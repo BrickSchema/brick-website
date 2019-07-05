@@ -7,3 +7,5 @@ dist
 .env
 .env.*
 static/rss.xml
+static/search.json
+.idea
