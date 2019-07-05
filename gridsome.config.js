@@ -38,6 +38,25 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'apps/**/*.md',
+        typeName: 'App',
+        refs: {
+          categories: {
+            typeName: 'Category',
+            route: 'categories/:id',
+            create: true
+          }
+        },
+        remark: {
+          plugins: [
+            ['gridsome-plugin-remark-shiki', {theme: 'Material-Theme-Palenight', skipInline: true}]
+          ]
+        }
+      }
+    },
+    {
       use: 'gridsome-plugin-rss',
       options: {
         contentTypeName: 'Post',
