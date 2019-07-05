@@ -14,9 +14,9 @@ const postcssPlugins = [
 if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 
 module.exports = {
-  siteName: 'Gridsome Portfolio Starter',
-  siteDescription: 'A simple portfolio theme for Gridsome powered by Tailwind CSS v1.0',
-  siteUrl: 'https://gridsome-portfolio-starter.netlify.com',
+  siteName: 'BrickSchema',
+  siteDescription: 'A uniform metadata schema for buildings',
+  siteUrl: 'https://brick.andrew.cmu.edu',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
