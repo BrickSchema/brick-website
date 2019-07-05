@@ -1,9 +1,9 @@
 ---
-title: How to Get Better At Coding
-path: how-to-get-better-at-coding
+title: Advanced Querying with SPARQL
+path: understanding-sparql
 date: 2019-04-05
 summary: Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic rerum earum quos explicabo suscipit maxime iste qui nihil. Reiciendis asperiores minus necessitatibus
-tags: ['coding', 'frontend', 'backend']
+tags: ['SPARQL', 'querying', 'brick']
 ---
 
 ![background](./images/blog_bg_2.jpg)
