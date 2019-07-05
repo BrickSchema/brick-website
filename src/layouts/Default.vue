@@ -3,8 +3,12 @@
     <header class="border-t-14 border-primary-700">
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
         <div>
-          <g-link v-if="theme === 'theme-light'" to="/"><g-image src="../../static/logo.svg" class="w-40" alt="logo" /></g-link>
-          <g-link v-else to="/"><g-image src="../../static/logo_dark_mode.svg" class="w-40" alt="logo" /></g-link>
+            <g-link v-if="theme === 'theme-light'" to="/">
+                <g-image src="../../static/logo.png" class="w-12" alt="logo"/>
+            </g-link>
+            <g-link v-else to="/">
+                <g-image src="../../static/logo.png" class="w-12" alt="logo"/>
+            </g-link>
         </div>
         <div class="block lg:hidden">
           <button @click="toggle" class="flex items-center px-3 py-2 border rounded border-gray-500 hover:text-gray-600 hover:border-gray-600">
