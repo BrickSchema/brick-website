@@ -8,10 +8,32 @@
 const fs = require('fs');
 const path = require('path');
 const pick = require('lodash.pick');
+const tagsets =  require('./static/tagsets.json')
+
 
 module.exports = function (api, options) {
   api.loadSource(store => {
-    // Use the Data store API here: https://gridsome.org/docs/data-store-api
+      const classes = store.addContentType({
+          typeName:'TagSet',
+      })
+
+      tagsets.forEach(node=>{
+          let subclasses = store.createReference('TagSet', node.subclasses);
+          classes.addNode({
+              id: node.id,
+              path: 'tagsets/' + node.id.split('#').pop(),
+              labels: node.labels,
+              generatedLabel: node.generatedLabel,
+              generatedAlias: node.generatedAlias,
+              superclasses: store.createReference('TagSet', node.superclasses),
+              subclasses: store.createReference('TagSet', node.subclasses),
+              totalChildren: node.subclasses.length,
+              comments: node.comments,
+              definitions: node.definitions,
+              equivalentClasses: store.createReference('TagSet', node.equivalentClasses),
+              hierarchy: store.createReference('TagSet', node.hierarchy.split('>'))
+          })
+      })
   })
 
   api.beforeBuild(({ config, store }) => {
