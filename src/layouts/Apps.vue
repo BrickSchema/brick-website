@@ -1,11 +1,11 @@
 <template>
     <div class="inline-flex">
-        <a :href="app.node.url" target="_blank" class="card" v-for="app in (category? category : $static.apps.edges)"
-           :key="app.id">
-            <g-image :src="app.node.thumbnail.src" alt="Avatar" style="width:100%"/>
-            <div class="container">
-                <h4><b>{{app.node.title}}</b></h4>
-                <p>{{app.node.summary}}</p>
+
+        <a :href="app.node.url" target="_blank" class="card m-4" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
+            <g-image :src="app.node.thumbnail.src" alt="Avatar"/>
+            <div class="container mx-auto my-2 details bg-white">
+                <div class="text-xl my-2">{{app.node.title}}</div>
+                <div class="text-lg">{{app.node.summary}}</div>
             </div>
         </a>
     </div>
@@ -34,8 +34,8 @@
     import ThemeSwitcher from '../components/ThemeSwitcher'
 
     export default {
-        props: {
-            category: {
+        props:{
+            category:{
                 default: false
             }
         },
@@ -66,39 +66,41 @@
 <style scoped>
     .card {
         margin: 24px;
-        width: 240px;
-        height: 320px;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        width: 260px;
+        height: 380px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         border-radius: 5px; /* 5px rounded corners */
         overflow: scroll;
     }
 
-    .card:hover {
-        box-shadow: 0px 11px 9px 1px rgba(0, 0, 0, 0.2);
+    .card:hover{
+        box-shadow: 0px 11px 9px 1px rgba(0,0,0,0.2);
         transition: 0.3s;
     }
 
     /* Add rounded corners to the top left and the top right corner of the image */
     img {
-        width: 240px;
-        height: 240px;
+        width: 260px;
+        height: 260px;
         border-radius: 5px 5px 0 0;
     }
 
-    .inline-flex {
-        float: right;
+    .inline-flex{
+        float: left;
         flex-flow: wrap;
     }
-
-    a {
+    a{
         color: #000;
-        font-family: "Noto Sans";
+        /*font-family: "Noto Sans";*/
         font-weight: lighter;
     }
 
-    h4 {
-        font-weight: bold;
-        padding: 2px;
+    .details{
+        height: inherit;
+    }
+
+    .container{
+        height: 100px;
     }
 </style>
