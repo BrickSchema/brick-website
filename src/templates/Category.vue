@@ -9,7 +9,7 @@
                     <categories class="list"/>
                 </div>
                 <div class="w-full h-auto l:w-4/6 h-12 overflow-auto bg-gray-100 rounded-lg px-4 py-2 m-8">
-                    <apps :category=$page.category.belongsTo.apps/>
+                    <apps :category=$page.category.belongsTo.apps />
                 </div>
             </div>
 
