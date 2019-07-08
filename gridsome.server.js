@@ -17,6 +17,12 @@ module.exports = function (api, options) {
           typeName:'TagSet',
       })
 
+      const removeEncoding = function(string) {
+          let tokens = string.split('"');
+          string = (tokens.length === 3) ? tokens[1] : string;
+          return string.split('@').shift();
+      }
+
       tagsets.forEach(node=>{
           let subclasses = store.createReference('TagSet', node.subclasses);
           classes.addNode({
@@ -29,7 +35,7 @@ module.exports = function (api, options) {
               subclasses: store.createReference('TagSet', node.subclasses),
               totalChildren: node.subclasses.length,
               comments: node.comments,
-              definitions: node.definitions,
+              definitions: node.definitions.map(def => removeEncoding(def)),
               equivalentClasses: store.createReference('TagSet', node.equivalentClasses),
               hierarchy: store.createReference('TagSet', node.hierarchy.split('>'))
           })
