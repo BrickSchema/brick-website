@@ -61,14 +61,14 @@ module.exports = {
       options: {
         contentTypeName: 'Post',
         feedOptions: {
-          title: 'Gridsome Portfolio Starter Blog',
-          feed_url: 'https://gridsome-portfolio-starter.netlify.com/rss.xml',
-          site_url: 'https://gridsome-portfolio-starter.netlify.com/'
+          title: 'BrickSchema',
+          feed_url: 'https://https://brick.andrew.cmu.edu/rss.xml',
+          site_url: 'https://https://brick.andrew.cmu.edu/'
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.summary,
-          url: 'https://gridsome-portfolio-starter.netlify.com' + node.path,
+          url: 'https://https://brick.andrew.cmu.edu' + node.path,
           author: 'Andre Madarang',
           date: node.date
         }),
