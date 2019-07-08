@@ -1,13 +1,18 @@
 <template>
     <Layout>
-        <div class="container-inner mx-auto py-16">
-            <div class="apps flex">
-                <div>
-                    <categories class="list"/>
+        <div class="mx-auto py-16 w-5/6">
 
+            <h1 class="text-4xl font-bold leading-tight m-8">Apps</h1>
+
+            <div class="w-full sm:flex text-xl text-gray-600 mx-auto">
+                <div class="l-auto h-auto l:w-2/6 h-12 bg-gray-200 rounded-lg  px-4 py-2 m-8">
+                    <categories class="list"/>
                 </div>
-                <apps class="flex-grow"/>
+                <div class="w-full h-auto l:w-4/6 h-12 overflow-auto bg-gray-100 rounded-lg px-4 py-2 m-8">
+                    <apps/>
+                </div>
             </div>
+
         </div>
     </Layout>
 </template>
@@ -26,30 +31,3 @@
         }
     }
 </script>
-
-<style scoped>
-    .container-inner {
-        margin: auto;
-        display: contents;
-        width: auto;
-    }
-
-    .flex-grow {
-        /*margin-left: 124px;*/
-        width: 70%;
-    }
-
-    .list {
-        width: 256px;
-        /*max-width: 100%;*/
-    }
-
-    .apps {
-        float: left;
-        margin: 64px;
-        padding: 20px;
-        margin-top: 64px;
-        flex-flow: wrap;
-        display: inline-box;
-    }
-</style>
