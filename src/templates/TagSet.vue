@@ -54,7 +54,7 @@
                 </div>
 
 
-                <div class="block sm:flex text-xl text-gray-600" v-if="$page.tagSet.definitions.length">
+                <div class="block sm:flex text-xl text-gray-600" v-if="$page.tagSet.definitions.length && $page.tagSet.definitions[0].length">
                     <div class="l-auto h-auto sm:w-1/6 bg-gray-300 h-12 bg-gray-200 rounded-lg  px-4 py-2 m-8">Definitions</div>
                     <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto">
                         <div class="bg-gray-200 rounded-lg px-4 py-2 m-8 definition" :key="definition" v-for="definition in $page.tagSet.definitions">
