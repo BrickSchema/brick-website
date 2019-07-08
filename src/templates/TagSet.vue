@@ -192,8 +192,8 @@
         content: "";
         position: absolute;
         top: 50%;
-        margin-top: -1.4em;
-        border-width: 1.35em 0 1.5em 1em;
+        margin-top: -1.45em;
+        border-width: 1.4em 0 1.5em 1em;
         border-style: solid;
         border-color: #e2e8f0 #e2e8f0 #e2e8f0 transparent;
         left: -1em;
@@ -207,8 +207,8 @@
         content: "";
         position: absolute;
         top: 50%;
-        margin-top: -1.5em;
-        border-top: 1.5em solid transparent;
+        margin-top: -1.45em;
+        border-top: 1.4em solid transparent;
         border-bottom: 1.5em solid transparent;
         border-left: 1em solid #e2e8f0;
         right: -1em;
