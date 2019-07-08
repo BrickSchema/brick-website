@@ -47,15 +47,29 @@ module.exports = function (api, options) {
     // Generate an index file for Fuse to search Posts
       const postsCollections = store.getContentType('Post').collection;
 
-      // Generate an index file for Fuse to search Apps
-      const appsCollection = store.getContentType('App').collection;
-
       const posts = postsCollections.data.map(post => {
       return pick(post, ['title', 'path', 'summary']);
     });
 
+      // Generate an index file for Fuse to search Apps
+      const appsCollection = store.getContentType('App').collection;
+
       const apps = appsCollection.data.map(app => {
           return pick(app, ['title', 'path', 'summary']);
+      });
+
+
+      // Generate an index file for Fuse to search TagSets
+      const tagSets = store.getContentType('TagSet').collection;
+
+      const classes = tagSets.data.map(className => {
+          return{
+              generatedLabel: className.generatedLabel,
+              labels: className.labels,
+              generatedAlias: className.generatedAlias,
+              definitions: className.definitions,
+              path: className.path
+          }
       });
 
     const output = {
@@ -71,10 +85,10 @@ module.exports = function (api, options) {
       : `${output.name}.json`
 
     if (outputPathExists) {
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...apps]))
+        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...apps, ...classes]))
     } else {
       fs.mkdirSync(outputPath)
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...apps]))
+        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...apps, ...classes]))
     }
   })
 }
