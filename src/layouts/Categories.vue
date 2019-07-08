@@ -2,19 +2,18 @@
     <div>
         <ul>
             <g-link to="/apps" class="flex">
-                <div class="title">
+                <div class="title mx-4 mt-4">
                     all
                 </div>
-                <div class="count">
+                <div class="count mt-4 mr-2">
                     {{$static.apps.total}}
                 </div>
             </g-link>
-            <g-link :to="category.node.path" class="flex" v-for="category in $static.categories.edges"
-                    :key="category.node.id">
-                <div class="title">
+            <g-link :to="category.node.path" class="flex" v-for="category in $static.categories.edges" :key="category.node.id">
+                <div class="title mx-4">
                     {{category.node.title}}
                 </div>
-                <div class="count">
+                <div class="count mr-2">
                     {{category.node.belongsTo.totalCount}}
                 </div>
             </g-link>
@@ -73,28 +72,27 @@
 </script>
 
 <style scoped>
-    .flex {
+    .flex{
         font-size: 18px;
         padding: 8px;
         color: black
     }
 
-    .title:hover {
+    .title:hover{
         color: #4185f4;
     }
 
-    .title {
+    .title{
         font-family: "Noto Sans";
         font-weight: lighter;
         width: 100%;
     }
-
-    .count {
+    .count{
         margin-left: auto;
         padding: .15rem .4rem;
         border-radius: .3em;
         font-size: .6em;
-        padding: 6px;
+        padding: 6px ;
         text-align: center;
         background: rgb(218, 219, 219);
         width: 28px;
