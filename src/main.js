@@ -18,17 +18,17 @@ export default function (Vue, { router, head, isClient }) {
 
   head.meta.push({
     name: 'keywords',
-    content: 'Gridsome,Vue,Tailwind,Tailwind CSS,JavaScript,HTML,CSS,Vue.js,VueJS'
+    content: 'BrickSchema,Brick,Schema,Metadata,Smart,Building,RDF,SPARQL,IoT'
   })
 
   head.meta.push({
     name: 'description',
-    content: 'Gridsome Portfolio Starter'
+    content: 'BrickSchema'
   })
 
   head.meta.push({
     name: 'author',
-    content: 'Andre Madarang'
+    content: 'Sheryas Nagare'
   })
 
   head.link.push({
