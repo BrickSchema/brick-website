@@ -16,7 +16,7 @@ git clone https://github.com/shreyasnagare/brick-website.git
 ```sh
 cd brick-website
 npm install
-gridsome develop
+npm run develop
 ```
 This will start a local development server. The server will start at http://localhost:8080/ with hot-reloading etc.
 
@@ -24,7 +24,7 @@ This will start a local development server. The server will start at http://loca
 
 ```sh
 cd brick-website
-gridsome build
+npm run build
 ```
 This will generate static files in the `./dist` directory which can be hosted anywhere, even on a CDN. There is no need for a Node.js server.
  
