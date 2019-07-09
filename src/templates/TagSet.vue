@@ -7,7 +7,7 @@
                 <tag-set-search-input/>
             </div>
             <div class=" l-auto sm:w-4/6 bg-gray-100 p-4 rounded-lg">
-                <ul id="breadcrumbs" class="flex">
+                <ul id="breadcrumbs" class="flex overflow-hidden overflow-x-auto">
                     <li
                             v-for="className in $page.tagSet.hierarchy"
                             :key="className.id">
@@ -173,7 +173,6 @@
 
 
     #breadcrumbs{
-        overflow: scroll;
         width: 100%;
         flex-flow: wrap;
     }
