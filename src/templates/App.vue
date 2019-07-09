@@ -2,8 +2,8 @@
     <Layout>
         <div class="container-inner mx-auto my-16">
             <h1 class="text-4xl font-bold leading-tight">{{ $page.app.title }}</h1>
-            <div class="text-xl text-gray-600 mb-4">{{ $page.app.date }}</div>
-            <div class="flex mb-8 text-sm">
+            <a :href="$page.app.url" target="_blank" class="text-xl my-4">🔗 Website and Github Link</a>
+            <div class="flex my-8 text-sm">
                 <g-link
                         :to="category.path"
                         v-for="category in $page.app.categories"
@@ -14,7 +14,7 @@
             </div>
             <div class="markdown-body mb-8" v-html="$page.app.content"/>
             <div class="mb-8">
-                <g-link to="/blog" class="font-bold uppercase">Back to Blog</g-link>
+                <g-link to="/apps" class="font-bold uppercase">Back to Apps</g-link>
             </div>
         </div>
     </Layout>
@@ -22,15 +22,16 @@
 
 <page-query>
     query App ($path: String!) {
-    app: app (path: $path) {
-    title
-    date (format: "MMMM D, Y")
-    content
-    categories {
-    title
-    path
-    }
-    }
+        app: app (path: $path) {
+            title
+            url
+            date (format: "MMMM D, Y")
+            content
+            categories {
+                title
+                path
+            }
+        }
     }
 </page-query>
 
