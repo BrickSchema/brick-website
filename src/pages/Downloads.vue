@@ -4,7 +4,7 @@
             <h1 class="text-4xl font-bold mb-16">Downloads</h1>
             <div class="overflow-x-hidden">
                 <div class="container-inner mx-auto text-xl border-t border-gray-500 border-b py-16 relative">
-                    <h2 class="text-3xl font-bold mb-16">Turtle Files</h2>
+                    <h2 class="text-3xl font-bold mb-16" id="Turtle-Files">Turtle Files</h2>
 
                     <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
                         <svg width="170px" height="170px">
@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="container-inner mx-auto text-xl border-gray-500 border-b py-16 relative">
-                    <h2 class="text-3xl font-bold mb-16">Papers and Presentations</h2>
+                    <h2 class="text-3xl font-bold mb-16" id="Papers-and-Presentations">Papers and Presentations</h2>
 
                     <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
                         <svg width="170px" height="170px">
@@ -82,7 +82,7 @@
 
 
                 <div class="container-inner mx-auto text-xl border-gray-500 border-b py-16 relative">
-                    <h2 class="text-3xl font-bold mb-16">Building Examples</h2>
+                    <h2 class="text-3xl font-bold mb-16" id="Building-Examples">Building Examples</h2>
 
                     <div class="absolute right-0" style="top: 50px; transform: translate(100%) rotate(180deg)">
                         <svg width="170px" height="170px">
