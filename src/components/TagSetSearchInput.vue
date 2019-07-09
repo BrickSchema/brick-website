@@ -66,7 +66,6 @@ export default {
   created() {
     axios('/search.json').then(response => {
       this.tagsets = response.data
-      console.log(response.data.pop())
     })
     .catch(error => {
       console.log(error);
