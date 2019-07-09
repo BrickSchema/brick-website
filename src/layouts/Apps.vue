@@ -1,13 +1,13 @@
 <template>
     <div class="inline-flex">
 
-        <a :href="app.node.url" target="_blank" class="card m-4" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
+        <g-link :to="app.node.path" class="card m-4" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
             <g-image :src="app.node.thumbnail.src" alt="Avatar"/>
             <div class="container mx-auto my-2 details bg-white">
                 <div class="text-xl my-2">{{app.node.title}}</div>
                 <div class="text-lg">{{app.node.summary}}</div>
             </div>
-        </a>
+        </g-link>
     </div>
 </template>
 
