@@ -1,7 +1,7 @@
 <template>
     <div class="inline-flex">
 
-        <g-link :to="app.node.path" class="card m-4 bg-white" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
+        <g-link :to="app.node.path" class="card overflow-hidden m-4 bg-white" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
             <g-image class="border-b" :src="app.node.thumbnail.src" alt="Avatar"/>
             <div class="px-2 py-1 mx-auto">
                 <div class="font-bold h-4/6 text-lg p-1">{{app.node.title}}</div>
@@ -66,12 +66,11 @@
 <style scoped>
     .card {
         margin: 24px;
-        width: 260px;
-        height: 360px;
+        width: min-content;
+        height: 320px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         border-radius: 5px; /* 5px rounded corners */
-        overflow: scroll;
     }
 
     .card:hover{
@@ -81,8 +80,7 @@
 
     /* Add rounded corners to the top left and the top right corner of the image */
     img {
-        width: 260px;
-        height: 260px;
+        max-width: 220px;
         border-radius: 5px 5px 0 0;
     }
 
