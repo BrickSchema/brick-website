@@ -44,7 +44,7 @@
           </li>
 
             <li>
-                <g-link aria-label="github" to="//github.com/BuildSysUniformMetadata/GroundTruth"
+                <g-link aria-label="github" to="//github.com/BuildSysUniformMetadata/Brick"
                         rel="noopener noreferrer" target="_blank" title="Brick @ GitHub">
                     <svg width="20px" height="20px" viewBox="0 0 438.549 438.549" class="">
                         <path fill="currentColor"
