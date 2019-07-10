@@ -1,12 +1,12 @@
 <template>
     <Layout>
 
-        <div class=" xs:flex-col sm:flex mx-auto my-16">
+        <div class=" xs:flex-col sm:flex mx-auto my-16 overflow-x-hidden">
 
             <div class="l-auto pb-4 mx-4">
                 <tag-set-search-input/>
             </div>
-            <div class=" l-auto  bg-gray-100 p-4 rounded-lg mx-4 z-5">
+            <div class=" l-auto w-full bg-gray-100 p-4 rounded-lg mx-4 z-5">
                 <ul id="breadcrumbs" class="flex overflow-hidden overflow-x-auto">
                     <li
                             v-for="className in $page.tagSet.hierarchy"
