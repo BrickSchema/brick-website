@@ -1,7 +1,7 @@
 <template>
-    <div class="inline-flex">
+    <div class="inline-flex p-4">
 
-        <g-link :to="app.node.path" class="card overflow-hidden m-4 bg-white" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
+        <g-link :to="app.node.path" class="card overflow-hidden sm:m-4 bg-white m-auto" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
             <g-image class="border-b" :src="app.node.thumbnail.src" alt="Avatar"/>
             <div class="px-2 py-1 mx-auto">
                 <div class="font-bold h-4/6 text-lg p-1">{{app.node.title}}</div>
@@ -65,7 +65,8 @@
 
 <style scoped>
     .card {
-        margin: 24px;
+        /*margin: auto;*/
+        margin-bottom: 24px;
         width: min-content;
         height: 320px;
         box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
