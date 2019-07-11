@@ -27,12 +27,10 @@
                  class="text-copy-primary hover:text-primary-700">Features</a>
               <g-link v-else to="/#features" class="text-copy-primary hover:text-primary-700">Features</g-link>
           </li>
-            <li class="mr-8 mb-6 lg:mb-0">
-                <g-link to="/start" class="text-copy-primary hover:text-primary-700">Get Started</g-link>
-          </li>
-          <li class="mr-8 mb-6 lg:mb-0">
-              <g-link to="/downloads" class="text-copy-primary hover:text-primary-700">Downloads</g-link>
-          </li>
+
+            <li class="mr-8 mb-6 lg:mb-0" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
+                <g-link :to="webpage.node.path" class="text-copy-primary hover:text-primary-700">{{webpage.node.title}}</g-link>
+            </li>
           <li class="mr-8 mb-6 lg:mb-0">
               <g-link to="/tagsets/VAV_Occupied_Heating_Max_Discharge_Air_Flow_Setpoint" class="text-copy-primary hover:text-primary-700">Docs</g-link>
           </li>
@@ -104,11 +102,19 @@
 </template>
 
 <static-query>
-query {
-  metaData {
+    query {
+    metaData {
     siteName
-  }
-}
+    }
+    webpages:allWebpage(filter:{show_on_navbar:{eq:true}}){
+    edges{
+    node{
+    path
+    title
+    }
+    }
+    }
+    }
 </static-query>
 
 <script>

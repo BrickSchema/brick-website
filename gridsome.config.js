@@ -57,6 +57,18 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'webpages/**/*.md',
+        typeName: 'Webpage',
+        remark: {
+          plugins: [
+            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+          ]
+        }
+      }
+    },
+    {
       use: 'gridsome-plugin-rss',
       options: {
         contentTypeName: 'Post',
@@ -69,7 +81,7 @@ module.exports = {
           title: node.title,
           description: node.summary,
           url: 'https://https://brick.andrew.cmu.edu' + node.path,
-          author: 'Andre Madarang',
+          author: 'Shreyas Nagare',
           date: node.date
         }),
         output: {
