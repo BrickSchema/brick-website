@@ -29,7 +29,7 @@
           </li>
 
             <li class="mr-8 mb-6 lg:mb-0" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
-                <g-link :to="webpage.node.path" class="text-copy-primary hover:text-primary-700">{{webpage.node.title}}</g-link>
+                <g-link :to="webpage.node.path" class="text-copy-primary hover:text-primary-700 truncate">{{webpage.node.title}}</g-link>
             </li>
           <li class="mr-8 mb-6 lg:mb-0">
               <g-link to="/tagsets/VAV_Occupied_Heating_Max_Discharge_Air_Flow_Setpoint" class="text-copy-primary hover:text-primary-700">Docs</g-link>
