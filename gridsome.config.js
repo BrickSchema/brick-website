@@ -40,7 +40,7 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
-        path: 'apps/**/*.md',
+        path: 'tools/**/*.md',
         typeName: 'App',
         refs: {
           categories: {
