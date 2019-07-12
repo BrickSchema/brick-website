@@ -5,7 +5,7 @@
     <div class="relative w-80">
       <input
         type="text"
-        placeholder="Search (Press  &quot;/&quot; to focus)"
+        placeholder="Search"
         class="bg-background-form border border-gray-500 rounded-full px-4 pl-10 py-2 outline-none focus:border-primary-500 w-80"
         v-model="query"
         @input="softReset"
