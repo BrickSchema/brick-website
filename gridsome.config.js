@@ -59,8 +59,21 @@ module.exports = {
     {
       use: '@gridsome/source-filesystem',
       options: {
+        path: 'personas/**/*.md',
+        typeName: 'Persona'
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
         path: 'webpages/**/*.md',
         typeName: 'Webpage',
+        refs: {
+          personas: {
+            typeName: 'Persona',
+            route: 'personas/:id'
+          }
+        },
         remark: {
           plugins: [
             [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
