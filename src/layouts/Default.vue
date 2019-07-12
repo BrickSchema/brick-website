@@ -22,11 +22,6 @@
           <li class="mr-8 mb-6 lg:mb-0">
             <search-input />
           </li>
-          <li class="mr-8 mb-6 lg:mb-0">
-              <a v-if="$route.path === '/'" href="/#features" v-scroll-to="'#features'"
-                 class="text-copy-primary hover:text-primary-700">Features</a>
-              <g-link v-else to="/#features" class="text-copy-primary hover:text-primary-700">Features</g-link>
-          </li>
 
             <li class="mr-8 mb-6 lg:mb-0" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
                 <g-link :to="webpage.node.path" class="text-copy-primary hover:text-primary-700 truncate">{{webpage.node.title}}</g-link>
