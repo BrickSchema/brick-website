@@ -3,10 +3,7 @@
     <header class="border-t-14 border-primary-700">
       <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
         <div>
-            <g-link v-if="theme === 'theme-light'" to="/">
-                <g-image src="../../static/logo.png" class="w-12" alt="logo"/>
-            </g-link>
-            <g-link v-else to="/">
+            <g-link to="/">
                 <g-image src="../../static/logo.png" class="w-12" alt="logo"/>
             </g-link>
         </div>
