@@ -2,6 +2,7 @@
 title: Get Started
 path: /get-started
 show_on_navbar: true
+personas: ['business', 'developer', 'contributor', 'manager']
 ---
 
 ## Learning Materials  

@@ -2,6 +2,7 @@
 title: Downloads
 path: /downloads
 show_on_navbar: true
+personas: ['business', 'developer', 'contributor', 'manager']
 ---
 
 ## Turtle Files
