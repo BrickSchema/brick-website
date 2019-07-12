@@ -30,7 +30,7 @@
                     <div class="l-auto h-auto sm:w-1/6 h-12 bg-gray-300 rounded-lg  px-4 py-2 m-8">IRI</div>
                     <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto">
                         <div class="bg-gray-200 rounded-lg px-4 py-2 m-8 iri">
-                            <a :href="$page.tagSet.id" target="_blank">{{ $page.tagSet.id }}</a>
+                            <a :href="'http://www.linked.data.gov.au/def/pylode/brick.html#'+$page.tagSet.id.split('#').pop().toLowerCase()" target="_blank">{{ $page.tagSet.id }}</a>
                         </div>
                     </div>
                 </div>
