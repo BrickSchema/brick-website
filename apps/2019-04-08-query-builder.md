@@ -1,6 +1,6 @@
 ---
 title: QueryBuilder
-path: apps/QueryBuilder
+path: tools/QueryBuilder
 date: 2019-04-08
 summary: Something about Query Builder
 categories: ['visualization', 'tool']

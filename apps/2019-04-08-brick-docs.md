@@ -1,6 +1,6 @@
 ---
    title: BrickDocs
-   path: apps/BrickDocs
+   path: tools/BrickDocs
    date: 2019-04-08
    summary: BrickDocs is an authoring tool for Brick TTL files
    categories: ['docs', 'tagset']

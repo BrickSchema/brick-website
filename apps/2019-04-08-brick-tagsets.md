@@ -1,6 +1,6 @@
 ---
 title: Brick TagSet Hierarchy
-path: apps/TagSet-Hierarchy
+path: tools/TagSet-Hierarchy
 date: 2019-04-08
 summary: Shows hierarchy of Brick TagSets
 categories: ['tagset', 'visualization']

@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <g-link to="/apps" class="flex font-light">
+            <g-link to="/tools" class="flex font-light">
                 <div class="title mx-4 mt-4 font-thin w-full">
                     all
                 </div>
