@@ -147,7 +147,7 @@
     }
 </script>
 
-<style>
+<style scoped>
     .list{
 
         display: flex;
