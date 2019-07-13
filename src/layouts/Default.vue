@@ -27,9 +27,8 @@
                     <li class="mr-8 mb-6 lg:mb-0">
                         <search-input />
                     </li>
-                    <li class="mr-8 mb-6 lg:mb-0">
-                        <div @click="show">persona</div>
-                        <!--                <persona-switcher :persona="persona" @personaChanged="updatePersona" />-->
+                    <li class="mr-8 mb-6 lg:mb-0 hover:text-primary-700">
+                        <div @click="show">Persona</div>
                     </li>
 
                     <li class="mr-8 mb-6 lg:mb-0" v-if="webpage.node.personas.some((p)=>p.id===persona)" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
