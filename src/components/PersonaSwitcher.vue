@@ -16,7 +16,7 @@
 <static-query>
   query {
 
-    personas: allPersona(order: ASC){
+    personas: allPersona(sortBy:"fileInfo.name", order: ASC){
     edges{
     node{
     id
