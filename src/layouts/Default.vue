@@ -112,7 +112,7 @@
     siteName
     }
 
-    webpages:allWebpage(filter:{show_on_navbar:{eq:true}}, sortBy: "title", order:ASC){
+    webpages:allWebpage(filter:{show_on_navbar:{eq:true}}, sortBy:"fileInfo.name", order:ASC){
     edges{
     node{
     path
