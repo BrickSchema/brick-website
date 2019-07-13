@@ -31,19 +31,19 @@
       </div>
     </div>
     <transition name="fade">
-      <div v-if="query.length > 0 && searchResultsVisible" class="normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-20 overflow-y-auto" style="max-height: 32rem">
+      <div v-if="query.length > 0 && searchResultsVisible" class="bg-white normal-case absolute border left-0 right-0 w-108 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-20 overflow-y-auto" style="max-height: 32rem">
         <div class="flex flex-col" ref="results">
           <a
             v-for="(post, index) in results"
             :key="index"
             :href="post.item.path"
             @click="reset"
-            class="bg-background-form border-b border-gray-400 text-xl cursor-pointer p-4 search-hover"
+            class="bg-background-form text-gray-700 border-b border-gray-400 text-xl cursor-pointer p-4 search-hover"
             :class="{ 'search-highlighted' : index === highlightedIndex }"
           >
             {{ post.item.title }}
 
-            <span class="block font-normal text-copy-primary text-sm my-1">{{ post.item.summary }}</span>
+            <span class="block font-normal text-copy-primary text-sm my-1 text-gray-500">{{ post.item.summary }}</span>
           </a>
 
           <div v-if="results.length === 0" class="bg-background-form font-normal w-full border-b cursor-pointer p-4">

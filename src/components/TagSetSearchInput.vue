@@ -38,12 +38,12 @@
             :key="index"
             :href="post.item.path"
             @click="reset"
-            class="bg-background-form border-b border-gray-400 text-xl cursor-pointer p-4 search-hover"
+            class="bg-background-form border-b border-gray-400 text-xl cursor-pointer p-4 search-hover text-gray-700"
             :class="{ 'search-highlighted' : index === highlightedIndex }"
           >
             {{ post.item.generatedLabel }}
 
-            <span v-if="post.item.definitions !== undefined" class="block font-normal text-copy-primary text-sm my-1">{{ post.item.definitions[0] }}</span>
+            <span v-if="post.item.definitions !== undefined" class="block font-normal text-copy-primary text-sm my-1 text-gray-500">{{ post.item.definitions[0] }}</span>
           </a>
 
           <div v-if="results.length === 0" class="bg-background-form font-normal w-full border-b cursor-pointer p-4">
