@@ -153,6 +153,7 @@
             updatePersona(persona) {
                 this.persona = persona
                 this.showModal = false;
+                this.$emit('personaUpdated', persona)
             },
             changeFillColor(e) {
                 if(!this.githubLogo && e.target.firstChild)
