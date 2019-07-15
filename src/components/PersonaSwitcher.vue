@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="m-8 font-thin text-gray-700">Select a persona that will help up show you more relevant information.</div>
+    <div class="m-8 font-thin text-gray-700">Select a persona that will help us show you more relevant information.</div>
     <ul>
       <li v-for="thisPersona in this.$static.personas.edges" @click.prevent="updatePersona(thisPersona.node.id)" :class="thisPersona.node.id === persona ? 'bg-gray-200' : 'bg-white'">
         <div class="mx-8 my-4 p-2 hover:text-primary-700">
