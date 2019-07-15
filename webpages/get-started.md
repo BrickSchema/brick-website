@@ -1,6 +1,7 @@
 ---
 title: Get Started
 path: /get-started
+summary: How to get started with Brick  
 show_on_navbar: true
 personas: ['business', 'developer', 'contributor', 'manager']
 ---

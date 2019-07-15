@@ -1,6 +1,7 @@
 ---
 title: Concepts
 path: /concepts/technical
+summary: Technical concepts of Brick
 show_on_navbar: true
 personas: ['developer', 'manager']
 ---

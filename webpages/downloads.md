@@ -1,6 +1,7 @@
 ---
-title: Downloads
-path: /downloads
+title: Resources
+path: /resources
+summary: Brick core files, papers and example buildings
 show_on_navbar: true
 personas: ['business', 'developer', 'contributor', 'manager']
 ---
