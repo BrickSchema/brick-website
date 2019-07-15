@@ -19,9 +19,6 @@ module.exports = {
   siteUrl: 'https://brick.andrew.cmu.edu',
   plugins: [
     {
-      use: 'gridsome-plugin-modal'
-    },
-    {
       use: '@gridsome/source-filesystem',
       options: {
         path: 'blog/**/*.md',
