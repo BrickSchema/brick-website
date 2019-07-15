@@ -1,13 +1,12 @@
 <template>
     <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen">
-
-        <modal v-if="showModal" name="select-persona"
-               width="360"
-               height="520"
-               class="persona-modal"
-        >
-            <persona-switcher :persona="persona" @personaUpdated="updatePersona" />
-        </modal>
+        <div v-if="showModal" class="modal-overlay" @click.self="showModal = false">
+            <div class="modal-outer-box" @click.self="showModal = false">
+                <div class="modal shadow-2xl">
+                    <persona-switcher :persona="persona" @personaUpdated="updatePersona" />
+                </div>
+            </div>
+        </div>
         <header class="border-t-14 border-primary-700">
             <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
                 <div>
@@ -28,7 +27,7 @@
                         <search-input />
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0 hover:text-primary-700">
-                        <div @click="show">Persona</div>
+                        <div @click="showModal = true">Persona</div>
                     </li>
 
                     <li class="mr-8 mb-6 lg:mb-0" v-if="webpage.node.personas.some((p)=>p.id===persona)" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
@@ -137,8 +136,7 @@
         },
         mounted() {
             this.persona = localStorage.getItem('persona') || 'business'
-            this.$modal.show('select-persona');
-            setTimeout(() => {this.$modal.hide('select-persona');this.showModal = true}, 500);
+            this.showModal = !(localStorage.getItem('persona'))
         },
         data() {
             return {
@@ -154,13 +152,7 @@
             },
             updatePersona(persona) {
                 this.persona = persona
-                this.hide()
-            },
-            show () {
-                this.$modal.show('select-persona');
-            },
-            hide () {
-                this.$modal.hide('select-persona');
+                this.showModal = false;
             },
             changeFillColor(e) {
                 if(!this.githubLogo && e.target.firstChild)
