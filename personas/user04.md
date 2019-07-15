@@ -6,4 +6,12 @@
    thumbnail: ./images/contributor.svg
 ---
 
-# Detailed description
+---
+<br><br/>
+## Content for Brick Contributors
+
+<br><br/>
+
+---
+
+### [Contribute](https://brick.andrew.cmu.edu)

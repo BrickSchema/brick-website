@@ -6,4 +6,10 @@
    thumbnail: ./images/developer.svg
 ---
 
-# Detailed description
+---
+<br><br/>
+## Content for System Integrators and App Developers
+
+<br><br/>
+
+---

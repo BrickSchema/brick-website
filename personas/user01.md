@@ -6,4 +6,11 @@
    thumbnail: ./images/business.svg
 ---
 
-# Detailed description
+---
+<br><br/>
+## Content for Business Leaders
+
+<br><br/>
+
+---
+

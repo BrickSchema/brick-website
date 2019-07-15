@@ -6,4 +6,10 @@
    thumbnail: ./images/manager.svg
 ---
 
-# Detailed description
+---
+<br><br/>
+## Content for Building Managers
+
+<br><br/>
+
+---
