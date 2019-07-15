@@ -13,5 +13,3 @@
 <br><br/>
 
 ---
-
-### [Contribute](https://brick.andrew.cmu.edu)
