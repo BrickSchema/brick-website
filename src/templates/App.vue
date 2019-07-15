@@ -4,7 +4,7 @@
         <div class="container-inner mx-auto my-16">
 
             <div class="mb-8">
-                <g-link to="/apps" class="font-bold uppercase">Back to Apps</g-link>
+                <g-link to="/tools" class="font-bold uppercase">Back to Tools</g-link>
             </div>
             <h1 class="text-4xl font-bold leading-tight">{{ $page.app.title }}</h1>
             <a :href="$page.app.url" target="_blank" class="text-xl my-4">🔗 Website and Github Link</a>
