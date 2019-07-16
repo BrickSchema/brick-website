@@ -7,7 +7,7 @@
                 <g-link to="/tools" class="font-bold uppercase">Back to Tools</g-link>
             </div>
             <h1 class="text-4xl font-bold leading-tight">{{ $page.app.title }}</h1>
-            <a :href="$page.app.url" target="_blank" class="text-xl my-4">🔗 Website and Github Link</a>
+            <a :href="$page.app.url" target="_blank" class="text-xl my-4">🔗 Website</a>
             <div class="flex my-8 text-sm overflow-hidden overflow-x-auto">
                 <g-link
                         :to="category.path"
