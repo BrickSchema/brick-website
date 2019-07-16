@@ -33,7 +33,7 @@
                         <div @click="showModal = true">Persona</div>
                     </li>
 
-                    <li class="mr-8 mb-6 lg:mb-0" v-if="webpage.node.personas.some((p)=>p.id===persona)" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
+                    <li class="mr-8 mb-6 lg:mb-0" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
                         <g-link :to="webpage.node.path" class="text-copy-primary hover:text-primary-700 truncate">{{webpage.node.title}}</g-link>
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
