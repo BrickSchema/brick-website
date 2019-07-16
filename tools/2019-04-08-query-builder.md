@@ -8,59 +8,16 @@ thumbnail: ./images/query-builder.png
 url: https://querybuilder.mortardata.org/
 ---
 
-![background](./images/blog_bg_1.jpg)
-
-Instructions
-============
-
-Note that --- not considering the asterisk --- the actual text
-content starts at 4-columns in.
-
-> Block quotes are
-> written like so.
->
-> They can span multiple paragraphs,
-> if you like.
-Note again how the actual text starts at 4 columns in (4 characters
-from the left side). Here's a code sample:
-
-    # Let me re-iterate ...
-    for i in 1 .. 10 { do-something(i) }
-
-As you probably guessed, indented 4 spaces. By the way, instead of
-indenting the block, you can use delimited blocks, if you like:
-
-~~~
-define foobar() {
-    print "Welcome to flavor country!";
-}
-~~~
-
-(which makes copying & pasting easier). You can optionally mark the
-delimited block for Pandoc to syntax highlight it:
-
-~~~python
-import time
-# Quick, count to ten!
-for i in range(10):
-    # (but not *too* quick)
-    time.sleep(0.5)
-    print i
-~~~
+![background](./images/query-builder-sc.png)
 
 
+## Introduction
+Construct Brick queries interactively by expanding and selecting nodes.
 
-### Contributing ###
-
-Now a nested list:
-
- 1. First, get these ingredients:
-
-      * carrots
-      * celery
-      * lentils
-
- 2. Boil some water.
-
- 3. Dump everything in the pot and follow
-    this algorithm:
+## How To Use
+- **Nodes** represent Brick classes appearing in Brick models. **Edges** represent relationships between instances of classes
+- **Click** nodes to see their relationships to neighboring nodes.
+- **Select** nodes for the query by clicking them. Nodes highlighted in green selected. Click a node again to de-select.
+- Click class names in "Start From..." to **reset** the graph content and position
+- **Click and drag** to move the graph around.
+- **Scroll in and out** to zoom in and out of the graph.
