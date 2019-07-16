@@ -19,7 +19,7 @@
             </div>
             <div class="markdown-body mb-8" v-html="$page.app.content"/>
             <div class="mb-8">
-                <g-link to="/apps" class="font-bold uppercase">Back to Apps</g-link>
+                <g-link to="/tools" class="font-bold uppercase">Back to Tools</g-link>
             </div>
         </div>
     </Layout>
