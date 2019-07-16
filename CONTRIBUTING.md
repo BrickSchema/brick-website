@@ -30,12 +30,14 @@ personas (optional): List of persona IDs this webpage is relevant to.
 ---
 
 Webpage content in markdown.
-Tip #1: You can use the same title for two different files (example: 'Concepts' for technical persona and 'Concepts' for non-technical persona). It would be a good idea to put different personas in each file.
-Tip #2: Use images as you would normally use.
-Tip #3: Keeping similar pages in the same folder makes more sense. Example: (/concepts/summary.md and /concepts/indepth.md)
-Tip #4: Try to give users access to other pages. Example: summary.md >> For more detailed concepts, see [this](path for indepth concepts)
 
 ```
+### Tips:
+ - You can use the same title for two different files (example: 'Concepts' for technical persona and 'Concepts' for non-technical persona). It would be a good idea to put different personas in each file.
+ - Use images as you would normally use.
+ - Keeping similar pages in the same folder makes more sense. Example: (/concepts/summary.md and /concepts/indepth.md)
+ - Try to give users access to other pages. Example: summary.md >> For more detailed concepts, see [this](path for indepth concepts)
+ - To avoid haveing longer pages, split the content into multiple pages and use md hyperlinks [example](/webpages/concepts/technical.md). (These pages would ideally have show_on_navbar: false with a few/no personas)
 
 ## Content filtering
 Example webpage:
