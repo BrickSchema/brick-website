@@ -3754,13 +3754,6 @@ gray-matter@^4.0.2:
     section-matter "^1.0.0"
     strip-bom-string "^1.0.0"
 
-gridsome-plugin-modal@^0.1.1:
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/gridsome-plugin-modal/-/gridsome-plugin-modal-0.1.1.tgz#69f718566bf9bd08621bd29c01838847a317302b"
-  integrity sha512-2L8ARFcbUFk5OTPpZgrxcBkTcvR5m2PjiPkF3lgRiajttcjbMrXYSemeZRztAjw3cOtCTvr+kyGpcBE6M4CSVA==
-  dependencies:
-    vue-js-modal "^1.3.28"
-
 gridsome-plugin-remark-shiki@^0.3.0:
   version "0.3.0"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-remark-shiki/-/gridsome-plugin-remark-shiki-0.3.0.tgz#36e1a291b4a45ded418aade72ab75092906254b5"
@@ -8624,11 +8617,6 @@ vue-hot-reload-api@^2.3.0:
   version "2.3.3"
   resolved "https://registry.yarnpkg.com/vue-hot-reload-api/-/vue-hot-reload-api-2.3.3.tgz#2756f46cb3258054c5f4723de8ae7e87302a1ccf"
   integrity sha512-KmvZVtmM26BQOMK1rwUZsrqxEGeKiYSZGA7SNWE6uExx8UX/cj9hq2MRV/wWC3Cq6AoeDGk57rL9YMFRel/q+g==
-
-vue-js-modal@^1.3.28:
-  version "1.3.31"
-  resolved "https://registry.yarnpkg.com/vue-js-modal/-/vue-js-modal-1.3.31.tgz#fdece823d4f2816c8b1075c1fd8f667df11f5a42"
-  integrity sha512-gwt2904sWbMUuUcHwKQ510IEs4G7S3bqVWLYeTOc2eEyWMmmnT9UmojDsXIexFnPVM7cZTua37z3Jm/h0i0y8Q==
 
 vue-loader@^15.7.0:
   version "15.7.0"
