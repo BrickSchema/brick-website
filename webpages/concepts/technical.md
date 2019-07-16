@@ -2,7 +2,7 @@
 title: Concepts
 path: /concepts/technical
 summary: Technical concepts of Brick
-show_on_navbar: true
+show_on_navbar: false
 personas: ['developer', 'manager']
 ---
 
