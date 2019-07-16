@@ -51,11 +51,11 @@ module.exports = function (api, options) {
       return pick(post, ['title', 'path', 'summary']);
     });
 
-      // Generate an index file for Fuse to search Apps
-      const appsCollection = store.getContentType('App').collection;
+      // Generate an index file for Fuse to search webpages
+      const pagesCollection = store.getContentType('Webpage').collection;
 
-      const apps = appsCollection.data.map(app => {
-          return pick(app, ['title', 'path', 'summary']);
+      const webpages = pagesCollection.data.map(webpage => {
+          return pick(webpage, ['title', 'path', 'summary']);
       });
 
 
@@ -85,10 +85,10 @@ module.exports = function (api, options) {
       : `${output.name}.json`
 
     if (outputPathExists) {
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...apps, ...classes]))
+        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...webpages, ...classes]))
     } else {
       fs.mkdirSync(outputPath)
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...apps, ...classes]))
+        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...webpages, ...classes]))
     }
   })
 }
