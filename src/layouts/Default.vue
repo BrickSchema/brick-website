@@ -27,10 +27,7 @@
                         <search-input />
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
-                        <g-link to="/#" class="text-copy-primary hover:text-primary-700">Home</g-link>
-                    </li>
-                    <li class="mr-8 mb-6 lg:mb-0 hover:text-primary-700">
-                        <div @click="showModal = true">Persona</div>
+                        <g-link to="/ " class="text-copy-primary hover:text-primary-700">Home</g-link>
                     </li>
 
                     <li class="mr-8 mb-6 lg:mb-0" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
@@ -138,8 +135,7 @@
             PersonaSwitcher
         },
         mounted() {
-            this.persona = localStorage.getItem('persona') || 'business'
-            this.showModal = !(localStorage.getItem('persona'))
+            this.persona = localStorage.getItem('persona') || 'default'
         },
         data() {
             return {
