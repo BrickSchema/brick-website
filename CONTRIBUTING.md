@@ -12,7 +12,6 @@ thumbnail (optional): This is for future use.
 ---
 
 Description of the persona (for future use)
-
 ```
 
 # Modifying the pages:
