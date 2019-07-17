@@ -22,11 +22,10 @@
       <div class="pt-4 bg-gray-100">
         <div class="container-inner mx-auto text-xl pb-4 relative">
 
-          <div class="text-3xl font-bold my-8">Pages most relevant to your persona:</div>
-          <ul v-for="thisPersona in $page.personas.edges" v-if="thisPersona.node.id === persona">
+          <ul v-for="thisPersona in $page.personas.edges" v-if="thisPersona.node.pages.edges.length">
+            <div class="text-xl font-bold mt-4">If you are a {{ thisPersona.node.label }}, check out these pages:</div>
             <li v-for="page in thisPersona.node.pages.edges">
-              <g-link class="text-2xl" :to="page.node.path"> {{ page.node.title }} </g-link>
-              <div class="mb-4 text-l text-gray-700 font-thin"> {{ page.node.summary }} </div>
+              <g-link class="text-lg" :to="page.node.path"> {{ page.node.title }} </g-link>
             </li>
           </ul>
         </div>
