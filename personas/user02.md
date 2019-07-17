@@ -8,7 +8,7 @@
 
 ---
 <br><br/>
-## Content for Building Managers
+## Description of Building Managers
 
 <br><br/>
 

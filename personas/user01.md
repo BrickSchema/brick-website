@@ -8,7 +8,7 @@
 
 ---
 <br><br/>
-## Content for Business Leaders
+## Description of Business Leaders
 
 <br><br/>
 

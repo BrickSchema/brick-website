@@ -1,7 +1,7 @@
 ---
-title: Front Page
-path: /testfront
-summary: Front page of Brick site
+title: About
+path: /about
+summary: What is Brick? How does Brick compare to X?
 show_on_navbar: false
 ---
 
