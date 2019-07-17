@@ -27,7 +27,7 @@
                         <search-input />
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
-                        <g-link to="/ " class="text-copy-primary hover:text-primary-700">Home</g-link>
+                        <g-link to="/#home" class="text-copy-primary hover:text-primary-700">Home</g-link>
                     </li>
 
                     <li class="mr-8 mb-6 lg:mb-0" v-for="webpage in $static.webpages.edges" :key="webpage.path" >
