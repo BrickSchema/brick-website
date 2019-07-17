@@ -1,5 +1,5 @@
 <template>
-  <Layout @personaUpdated="updatePersona">
+  <Layout>
 
     <div class="hero container-inner mx-auto flex flex-col sm:flex-row justify-between py-16">
       <div class="w-1/4 mt-8 sm:mt-0">
