@@ -125,19 +125,6 @@
     metaInfo: {
       title: 'Home'
     },
-    data(){
-      return{
-        persona:''
-      }
-    },
-    mounted() {
-      this.persona = localStorage.getItem('persona') || 'business'
-    },
-    methods:{
-      updatePersona(persona){
-        this.persona = persona
-      }
-    }
   }
 </script>
 
