@@ -51,9 +51,7 @@ personas: ['contributor','developer']
 ...
 ...
 ```
-### Navbar
-- will show "Contribute" tab on the the navbar.
-- tabs will be in the lexicographical order of the webpage's md filename. So, if the order matters, you can name the files '1.somepage.md' and '2.otherpage.md'
+Use the personas list to mark this page as important/useful for the mentioned personas.
 
 # Modifying the home page
 The homepage will have the following structure:
