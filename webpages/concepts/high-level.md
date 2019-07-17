@@ -3,7 +3,6 @@ title: Concepts
 path: /concepts/high-level
 summary: High-level concepts of Brick
 show_on_navbar: false
-personas: ['business', 'contributor']
 ---
 
 ## Concept 1
