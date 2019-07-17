@@ -8,7 +8,7 @@
 
 ---
 <br><br/>
-## Content for Brick Contributors
+## Description of Brick Contributors
 
 <br><br/>
 

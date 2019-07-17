@@ -8,7 +8,7 @@
 
 ---
 <br><br/>
-## Content for System Integrators and App Developers
+## Description of System Integrators and App Developers
 
 <br><br/>
 
