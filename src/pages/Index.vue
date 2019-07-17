@@ -12,11 +12,7 @@
     </div> <!-- end hero -->
 
     <div class="container-inner mx-auto my-16">
-      <ul>
-        <li v-for="thisPersona in $page.personas.edges" v-if="thisPersona.node.id === persona">
-          <div class="markdown-body" v-html="thisPersona.node.content" />
-        </li>
-      </ul>
+          <div class="markdown-body" v-html="$page.aboutPage.content" />
     </div>
 
     <div class="container-inner mx-auto my-16 bg-gray-100">
@@ -117,6 +113,9 @@
   }
   }
   }
+  }
+  aboutPage: webpage(path:"/about"){
+  content
   }
   }
 </page-query>
