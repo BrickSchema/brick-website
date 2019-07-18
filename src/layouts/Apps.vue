@@ -1,11 +1,11 @@
 <template>
-    <div class="inline-flex w-full">
+    <div class="inline-flex p-4">
 
-        <g-link :to="app.node.path" class="card w-full flex overflow-hidden bg-white mx-auto border-primary-200 border mb-4" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
-            <g-image class="my-auto h-full w-full" :src="app.node.thumbnail.src" alt="Avatar"/>
-            <div class="border-t md:border-t-0 md:border-l px-2 py-1 mx-auto details">
-                <div class="font-bold text-lg p-1">{{app.node.title}}</div>
-                <div class="font-thin text-sm p-1">{{app.node.summary}}</div>
+        <g-link :to="app.node.path" class="card overflow-hidden sm:m-4 bg-white m-auto" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
+            <g-image class="border-b" :src="app.node.thumbnail.src" alt="Avatar"/>
+            <div class="px-2 py-1 mx-auto">
+                <div class="font-bold h-4/6 text-lg p-1">{{app.node.title}}</div>
+                <div class="font-thin h-2/6 text-sm p-1">{{app.node.summary}}</div>
             </div>
         </g-link>
     </div>
@@ -31,7 +31,6 @@
 
 <script>
     import SearchInput from '../components/SearchInput'
-    import ThemeSwitcher from '../components/ThemeSwitcher'
 
     export default {
         props:{
@@ -40,24 +39,16 @@
             }
         },
         components: {
-            SearchInput,
-            ThemeSwitcher
-        },
-        mounted() {
-            this.theme = localStorage.getItem('theme') || 'theme-light'
+            SearchInput
         },
         data() {
             return {
-                isOpen: false,
-                theme: '',
+                isOpen: false
             }
         },
         methods: {
             toggle() {
                 this.isOpen = !this.isOpen
-            },
-            updateTheme(theme) {
-                this.theme = theme
             }
         }
     }
@@ -65,21 +56,23 @@
 
 <style scoped>
     .card {
-        max-height: 340px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.025);
+        /*margin: auto;*/
+        margin-bottom: 24px;
+        width: min-content;
+        height: 320px;
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
         transition: 0.3s;
         border-radius: 5px; /* 5px rounded corners */
     }
 
     .card:hover{
-        top: -5%;
+        box-shadow: 0px 11px 9px 1px rgba(0,0,0,0.2);
         transition: 0.3s;
     }
 
     /* Add rounded corners to the top left and the top right corner of the image */
     img {
-        width: 120px;
-        height: 120px;
+        max-width: 220px;
         border-radius: 5px 5px 0 0;
     }
 
@@ -90,10 +83,5 @@
     a{
         color: #000;
         font-weight: lighter;
-    }
-
-    .details{
-        width: inherit;
-        height: auto;
     }
 </style>
