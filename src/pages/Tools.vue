@@ -5,7 +5,7 @@
             <h1 class="text-4xl ml-4 pb-2 font-bold leading-tight border-b border-primary-200">Tools</h1>
 
             <div class="w-full sm:flex text-xl text-gray-600 sm:mx-auto">
-                <div class="h-auto sm:border-r border-primary-200">
+                <div class="h-auto border-b sm:border-b-0 sm:border-r border-primary-200">
                     <categories class="list"/>
                 </div>
                 <div class="w-full px-auto p-4">
