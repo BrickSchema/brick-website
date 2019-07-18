@@ -1,7 +1,7 @@
 <template>
     <Layout>
 
-        <div class=" xs:flex-col sm:flex mx-auto my-16 overflow-x-hidden">
+        <div class="container xs:flex-col sm:flex mx-auto my-16 overflow-x-hidden">
 
             <div class="l-auto pb-4 mx-4">
                 <tag-set-search-input/>
