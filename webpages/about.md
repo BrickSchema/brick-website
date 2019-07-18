@@ -20,6 +20,8 @@ Brick:
 
 Brick is free and open-sourced under the BSD 3-Clause license. The source code for Brick, this website, and related tools developed by the Brick team are available on **[GitHub](https://github.com/BrickSchema)**.
 
+![Brick Model Example](images/brick-model-example.png)
+
 ## How Does Brick Compare to X?
 
 **Project Haystack** ([link](https://project-haystack.org/)) is a popular tagging system for describing building assets using semi-structured sets of tags.
@@ -31,3 +33,15 @@ Brick includes a tagging system similar to Haystack that augments tags with form
 **Building Topology Ontology (BOT)** ([link](https://w3c-lbd-cg.github.io/bot/)) is a complementary effort for semantic building metadata from the [Linked Building Data W3C Community Group](https://www.w3.org/community/lbd/) that focuses on capturing topological concepts in buildings such as sites, floors, zones and rooms. Because BOT is built using the Semantic Web, it can be used in tandem with Brick.
 
 **Smart Appliances REFerence Ontology (SAREF)** ([link](https://sites.google.com/site/smartappliancesproject/ontologies/reference-ontology)) is an ontology capturing high level aspects of smart and connected appliances. While SAREF does not capture the the full spectrum of equipment and sensors that exist in buildings, SAREF models can be easily integrated into Brick.
+
+
+Modeling Support         | **Brick** | **Project Haystack** | **IFC** | **BOT** | **SAREF**
+-------------------------|-----------|----------------------|---------|---------|----------
+HVAC Systems             |  **yes**      |       **yes**    |   no    |   no    |   no
+Lighting Systems         |  **yes**      |       partial    |   no    |   no    |   no
+Electrical Systems       |  **yes**      |       **yes**    |   no    |   no    |   no
+Spatial Information      |  **yes**      |       no         |**yes**  |**yes**  |   no
+Sensor Systems           |  **yes**      |       **yes**    |  partial|   no    |   **yes**
+Control Relationships    |  **yes**      |       no         |   no    |   no    |   no
+Sequential Relationships |  **yes**      |       no         |   no    |   no    |   no
+Formal Definitions       |  **yes**      |       no         |   no    |**yes**  |   **yes**
