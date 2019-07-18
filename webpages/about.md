@@ -11,14 +11,18 @@ Brick is an open-source effort to standardize semantic descriptions of the **phy
 Brick consists of an **extensible dictionary** of terms and concepts in and around buildings, a set of **relationships** for linking and composing concepts together, and a **flexible data model** permitting seamless integration of Brick with existing tools and databases.
 Through the use of powerful Semantic Web technology, Brick can describe the broad set of idiosyncratic and custom features, assets and subsystems found across the building stock in a consistent matter.
 
-Brick:
+Adopting Brick as the canonical description of a building enables the following:
 
-- lowers the cost of deploying analytics, energy effiency measures and intelligent controls across buildings
-- presents an integrated, cross-vendor representation of the multitude of subsystems in modern buildings: HVAC, lighting, fire, security and so on
-- simplifies the development of smart analytics and control applications
-- reduces the reliance upon the non-standard, unstructured labels endemic to building management systems
+- Brick lowers the cost of deploying analytics, energy effiency measures and intelligent controls across buildings
+- Brick presents an integrated, cross-vendor representation of the multitude of subsystems in modern buildings: HVAC, lighting, fire, security and so on
+- Brick simplifies the development of smart analytics and control applications
+- Brick reduces the reliance upon the non-standard, unstructured labels endemic to building management systems
 
 Brick is free and open-sourced under the BSD 3-Clause license. The source code for Brick, this website, and related tools developed by the Brick team are available on **[GitHub](https://github.com/BrickSchema)**.
+
+![Brick Model Example](images/brick-model-example.png)
+
+_This would go as a caption for the image?_ Example of a simple building model demonstrating how Brick can classify building assets and describe the relationships between them.
 
 ## How Does Brick Compare to X?
 
@@ -31,3 +35,15 @@ Brick includes a tagging system similar to Haystack that augments tags with form
 **Building Topology Ontology (BOT)** ([link](https://w3c-lbd-cg.github.io/bot/)) is a complementary effort for semantic building metadata from the [Linked Building Data W3C Community Group](https://www.w3.org/community/lbd/) that focuses on capturing topological concepts in buildings such as sites, floors, zones and rooms. Because BOT is built using the Semantic Web, it can be used in tandem with Brick.
 
 **Smart Appliances REFerence Ontology (SAREF)** ([link](https://sites.google.com/site/smartappliancesproject/ontologies/reference-ontology)) is an ontology capturing high level aspects of smart and connected appliances. While SAREF does not capture the the full spectrum of equipment and sensors that exist in buildings, SAREF models can be easily integrated into Brick.
+
+
+Modeling Support         | **Brick** | **Project Haystack** | **IFC** | **BOT** | **SAREF**
+-------------------------|-----------|----------------------|---------|---------|----------
+HVAC Systems             |  **yes**      |       **yes**    |   no    |   no    |   no
+Lighting Systems         |  **yes**      |       partial    |   no    |   no    |   no
+Electrical Systems       |  **yes**      |       **yes**    |   no    |   no    |   no
+Spatial Information      |  **yes**      |       no         |**yes**  |**yes**  |   no
+Sensor Systems           |  **yes**      |       **yes**    |  partial|   no    |   **yes**
+Control Relationships    |  **yes**      |       no         |   no    |   no    |   no
+Sequential Relationships |  **yes**      |       no         |   no    |   no    |   no
+Formal Definitions       |  **yes**      |       no         |   no    |**yes**  |   **yes**
