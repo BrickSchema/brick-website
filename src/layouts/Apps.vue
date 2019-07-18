@@ -1,8 +1,8 @@
 <template>
-    <div class="inline-flex p-4">
+    <div class="inline-flex w-full">
 
-        <g-link :to="app.node.path" class="card md:flex overflow-hidden sm:m-4 bg-white mx-auto" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
-            <g-image class="my-auto" :src="app.node.thumbnail.src" alt="Avatar"/>
+        <g-link :to="app.node.path" class="card w-full flex overflow-hidden bg-white mx-auto border-primary-200 border mb-4" v-for="app in (category? category : $static.apps.edges)" :key="app.id" >
+            <g-image class="my-auto h-full w-full" :src="app.node.thumbnail.src" alt="Avatar"/>
             <div class="border-t md:border-t-0 md:border-l px-2 py-1 mx-auto details">
                 <div class="font-bold text-lg p-1">{{app.node.title}}</div>
                 <div class="font-thin text-sm p-1">{{app.node.summary}}</div>
@@ -65,24 +65,21 @@
 
 <style scoped>
     .card {
-        /*margin: auto;*/
-        margin-bottom: 24px;
-        /*width: -moz-available;*/
         max-height: 340px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.025);
         transition: 0.3s;
         border-radius: 5px; /* 5px rounded corners */
     }
 
     .card:hover{
-        box-shadow: 0px 11px 9px 1px rgba(0,0,0,0.2);
+        top: -5%;
         transition: 0.3s;
     }
 
     /* Add rounded corners to the top left and the top right corner of the image */
     img {
-        height: 240px;
-        width: 240px;
+        width: 120px;
+        height: 120px;
         border-radius: 5px 5px 0 0;
     }
 
@@ -96,7 +93,7 @@
     }
 
     .details{
-        width: 240px;
+        width: inherit;
         height: auto;
     }
 </style>
