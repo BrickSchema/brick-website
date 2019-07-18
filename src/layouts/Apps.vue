@@ -31,7 +31,6 @@
 
 <script>
     import SearchInput from '../components/SearchInput'
-    import ThemeSwitcher from '../components/ThemeSwitcher'
 
     export default {
         props:{
@@ -40,24 +39,16 @@
             }
         },
         components: {
-            SearchInput,
-            ThemeSwitcher
-        },
-        mounted() {
-            this.theme = localStorage.getItem('theme') || 'theme-light'
+            SearchInput
         },
         data() {
             return {
                 isOpen: false,
-                theme: '',
             }
         },
         methods: {
             toggle() {
                 this.isOpen = !this.isOpen
-            },
-            updateTheme(theme) {
-                this.theme = theme
             }
         }
     }
