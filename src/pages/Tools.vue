@@ -2,14 +2,14 @@
     <Layout>
         <div class="container-inner mx-auto py-16">
 
-            <h1 class="text-4xl font-bold leading-tight">Tools</h1>
+            <h1 class="text-4xl ml-4 pb-2 font-bold leading-tight border-b border-primary-200">Tools</h1>
 
             <div class="w-full sm:flex text-xl text-gray-600 sm:mx-auto">
-                <div class="l-auto h-auto rounded-lg ">
+                <div class="h-auto border-r border-primary-200">
                     <categories class="list"/>
                 </div>
-                <div class="w-full px-auto bg-gray-100 ml-8">
-                    <apps/>
+                <div class="w-full px-auto p-4">
+                    <apps />
                 </div>
             </div>
 
