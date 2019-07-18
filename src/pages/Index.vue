@@ -7,7 +7,7 @@
       </div>
       <div class="text-4xl font-bold w-full sm:w-3/5 text-center sm:text-left">
         <div class="leading-tight">Brick</div>
-        <div class="text-primary-700 leading-tight">A uniform metadata schema for buildings</div>
+        <div class="text-left text-primary-700 leading-tight">A uniform metadata schema for buildings</div>
       </div>
     </div> <!-- end hero -->
 
