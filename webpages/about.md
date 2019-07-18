@@ -26,15 +26,15 @@ _This would go as a caption for the image?_ Example of a simple building model d
 
 ## How Does Brick Compare to X?
 
-**Project Haystack** ([link](https://project-haystack.org/)) is a popular tagging system for describing building assets using semi-structured sets of tags.
+[**Project Haystack**](https://project-haystack.org/) is a popular tagging system for describing building assets using semi-structured sets of tags.
 Because there are no formal rules for how tags can be used, Haystack-based descriptions of buildings tend to consist of ad-hoc collections of tags, resulting in highly custom and inconsistent modeling practices across sites.
 Brick includes a tagging system similar to Haystack that augments tags with formal semantic rules that promote consistency and interpretability.
 
-**Industry Foundation Classes** ([link](https://technical.buildingsmart.org/)) and **Building Information Models** ([link](https://www.nationalbimstandard.org/)) emerged from the need for a common exchange model for the 3D architectural drawings needed for a building's construction. BIM models capture structural information, but lack descriptions of how the constituent equipment and points function together.
+[**Industry Foundation Classes**](https://technical.buildingsmart.org/) and [**Building Information Models**](https://www.nationalbimstandard.org/) emerged from the need for a common exchange model for the 3D architectural drawings needed for a building's construction. BIM models capture structural information, but lack descriptions of how the constituent equipment and points function together.
 
-**Building Topology Ontology (BOT)** ([link](https://w3c-lbd-cg.github.io/bot/)) is a complementary effort for semantic building metadata from the [Linked Building Data W3C Community Group](https://www.w3.org/community/lbd/) that focuses on capturing topological concepts in buildings such as sites, floors, zones and rooms. Because BOT is built using the Semantic Web, it can be used in tandem with Brick.
+[**Building Topology Ontology (BOT)** ](https://w3c-lbd-cg.github.io/bot/) is a complementary effort for semantic building metadata from the [Linked Building Data W3C Community Group](https://www.w3.org/community/lbd/) that focuses on capturing topological concepts in buildings such as sites, floors, zones and rooms. Because BOT is built using the Semantic Web, it can be used in tandem with Brick.
 
-**Smart Appliances REFerence Ontology (SAREF)** ([link](https://sites.google.com/site/smartappliancesproject/ontologies/reference-ontology)) is an ontology capturing high level aspects of smart and connected appliances. While SAREF does not capture the the full spectrum of equipment and sensors that exist in buildings, SAREF models can be easily integrated into Brick.
+[**Smart Appliances REFerence Ontology (SAREF)**](https://sites.google.com/site/smartappliancesproject/ontologies/reference-ontology) is an ontology capturing high level aspects of smart and connected appliances. While SAREF does not capture the the full spectrum of equipment and sensors that exist in buildings, SAREF models can be easily integrated into Brick.
 
 
 Modeling Support         | **Brick** | **Project Haystack** | **IFC** | **BOT** | **SAREF**
