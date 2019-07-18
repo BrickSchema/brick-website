@@ -11,12 +11,12 @@ Brick is an open-source effort to standardize semantic descriptions of the **phy
 Brick consists of an **extensible dictionary** of terms and concepts in and around buildings, a set of **relationships** for linking and composing concepts together, and a **flexible data model** permitting seamless integration of Brick with existing tools and databases.
 Through the use of powerful Semantic Web technology, Brick can describe the broad set of idiosyncratic and custom features, assets and subsystems found across the building stock in a consistent matter.
 
-Brick:
+Adopting Brick as the canonical description of a building enables the following:
 
-- lowers the cost of deploying analytics, energy effiency measures and intelligent controls across buildings
-- presents an integrated, cross-vendor representation of the multitude of subsystems in modern buildings: HVAC, lighting, fire, security and so on
-- simplifies the development of smart analytics and control applications
-- reduces the reliance upon the non-standard, unstructured labels endemic to building management systems
+- Brick lowers the cost of deploying analytics, energy effiency measures and intelligent controls across buildings
+- Brick presents an integrated, cross-vendor representation of the multitude of subsystems in modern buildings: HVAC, lighting, fire, security and so on
+- Brick simplifies the development of smart analytics and control applications
+- Brick reduces the reliance upon the non-standard, unstructured labels endemic to building management systems
 
 Brick is free and open-sourced under the BSD 3-Clause license. The source code for Brick, this website, and related tools developed by the Brick team are available on **[GitHub](https://github.com/BrickSchema)**.
 
