@@ -1,9 +1,9 @@
 ---
 title: QueryBuilder
 path: tools/QueryBuilder
-date: 2019-04-08
+date: 2019-04-18
 summary: Something about Query Builder
-categories: ['visualization', 'tool']
+categories: ['visualization', 'utility']
 thumbnail: ./images/query-builder.png
 url: https://querybuilder.mortardata.org/
 ---

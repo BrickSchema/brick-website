@@ -1,7 +1,7 @@
 ---
 title: Brick TagSet Hierarchy
 path: tools/TagSet-Hierarchy
-date: 2019-04-08
+date: 2019-06-08
 summary: Shows hierarchy of Brick TagSets
 categories: ['tagset', 'visualization']
 thumbnail: ./images/brick-tagsets.png
