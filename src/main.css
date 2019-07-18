@@ -25,35 +25,6 @@
   background: #e6efff;
 }
 
-.theme-dark .markdown-body {
-    color: #24292e;
-}
-
-.theme-dark .search-highlighted {
-  background: #2d3748;
-}
-
-.theme-dark .search-hover:hover {
-  background: #2d3748;
-}
-
-.theme-dark {
-  --bg-background-primary: #0D2438;
-  --bg-background-secondary: #102C44;
-  --bg-background-tertiary: #1E3951;
-
-  --bg-background-form: #1a202c;
-
-  --text-copy-primary: #cbd5e0;
-  --text-copy-secondary: #e2e8f0;
-
-  --border-border-color-primary:  #1a202c;
-}
-
-.theme-dark .markdown-body {
-    color: #cbd5e0;
-}
-
 .content-wrapper {
   transition: background-color .25s;
 }
