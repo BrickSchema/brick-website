@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <div class="mx-auto py-16 px-4 sm:px-8">
+        <div class="container mx-auto py-16">
 
             <h1 class="text-4xl ml-4 pb-2 font-bold leading-tight border-b border-primary-200">Tools</h1>
 
