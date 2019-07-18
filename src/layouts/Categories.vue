@@ -1,19 +1,19 @@
 <template>
     <div>
         <ul>
-            <g-link to="/tools" class="flex font-light">
-                <div class="title mx-4 mt-4 font-thin w-full">
-                    all
+            <g-link to="/tools" class="flex my-2">
+                <div class="title font-thin text-sm text-md w-full mx-2">
+                    ALL
                 </div>
-                <div class="count mt-4 mr-2 bg-gray-300 text-xs rounded font-light pt-1 align-middle px-2">
+                <div class="count mr-2 bg-gray-200 text-xs rounded font-light align-middle px-2 mx-4">
                     {{$static.apps.total}}
                 </div>
             </g-link>
-            <g-link :to="category.node.path" class="flex" v-for="category in $static.categories.edges" :key="category.node.id">
-                <div class="title mx-4 font-thin text-md w-full">
-                    {{category.node.title}}
+            <g-link :to="category.node.path" class="flex my-2" v-for="category in $static.categories.edges" :key="category.node.id">
+                <div class="title font-thin text-sm text-md w-full mx-2">
+                    {{category.node.title.toUpperCase()}}
                 </div>
-                <div class="count mr-2 bg-gray-300 text-xs rounded font-light pt-1 align-middle px-2">
+                <div class="count mr-2 bg-gray-200 text-xs rounded font-light align-middle px-2 mx-4">
                     {{category.node.belongsTo.totalCount}}
                 </div>
             </g-link>

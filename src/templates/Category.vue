@@ -1,14 +1,14 @@
 <template>
     <Layout>
-        <div class="mx-auto py-16 w-5/6">
+        <div class="container-inner mx-auto py-16">
 
-            <h1 class="text-4xl font-bold leading-tight m-8">Category: {{$page.category.title}}</h1>
+            <h1 class="text-4xl ml-4 pb-2 font-bold leading-tight border-b border-primary-200">Tools: {{ $page.category.title }}</h1>
 
-            <div class="w-full sm:flex text-xl text-gray-600 mx-auto">
-                <div class="l-auto h-auto h-12 bg-gray-200 rounded-lg  px-4 py-2 m-8">
+            <div class="w-full sm:flex text-xl text-gray-600 sm:mx-auto">
+                <div class="h-auto border-r border-primary-200">
                     <categories class="list"/>
                 </div>
-                <div class="w-full h-auto h-12 overflow-auto bg-gray-100 rounded-lg px-auto py-2 md:m-8">
+                <div class="w-full px-auto p-4">
                     <apps :category=$page.category.belongsTo.apps />
                 </div>
             </div>
@@ -50,10 +50,11 @@
 
     export default {
         metaInfo: {
-            title: 'Apps'
+            title: `Tools`
         },
         components: {
             Apps, Categories
         }
     }
 </script>
+
