@@ -57,14 +57,14 @@
 <style scoped>
     .card {
         max-height: 340px;
-        box-shadow: 0 4px 8px 0 rgba(0,0,0,0.025);
+        box-shadow: 0 4px 8px 0 rgba(255, 255, 255,0.25);
         transition: 0.3s;
         border-radius: 5px; /* 5px rounded corners */
     }
 
     .card:hover{
-        top: -5%;
-        transition: 0.3s;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.0625);
+        transition: 0.1s;
     }
 
     /* Add rounded corners to the top left and the top right corner of the image */
