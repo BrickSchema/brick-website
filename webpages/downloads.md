@@ -38,9 +38,12 @@ BuildSys 2016
    
 [Poster | Portable Queries Using the Brick Schema for Building Applications][8]   
 BuildSys 2016     
+
+[White Paper | Brick Schema: Building Blocks for Smart Buildings](https://www.memoori.com/wp-content/uploads/2016/06/Brick_Schema_Whitepaper.pdf)   
+Memoori 2019 
     
-[White Paper | Brick : Metadata Schema for Buildings for Building Applications][9]     
-    
+[Leaflet | Brick : Metadata Schema for Buildings for Building Applications][9]     
+    
 <br/><br/>
 ## Building Examples     
 ---
