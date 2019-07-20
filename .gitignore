@@ -9,3 +9,4 @@ dist
 static/rss.xml
 static/search.json
 .idea
+static/hierarchy
