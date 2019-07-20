@@ -1,13 +1,13 @@
 <template>
     <div class="relative">
-        <div class="flex">
+        <div class="flex border-l border-b hover:bg-gray-100 pt-1"  v-bind:class="current ? 'bg-gray-200' : 'bg-white'" >
         <span @click="expanded=!expanded"
               v-if="!leaf"
-              class="text-sm"
-        >{{expanded ? '&#9660;' : '&#9658;'}}</span>
-        <span class="type" v-else>&nbsp;</span>
-        <g-link :to="`/tagsets/${id}`" v-bind:class="current ? 'bg-gray-200' : 'bg-white'" class="px-2 rounded w-full hover:bg-gray-100">
-            <div class="w-auto">&nbsp;{{ [...id.split('#')].pop() }}</div>
+              class="text-sm cursor-pointer"
+        >{{expanded ? '&nbsp;➖' : '&nbsp;➕'}}</span>
+        <g-link :to="`/tagsets/${id}`" class="px-2 rounded w-full font-thin text-sm flex">
+            <span class="type" v-if="leaf">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <div class="w-auto text-left">{{ [...id.split('#')].pop().split('_').join(' ') }}</div>
         </g-link>
     </div>
         <div v-if="expanded" :style="`margin-left: 20px`" v-for="tagset in hierarchy.subclasses" :key="tagset">
