@@ -31,7 +31,7 @@
       </div>
     </div>
     <transition name="fade">
-      <div v-if="query.length > 0 && searchResultsVisible" class="search-results xs:max-h-screen w-full normal-case absolute border left-0 right-0 top-2 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto">
+      <div v-if="query.length > 0 && searchResultsVisible" class="bg-white search-results xs:max-h-screen w-full normal-case absolute border left-0 right-0 top-2 text-left mb-4 mt-2 rounded-lg shadow overflow-hidden z-10 overflow-y-auto">
         <div class="flex flex-col" ref="results">
           <a
             v-for="(post, index) in results"
