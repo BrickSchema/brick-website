@@ -6,7 +6,7 @@
               class="text-sm"
         >{{expanded ? '&#9660;' : '&#9658;'}}</span>
         <span class="type" v-else>&nbsp;</span>
-        <g-link :to="id" v-bind:class="current ? 'bg-gray-200' : 'bg-white'" class="px-2 rounded w-full hover:bg-gray-100">
+        <g-link :to="`/tagsets/${id}`" v-bind:class="current ? 'bg-gray-200' : 'bg-white'" class="px-2 rounded w-full hover:bg-gray-100">
             <div class="w-auto">&nbsp;{{ [...id.split('#')].pop() }}</div>
         </g-link>
     </div>
