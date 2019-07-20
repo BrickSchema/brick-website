@@ -22,10 +22,8 @@ module.exports = function (api, options) {
           string = (tokens.length === 3) ? tokens[1] : string;
           return string.split('@').shift();
       }
-
       tagsets.forEach(node=>{
-          let subclasses = store.createReference('TagSet', node.subclasses);
-          classes.addNode({
+              classes.addNode({
               id: node.id,
               path: 'tagsets/' + node.id.split('#').pop(),
               labels: node.labels,
@@ -39,6 +37,24 @@ module.exports = function (api, options) {
               equivalentClasses: store.createReference('TagSet', node.equivalentClasses),
               hierarchy: store.createReference('TagSet', node.hierarchy.split('>'))
           })
+
+          const outputPath = path.resolve(process.cwd(), './static/hierarchy')
+          const outputPathExists = fs.existsSync(outputPath)
+          const fileName = node.id.split('#').pop().endsWith('.json')
+              ? node.id.split('#').pop()
+              : `${node.id.split('#').pop()}.json`
+
+          if (outputPathExists) {
+              fs.writeFileSync(path.resolve(process.cwd(), './static/hierarchy', fileName), JSON.stringify({
+                  subclasses: node.subclasses,
+              }))
+          } else {
+              fs.mkdirSync(outputPath)
+              fs.writeFileSync(path.resolve(process.cwd(), './static/hierarchy', fileName), JSON.stringify({
+                  subclasses: node.subclasses,
+              }))
+          }
+
       })
   })
 
