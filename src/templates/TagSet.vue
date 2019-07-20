@@ -5,6 +5,10 @@
 
             <div class="l-auto pb-4 mx-4">
                 <tag-set-search-input/>
+                <recursive-tree
+                    :hierarchyPath="$page.tagSet.hierarchy.map(c=>c.path.substring(9))"
+                >
+                </recursive-tree>
             </div>
             <div class=" l-auto w-full bg-gray-100 p-4 rounded-lg mx-4 z-5">
                 <ul id="breadcrumbs" class="flex overflow-hidden overflow-x-auto">
@@ -134,10 +138,12 @@
 
 <script>
 
+    import RecursiveTree from '../components/RecursiveTree'
     import TagSetSearchInput from '../components/TagSetSearchInput'
     export default {
         components: {
-            TagSetSearchInput
+            TagSetSearchInput,
+            RecursiveTree
         },
         metaInfo() {
             return {
