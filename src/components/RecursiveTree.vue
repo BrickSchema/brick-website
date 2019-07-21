@@ -4,8 +4,8 @@
              v-bind:class="[(current ? 'bg-gray-200' : 'bg-white') , (expanded ? 'border-b-4 border-gray-200' : 'border-b border-gray-100')]" >
         <span @click="expanded=!expanded"
               v-if="!leaf"
-              class="text-normal     cursor-pointer" v-bind:class="!darkerBg? 'bg-gray-200' : ''"
-        >{{expanded ? '&nbsp;➖' : '&nbsp;➕'}}</span>
+              class="text-normal px-2 cursor-pointer" v-bind:class="!darkerBg? 'bg-gray-200' : ''"
+        >{{expanded ? '▸' : '▾'}}</span>
         <g-link :to="`/tagsets/${id}`" class="rounded w-full font-thin text-normal flex">
             <span class="type" v-if="leaf"  v-bind:class="[(current ? 'bg-gray-200' : 'bg-white') , (!darkerBg? 'bg-gray-200' : 'bg-white')]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div class="w-auto text-left ml-1">{{ [...id.split('#')].pop().split('_').join(' ') }}</div>
