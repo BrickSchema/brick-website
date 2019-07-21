@@ -116,15 +116,15 @@
     labels
     generatedLabel
     definitions
-    superclasses(sortBy:"totalChildren", order:DESC){
+    superclasses(sortBy:"generatedLabel", order:ASC){
     generatedLabel
     path
     }
-    subclasses(sortBy:"totalChildren", order:DESC){
+    subclasses(sortBy:"generatedLabel", order:ASC){
     generatedLabel
     path
     }
-    equivalentClasses(sortBy:"totalChildren", order:DESC){
+    equivalentClasses(sortBy:"generatedLabel", order:ASC){
     generatedLabel
     path
     }

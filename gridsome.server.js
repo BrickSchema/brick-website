@@ -31,7 +31,6 @@ module.exports = function (api, options) {
               generatedAlias: node.generatedAlias,
               superclasses: store.createReference('TagSet', node.superclasses),
               subclasses: store.createReference('TagSet', node.subclasses),
-              totalChildren: node.subclasses.length,
               comments: node.comments,
               definitions: node.definitions.map(def => removeEncoding(def)),
               equivalentClasses: store.createReference('TagSet', node.equivalentClasses),
