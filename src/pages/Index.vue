@@ -19,13 +19,13 @@
     </div>
 
     <div class="overflow-x-hidden">
-      <div class="pt-4 bg-gray-100">
-        <div class="container-inner mx-auto text-xl pb-4 relative">
+      <div class="py-8 bg-gray-100">
+        <div class="container-inner mx-auto text-xl pb-8 relative">
 
           <ul v-for="thisPersona in $page.personas.edges" v-if="thisPersona.node.pages.edges.length">
             <div class="text-xl font-bold mt-4">If you are a {{ thisPersona.node.label }}, check out these pages:</div>
             <li v-for="page in thisPersona.node.pages.edges">
-              <g-link class="text-lg" :to="page.node.path"> {{ page.node.title }} </g-link>
+              <g-link class="text-lg font-medium" :to="page.node.path"> {{ page.node.title }} </g-link>
             </li>
           </ul>
         </div>
