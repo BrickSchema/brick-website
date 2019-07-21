@@ -190,7 +190,7 @@
 
     #breadcrumbs a{
         background: #edf2f7;
-        padding: .7em 1em;
+        padding: .3em 1em;
         float: left;
         text-decoration: none;
         /*color: #444;*/
@@ -207,8 +207,8 @@
         content: "";
         position: absolute;
         top: 50%;
-        margin-top: -1.45em;
-        border-width: 1.4em 0 1.5em 1em;
+        margin-top: -1.05em;
+        border-width: 1.05em 0 1.05em 1em;
         border-style: solid;
         border-color: #edf2f7 #edf2f7 #edf2f7 transparent;
         left: -1em;
@@ -222,9 +222,9 @@
         content: "";
         position: absolute;
         top: 50%;
-        margin-top: -1.45em;
-        border-top: 1.4em solid transparent;
-        border-bottom: 1.5em solid transparent;
+        margin-top: -1.05em;
+        border-top: 1.05em solid transparent;
+        border-bottom: 1.05em solid transparent;
         border-left: 1em solid #edf2f7;
         right: -1em;
     }
