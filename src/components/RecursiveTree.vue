@@ -11,7 +11,7 @@
             <div class="w-auto text-left ml-1">{{ [...id.split('#')].pop().split('_').join(' ') }}</div>
         </g-link>
     </div>
-        <div v-if="expanded" class="ml-6" v-for="tagset in hierarchy.subclasses" :key="tagset" v-bind:class="darkerBg? 'bg-gray-100' : 'bg-white'">
+        <div v-if="expanded" class="ml-6" v-for="tagset in hierarchy" :key="tagset" v-bind:class="darkerBg? 'bg-gray-100' : 'bg-white'">
             <recursive-tree :id="[...tagset.split('#')].pop()" :hierarchyPath="hierarchyPath" :darker-bg="!darkerBg"></recursive-tree>
         </div>
     </div>
@@ -46,7 +46,7 @@
         data() {
             return {
                 loaded: false,
-                hierarchy: {subclasses:[]},
+                hierarchy: [],
                 leaf: false,
                 expanded:true,
                 current: ([...this.hierarchyPath].pop()===([...this.id.split('#')].pop()))
@@ -54,10 +54,10 @@
         },
         created() {
             axios(`/hierarchy/${this.id.split('#').pop()}.json`).then(response => {
-            this.hierarchy = response.data;
+            this.hierarchy = response.data.subclasses.sort();
             this.loaded = true;
             this.expanded = this.hierarchyPath.includes(this.id.split('#').pop());
-            if(!response.data.subclasses.length){
+            if(!this.hierarchy.length){
                 this.leaf = true;
             }
         })
