@@ -1,17 +1,17 @@
 <template>
     <div class="relative">
-        <div class="flex hover:bg-gray-100 border-gray-100"
-             v-bind:class="[(current ? 'bg-gray-200' : 'bg-white') , (expanded ? 'border-b-4' : 'border-b-0')]" >
+        <div class="flex hover:bg-gray-200 border-gray-200"
+             v-bind:class="[(current ? 'bg-gray-200' : 'bg-white') , (expanded ? 'border-b-4 border-gray-200' : 'border-b border-gray-100')]" >
         <span @click="expanded=!expanded"
               v-if="!leaf"
-              class="text-normal     cursor-pointer" v-bind:class="!darkerBg? 'bg-gray-100' : ''"
+              class="text-normal     cursor-pointer" v-bind:class="!darkerBg? 'bg-gray-200' : ''"
         >{{expanded ? '&nbsp;➖' : '&nbsp;➕'}}</span>
         <g-link :to="`/tagsets/${id}`" class="rounded w-full font-thin text-normal flex">
-            <span class="type" v-if="leaf"  v-bind:class="[(current ? 'bg-gray-200' : 'bg-white') , (!darkerBg? 'bg-gray-100' : 'bg-white')]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+            <span class="type" v-if="leaf"  v-bind:class="[(current ? 'bg-gray-200' : 'bg-white') , (!darkerBg? 'bg-gray-200' : 'bg-white')]">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
             <div class="w-auto text-left ml-1">{{ [...id.split('#')].pop().split('_').join(' ') }}</div>
         </g-link>
     </div>
-        <div v-if="expanded" class="ml-6" v-for="tagset in hierarchy" :key="tagset" v-bind:class="darkerBg? 'bg-gray-100' : 'bg-white'">
+        <div v-if="expanded" class="ml-6" v-for="tagset in hierarchy" :key="tagset" v-bind:class="darkerBg? 'bg-gray-200' : 'bg-white'">
             <recursive-tree :id="[...tagset.split('#')].pop()" :hierarchyPath="hierarchyPath" :darker-bg="!darkerBg"></recursive-tree>
         </div>
     </div>

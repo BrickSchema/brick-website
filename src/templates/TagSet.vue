@@ -6,7 +6,7 @@
             <div class="l-auto pb-4 mx-4 w-80">
                 <tag-set-search-input/>
                 <recursive-tree
-                    :hierarchyPath="$page.tagSet.hierarchy.map(c=>c.path.substring(9))" class="bg-gray-100"
+                    :hierarchyPath="$page.tagSet.hierarchy.map(c=>c.path.substring(9))" class="bg-gray-200"
                 >
                 </recursive-tree>
             </div>
