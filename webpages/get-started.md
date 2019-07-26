@@ -5,7 +5,25 @@ summary: Getting started with the Brick schema
 show_on_navbar: true
 ---
 
+There are many ways to get started using Brick: ranging from exploring and analyzing existing Brick models to developing data-driven applications using Brick to creating your own Brick model.
 
+### Exploring existing Brick models
+
+- **Observe** Brick models for 6 real buildings using the [BrickViewer tool](http://viewer.brickschema.org/)
+- **Interact** with over 100 Brick models using the [Brick QueryBuilder tool](https://querybuilder.mortardata.org/)
+- **Download** the Brick models for 6 real buildings from [this page](/resources) for use with ontology exploration tools like [Protege](https://protege.stanford.edu/)
+
+### Using Brick for data analysis
+
+- **Deploy an API** for ingesting and retrieving timeseries data using Brick models with the [Brick Server](https://github.com/BrickSchema/brick-server) reference implementation
+- **Build and execute** analytics applications that scale across tens or hundreds of buildings using the [Mortar data platform](https://mortardata.org/)
+
+### Create your own Brick models
+
+- **Iterate** on existing Brick models and interactively add components with [BrickStudio](/tools/BrickStudio)
+- **Convert** existing building metadata -- from Project Haystack, IFC or BMS point dumps -- into a Brick model (**link coming soon**)
+
+---
 
 ## Connecting with the Brick Community
 
