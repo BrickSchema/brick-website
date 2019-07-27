@@ -55,6 +55,14 @@
   </div>
 </template>
 
+<static-query>
+  {
+  metaData{
+  pathPrefix
+  }
+  }
+</static-query>
+
 <script>
 import axios from 'axios'
 import SearchFocus from './SearchFocus'
@@ -64,7 +72,7 @@ export default {
     SearchFocus,
   },
   created() {
-    axios('/search.json').then(response => {
+    axios(this.$static.metaData.pathPrefix + "/search.json").then(response => {
       this.posts = response.data
     })
     .catch(error => {
