@@ -17,6 +17,14 @@
     </div>
 </template>
 
+<static-query>
+    {
+    metaData{
+    pathPrefix
+    }
+    }
+</static-query>
+
 <script>
     import axios from 'axios'
     import RecursiveTree from '../components/RecursiveTree'
@@ -53,7 +61,7 @@
             }
         },
         created() {
-            axios(`/hierarchy/${this.id.split('#').pop()}.json`).then(response => {
+            axios(`${this.$static.metaData.pathPrefix}/hierarchy/${this.id.split('#').pop()}.json`).then(response => {
             this.hierarchy = response.data.subclasses.sort();
             this.loaded = true;
             this.expanded = this.hierarchyPath.includes(this.id.split('#').pop());
