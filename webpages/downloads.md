@@ -85,7 +85,11 @@ For an in-depth discussion of the creation and evaluation of these Brick models,
 
 [Design and Analysis of a Query Processor for Brick][17]. Gabe Fierro and David E. Culler. 2018. ACM Transactions on Sensor Networks 14, 3-4, Article 18 (November 2018), 25 pages. DOI: https://doi.org/10.1145/3199666 
 
-[Mortar: An Open Testbed for Portable Building Analytics][18]. Gabe Fierro, Marco Pritoni, Moustafa AbdelBaky, Paul Raftery, Therese Peffer, Greg Thomson, and David E. Culler. 2018. In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys '18). ACM, New York, NY, USA, 172-181. DOI: https://doi.org/10.1145/3276774.3276796 
+[Mortar: An Open Testbed for Portable Building Analytics][18]. Gabe Fierro, Marco Pritoni, Moustafa AbdelBaky, Paul Raftery, Therese Peffer, Greg Thomson, and David E. Culler. 2018. In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276796 
+
+[Scrabble: Transferrable Semi-Automated Semantic Metadata Normalization Using Intermediate Representation][19]. Jason Koh, Bharathan Balaji, Dhiman Sengupta, Julian McAuley, Rajesh Gupta, and Yuvraj Agarwal. 2018.  In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276795
+
+[Plaster: an Integration, Benchmark, and Development Framework for Metadata Normalization Methods][20].  Jason Koh, Dezhi Hong, Rajesh Gupta, Kamin Whitehouse, Hongning Wang, and Yuvraj Agarwal. 2018.  In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276794
 
 ## White Papers
 
@@ -121,3 +125,5 @@ BuildSys 2016
 [16]: http://people.eecs.berkeley.edu/~gtfierro/papers/hoddb.pdf
 [17]: http://people.eecs.berkeley.edu/~gtfierro/papers/hoddb_tosn.pdf
 [18]: http://people.eecs.berkeley.edu/~gtfierro/papers/mortar.pdf
+[19]: http://mesl.ucsd.edu/pubs/Jason_BuildSys2018Scrabble.pdf
+[20]: https://jbkoh.github.io/pdf/buildsys2018_plaster.pdf
