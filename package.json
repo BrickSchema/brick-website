@@ -4,7 +4,8 @@
   "scripts": {
     "build": "gridsome build",
     "develop": "gridsome develop",
-    "explore": "gridsome explore"
+    "explore": "gridsome explore",
+    "test": "(sed -e \"s/.*siteName:.*/&\\pathPrefix: 'brick-website',/\" gridsome.config.js > newconfig) && (mv -f newconfig gridsome.config.js)&& (gridsome build)"
   },
   "dependencies": {
     "@fullhuman/postcss-purgecss": "^1.2.0",
