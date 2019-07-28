@@ -88,13 +88,6 @@ module.exports = function (api, options) {
 
   api.beforeBuild(({ config, store }) => {
 
-    // Generate an index file for Fuse to search Posts
-      const postsCollections = store.getContentType('Post').collection;
-
-      const posts = postsCollections.data.map(post => {
-      return pick(post, ['title', 'path', 'summary']);
-    });
-
       // Generate an index file for Fuse to search webpages
       const pagesCollection = store.getContentType('Webpage').collection;
 
@@ -129,10 +122,10 @@ module.exports = function (api, options) {
       : `${output.name}.json`
 
     if (outputPathExists) {
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...webpages, ...classes]))
+        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...classes, ...webpages]))
     } else {
       fs.mkdirSync(outputPath)
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...posts, ...webpages, ...classes]))
+        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...classes, ...webpages]))
     }
   })
 }
