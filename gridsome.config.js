@@ -82,6 +82,18 @@ module.exports = {
       }
     },
     {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'ontologyPages/**/*.md',
+        typeName: 'OntologyPage',
+        remark: {
+          plugins: [
+            [ 'remark-attr', 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+          ]
+        }
+      }
+    },
+    {
       use: 'gridsome-plugin-rss',
       options: {
         contentTypeName: 'Post',
