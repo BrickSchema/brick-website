@@ -8,7 +8,12 @@
 const fs = require('fs');
 const path = require('path');
 const pick = require('lodash.pick');
-const tagsets =  require('./static/tagsets.json')
+const brickClasses = require('./static/ontology/1.1.0/classes.json')
+const brickRelationships = require('./static/ontology/1.1.0/relationships.json')
+const brickNamespaces = require('./static/ontology/1.1.0/namespaces.json')
+const brickClassesOld = require('./static/ontology/1.0.3/classes.json')
+const brickRelationshipsOld = require('./static/ontology/1.0.3/relationships.json')
+const brickNamespacesOld = require('./static/ontology/1.0.3/namespaces.json')
 const { pathPrefix } = require('./gridsome.config')
 
 module.exports = function (api, options) {
@@ -43,46 +48,125 @@ module.exports = function (api, options) {
       */
       store.addMetaData('pathPrefix', cleanedPathPrefix)
       const classes = store.addContentType({
-          typeName:'TagSet',
+          typeName:'Class',
+      })
+      const relationships = store.addContentType({
+          typeName:'Relationship',
+      })
+      const namespaces = store.addContentType({
+          typeName:'Namespace',
       })
 
-      const removeEncoding = function(string) {
-          let tokens = string.split('"');
-          string = (tokens.length === 3) ? tokens[1] : string;
-          return string.split('@').shift();
-      }
-      tagsets.forEach(node=>{
+      brickClasses.forEach(node=>{
               classes.addNode({
+                  id: node.id,
+                  version: node.version,
+                  type: node.type,
+                  namespace: store.createReference('Namespace', node.namespace),
+                  name: node.name,
+                  path: node.path,
+                  labels: node.labels,
+                  generatedLabel: node.generatedLabel,
+                  generatedAlias: node.generatedAlias,
+                  superclasses: store.createReference('Class', node.superclasses),
+                  subclasses: store.createReference('Class', node.subclasses),
+                  comments: node.comments,
+                  definitions: node.definitions,
+                  equivalentClasses: store.createReference('Class', node.equivalentClasses),
+                  hierarchy: node.hierarchy,
+                  inRangeOf: store.createReference('Relationship', node.inRangeOf),
+                  inDomainOf: store.createReference('Relationship', node.inDomainOf)
+              })
+      })
+      brickRelationships.forEach(node=>{
+          relationships.addNode({
               id: node.id,
-              path: 'tagsets/' + node.id.split('#').pop(),
+              version: node.version,
+              type: node.type,
+              namespace: store.createReference('Namespace', node.namespace),
+              name: node.name,
+              path: node.path,
               labels: node.labels,
               generatedLabel: node.generatedLabel,
               generatedAlias: node.generatedAlias,
-              superclasses: store.createReference('TagSet', node.superclasses),
-              subclasses: store.createReference('TagSet', node.subclasses),
+              superProperties: store.createReference('Relationship', node.superProperties),
+              subProperties: store.createReference('Relationship', node.subProperties),
+              inverseProperties: store.createReference('Relationship', node.inverseProperties),
               comments: node.comments,
-              definitions: node.definitions.map(def => removeEncoding(def)),
-              equivalentClasses: store.createReference('TagSet', node.equivalentClasses),
-              hierarchy: store.createReference('TagSet', node.hierarchy.split('>'))
+              definitions: node.definitions,
+              hierarchy: node.hierarchy,
+              range: store.createReference('Class', node.range),
+              domain: store.createReference('Class', node.domain)
           })
+      })
+      brickNamespaces.forEach(node=>{
+          namespaces.addNode({
+              id: node.id,
+              type: node.type,
+              version: node.version,
+              value: node.value,
+              path: node.path,
+              labels: node.labels,
+              generatedLabel: node.generatedLabel,
+              generatedAlias: node.generatedAlias,
+              comments: node.comments,
+          })
+      })
 
-          const outputPath = path.resolve(process.cwd(), './static/hierarchy')
-          const outputPathExists = fs.existsSync(outputPath)
-          const fileName = node.id.split('#').pop().endsWith('.json')
-              ? node.id.split('#').pop()
-              : `${node.id.split('#').pop()}.json`
-
-          if (outputPathExists) {
-              fs.writeFileSync(path.resolve(process.cwd(), './static/hierarchy', fileName), JSON.stringify({
-                  subclasses: node.subclasses,
-              }))
-          } else {
-              fs.mkdirSync(outputPath)
-              fs.writeFileSync(path.resolve(process.cwd(), './static/hierarchy', fileName), JSON.stringify({
-                  subclasses: node.subclasses,
-              }))
-          }
-
+      brickClassesOld.forEach(node=>{
+          classes.addNode({
+              id: node.id,
+              version: node.version,
+              type: node.type,
+              namespace: store.createReference('Namespace', node.namespace),
+              name: node.name,
+              path: node.path,
+              labels: node.labels,
+              generatedLabel: node.generatedLabel,
+              generatedAlias: node.generatedAlias,
+              superclasses: store.createReference('Class', node.superclasses),
+              subclasses: store.createReference('Class', node.subclasses),
+              comments: node.comments,
+              definitions: node.definitions,
+              equivalentClasses: store.createReference('Class', node.equivalentClasses),
+              hierarchy: node.hierarchy,
+              inRangeOf: store.createReference('Relationship', node.inRangeOf),
+              inDomainOf: store.createReference('Relationship', node.inDomainOf)
+          })
+      })
+      brickRelationshipsOld.forEach(node=>{
+          relationships.addNode({
+              id: node.id,
+              version: node.version,
+              type: node.type,
+              namespace: store.createReference('Namespace', node.namespace),
+              name: node.name,
+              path: node.path,
+              labels: node.labels,
+              generatedLabel: node.generatedLabel,
+              generatedAlias: node.generatedAlias,
+              superProperties: store.createReference('Relationship', node.superProperties),
+              subProperties: store.createReference('Relationship', node.subProperties),
+              inverseProperties: store.createReference('Relationship', node.inverseProperties),
+              comments: node.comments,
+              definitions: node.definitions,
+              hierarchy: node.hierarchy,
+              range: store.createReference('Class', node.range),
+              domain: store.createReference('Class', node.domain)
+          })
+      })
+      brickNamespacesOld.forEach(node=>{
+          namespaces.addNode({
+              id: node.id,
+              type: node.type,
+              version: node.version,
+              value: node.value,
+              path: node.path,
+              labels: node.labels,
+              generatedLabel: node.generatedLabel,
+              generatedAlias: node.generatedAlias,
+              comments: node.comments,
+          })
       })
   })
 
@@ -93,20 +177,6 @@ module.exports = function (api, options) {
 
       const webpages = pagesCollection.data.map(webpage => {
           return pick(webpage, ['title', 'path', 'summary']);
-      });
-
-
-      // Generate an index file for Fuse to search TagSets
-      const tagSets = store.getContentType('TagSet').collection;
-
-      const classes = tagSets.data.map(className => {
-          return{
-              generatedLabel: className.generatedLabel,
-              labels: className.labels,
-              generatedAlias: className.generatedAlias,
-              definitions: className.definitions,
-              path: className.path
-          }
       });
 
     const output = {
@@ -122,10 +192,10 @@ module.exports = function (api, options) {
       : `${output.name}.json`
 
     if (outputPathExists) {
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...classes, ...webpages]))
+        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify(webpages))
     } else {
       fs.mkdirSync(outputPath)
-        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify([...classes, ...webpages]))
+        fs.writeFileSync(path.resolve(process.cwd(), output.dir, fileName), JSON.stringify(webpages))
     }
   })
 }
