@@ -36,6 +36,7 @@
     value
     }
     type
+    types
     superclasses(sortBy:"generatedLabel", order:ASC){
     generatedLabel
     path
@@ -73,6 +74,7 @@
     }
     version
     type
+    types
     superProperties(sortBy:"generatedLabel", order:ASC){
     generatedLabel
     path
