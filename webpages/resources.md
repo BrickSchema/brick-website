@@ -17,65 +17,28 @@ Turtle is a compact textual format that is understood by most Semantic Web tools
    - [BrickFrame.ttl][2]: Brick relationship definitions
    - [BrickTag.ttl][3]: Brick tags (internal)
    - [BrickUse.ttl][4]: Brick "uses" relationships (internal)
-   
+
 ## Reference Brick Models
 ---
-These six models are representative examples of how Brick can be used to model real buildings.
+These five models are representative examples of how Brick can be used to model real buildings.
 For an in-depth discussion of the creation and evaluation of these Brick models, please refer to the [BuildSys 2016][6] and [Applied Energy 2018][5] papers.
 
-[Soda Hall][10]    
-**Location**: UC Berkeley, Berkeley, CA    
-**BMS**: Barrington Systems    
-**Built**: 1994    
-**Size**: 110,565    
-**Number of points**: 1,586    
-**Tagsets mapped**: 98.7%    
-**Number of Relationships**: 1,939    
+Building  |Location| BMS  | Built | Sq Ft | Points | Classified | Relationships
+----------|--------|------|-------|-------|----------|--------------|----------------
+[Soda Hall][10] | Berkeley, CA | Barrington Systems | 1994  | 110,565  | 1,586  | 98.7%  | 1,939
+[Gates Hillman Center][11]  | Pittsburgh, PA, USA  | Automated Logic Controls | 2009  | 217,000 | 8,292  | 99%  | 35,693
+[Rice Hall][12]  | Charlottesville, VA, USA  | | 2011  | 100,000 | 1,300  | 98.5%  | 2,158
+[Engineering Building Unit 3B][13]  | San Diego, CA, USA  | Johnson Controls  | 2004 | 150,000 | 4,594 | 96% | 8,383
+[Green Tech House][14] | Vejle, Denmark | Niagara | 2014 | 38,000 | 956 | 98.8% | 19,086
 
-
-[Gates Hillman Center][11]    
-**Location**: Carnegie Mellon University, Pittsburgh, PA, USA    
-**BMS**: Automated Logic Controls    
-**Built**: 2009    
-**Size**: 217,000 sq ft    
-**Number of Points**: 8,292    
-**Tagsets Mapped**: 99%    
-**Number of Relationships**: 35,693    
-
-
-[Rice Hall][12]    
-**Location**: University of Virginia, Charlottesville, VA, USA    
-**Built**: 2011    
-**Size**: 100,000 sq ft    
-**Number of points**: 1,300    
-**Tagsets mapped**: 98.5%    
-**Number of Relationships**: 2,158    
-
-
-[Engineering Building Unit 3B][13]    
-**Location**: UC San Diego, San Diego, CA, USA    
-**BMS**: Johnson Controls    
-**Built**: 2004    
-**Size**: 150,000 sq ft    
-**Number of points**: 4,594    
-**Tagsets mapped**: 96%    
-**Number of Relationships**: 8,383    
-
-
-[Green Tech House][14]    
-**Location**: Vejle, Denmark    
-**BMS**: Niagara    
-**Built**: 2014    
-**Size**: 38,000    
-**Number of points**: 956    
-**Tagsets mapped**: 98.8%    
-**Number of Relationships**: 19,086    
-
+- **Points**: the number of BMS points contained in the model
+- **Relationships**: the number of relationships contained in the model
+- **Classified**: the percentage of points classified with Brick
 
 ## Academic Publications
 ---
 
-[Brick: Towards a Unified Metadata Schema For Buildings][6]. Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. 2016. In Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2016). DOI: https://doi.org/10.1145/2993422.2993577 
+[Brick: Towards a Unified Metadata Schema For Buildings][6]. Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. 2016. In Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2016). DOI: https://doi.org/10.1145/2993422.2993577
 
 [Brick: Metadata Schema for Portable Smart Building Applications][5]. Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. 2018. Applied Energy 226 (2018) 1273-1292. DOI: https://doi.org/10.1016/j.apenergy.2018.02.091
 
@@ -83,9 +46,9 @@ For an in-depth discussion of the creation and evaluation of these Brick models,
 
 [HodDB: a Query Processor for Brick][16]. Gabe Fierro, David E. Culler. 2017. In Proceedings of the 4th ACM International Conference on Systems for Energy-Efficient Built Environment (BuildSys 2017). DOI: https://doi.org/10.1145/3137133.3141449
 
-[Design and Analysis of a Query Processor for Brick][17]. Gabe Fierro and David E. Culler. 2018. ACM Transactions on Sensor Networks 14, 3-4, Article 18 (November 2018), 25 pages. DOI: https://doi.org/10.1145/3199666 
+[Design and Analysis of a Query Processor for Brick][17]. Gabe Fierro and David E. Culler. 2018. ACM Transactions on Sensor Networks 14, 3-4, Article 18 (November 2018), 25 pages. DOI: https://doi.org/10.1145/3199666
 
-[Mortar: An Open Testbed for Portable Building Analytics][18]. Gabe Fierro, Marco Pritoni, Moustafa AbdelBaky, Paul Raftery, Therese Peffer, Greg Thomson, and David E. Culler. 2018. In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276796 
+[Mortar: An Open Testbed for Portable Building Analytics][18]. Gabe Fierro, Marco Pritoni, Moustafa AbdelBaky, Paul Raftery, Therese Peffer, Greg Thomson, and David E. Culler. 2018. In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276796
 
 [Scrabble: Transferrable Semi-Automated Semantic Metadata Normalization Using Intermediate Representation][19]. Jason Koh, Bharathan Balaji, Dhiman Sengupta, Julian McAuley, Rajesh Gupta, and Yuvraj Agarwal. 2018.  In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276795
 
