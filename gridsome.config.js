@@ -32,7 +32,7 @@ module.exports = {
         },
         remark: {
           plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+            ['remark-attr', 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
           ]
         }
       }
@@ -51,7 +51,7 @@ module.exports = {
         },
         remark: {
           plugins: [
-            ['gridsome-plugin-remark-shiki', {theme: 'Material-Theme-Palenight', skipInline: true}]
+            ['remark-attr', 'gridsome-plugin-remark-shiki', {theme: 'Material-Theme-Palenight', skipInline: true}]
           ]
         }
       }
@@ -76,7 +76,7 @@ module.exports = {
         },
         remark: {
           plugins: [
-            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+            [ 'remark-attr', 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
           ]
         }
       }
