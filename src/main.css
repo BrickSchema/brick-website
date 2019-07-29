@@ -116,3 +116,7 @@ nav .active {
 div{
     text-align: justify;
 }
+
+table {
+    text-align: left;
+}
