@@ -28,6 +28,7 @@
     id
     name
     labels
+    version
     generatedLabel
     definitions
     namespace{
