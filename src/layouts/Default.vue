@@ -34,7 +34,7 @@
                         <g-link :to="webpage.node.path" class="text-copy-primary hover:text-primary-700 truncate">{{webpage.node.title}}</g-link>
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
-                        <g-link to="/ontology" class="text-copy-primary hover:text-primary-700">Ontology</g-link>
+                        <g-link to="/ontology/1.1.0/" class="text-copy-primary hover:text-primary-700">Ontology</g-link>
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
                         <g-link to="/tools" class="text-copy-primary hover:text-primary-700">Tools</g-link>
