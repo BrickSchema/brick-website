@@ -43,8 +43,7 @@ Example webpage:
 title: Contribute
 path: /contribute
 summary: How to contribute
-show_on_navbar: true
-personas: ['contributor','developer']
+show_on_navbar: true personas: ['contributor','developer']
 ---
 # Contributing to Brick
 ...
@@ -67,3 +66,8 @@ If you are a personaY, check out these pages:
 ```
 Where `/about` is the webpage with "/about" as its path.
  
+
+# Style
+
+## Brick Diagram
+![Swatch](static/docs/brick_diagram_swatch.png)
