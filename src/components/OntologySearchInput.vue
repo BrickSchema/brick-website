@@ -36,7 +36,7 @@
           <a
                   v-for="(post, index) in results"
                   :key="index"
-                  :href="post.item.path"
+                  :href="$static.metaData.pathPrefix + post.item.path"
                   @click="reset"
                   class="bg-background-form border-b border-gray-400 text-xl cursor-pointer p-4 search-hover text-gray-700"
                   :class="{ 'search-highlighted' : index === highlightedIndex }"
