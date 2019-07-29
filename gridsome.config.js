@@ -31,8 +31,8 @@ module.exports = {
           }
         },
         remark: {
-          plugins: [
-            ['remark-attr', 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+          plugins: [['remark-attr'],
+            ['gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
           ]
         }
       }
@@ -50,8 +50,8 @@ module.exports = {
           }
         },
         remark: {
-          plugins: [
-            ['remark-attr', 'gridsome-plugin-remark-shiki', {theme: 'Material-Theme-Palenight', skipInline: true}]
+          plugins: [['remark-attr'],
+            ['gridsome-plugin-remark-shiki', {theme: 'Material-Theme-Palenight', skipInline: true}]
           ]
         }
       }
@@ -75,8 +75,8 @@ module.exports = {
           }
         },
         remark: {
-          plugins: [
-            [ 'remark-attr', 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+          plugins: [['remark-attr'],
+            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
           ]
         }
       }
@@ -87,8 +87,8 @@ module.exports = {
         path: 'ontologyPages/**/*.md',
         typeName: 'OntologyPage',
         remark: {
-          plugins: [
-            [ 'remark-attr', 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
+          plugins: [['remark-attr'],
+            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
           ]
         }
       }
