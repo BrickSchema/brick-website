@@ -1,5 +1,6 @@
 <template>
-    <div><div class="text-3xl m-4">
+    <div :id="relationshipNode.name">
+        <div class="text-3xl m-4">
         <g-link class="leading-tight mt-16 mb-8 mr-2 font-normal text-gray-700 hover:text-primary-700" :to="`${relationshipNode.namespace.path}#${relationshipNode.name}`">{{ relationshipNode.namespace.value }}</g-link>:
         <span class="font-bold leading-tight mt-16 mb-8 mr-4">{{ relationshipNode.generatedLabel }}</span>
         <span class="text-xs font-bold bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded font-left my-auto align-middle">{{ relationshipNode.type.toUpperCase() }}</span>

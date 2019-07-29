@@ -1,8 +1,6 @@
 <template>
-    <div class="container">
-
-
-        <div class="mt-16 mb-8 ml-4 text-3xl">
+    <div :id="classNode.name">
+        <div class="text-3xl m-4">
             <g-link class="leading-tight mt-16 mb-8 mr-2 font-normal text-gray-700 hover:text-primary-700" :to="`${classNode.namespace.path}#${classNode.name}`">{{ classNode.namespace.value }}</g-link>:
             <span class="font-bold leading-tight mt-16 mb-8 mr-4">{{ classNode.generatedLabel }}</span>
             <span class="text-xs font-bold bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded font-left my-auto align-middle">{{ classNode.type.toUpperCase() }}</span>
