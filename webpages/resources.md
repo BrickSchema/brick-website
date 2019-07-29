@@ -38,21 +38,49 @@ Building  |Location| BMS  | Built | Sq Ft | Points | Classified | Relationships
 ## Academic Publications
 ---
 
-[Brick: Towards a Unified Metadata Schema For Buildings][6]. Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. 2016. In Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2016). DOI: https://doi.org/10.1145/2993422.2993577
+#### 2018
 
-[Brick: Metadata Schema for Portable Smart Building Applications][5]. Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. 2018. Applied Energy 226 (2018) 1273-1292. DOI: https://doi.org/10.1016/j.apenergy.2018.02.091
+[Brick: Metadata Schema for Portable Smart Building Applications][5].    
+Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. Applied Energy 226 (2018) 1273-1292.    
+DOI: https://doi.org/10.1016/j.apenergy.2018.02.091    
 
-[Demo Abstract: Portable Queries Using the Brick Schema for Building Applications][8]. Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. 2016. In Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2016). DOI: https://doi.org/10.1145/2993422.2996411
+[Design and Analysis of a Query Processor for Brick][17].    
+Gabe Fierro and David E. Culler. ACM Transactions on Sensor Networks 14, 3-4, Article 18 (November 2018), 25 pages.    
+DOI: https://doi.org/10.1145/3199666
 
-[HodDB: a Query Processor for Brick][16]. Gabe Fierro, David E. Culler. 2017. In Proceedings of the 4th ACM International Conference on Systems for Energy-Efficient Built Environment (BuildSys 2017). DOI: https://doi.org/10.1145/3137133.3141449
+[Mortar: An Open Testbed for Portable Building Analytics][18].    
+Gabe Fierro, Marco Pritoni, Moustafa AbdelBaky, Paul Raftery, Therese Peffer, Greg Thomson, and David E. Culler. In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018).    
+DOI: https://doi.org/10.1145/3276774.3276796
 
-[Design and Analysis of a Query Processor for Brick][17]. Gabe Fierro and David E. Culler. 2018. ACM Transactions on Sensor Networks 14, 3-4, Article 18 (November 2018), 25 pages. DOI: https://doi.org/10.1145/3199666
+[Scrabble: Transferrable Semi-Automated Semantic Metadata Normalization Using Intermediate Representation][19].    
+Jason Koh, Bharathan Balaji, Dhiman Sengupta, Julian McAuley, Rajesh Gupta, and Yuvraj Agarwal.  In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018).    
+DOI: https://doi.org/10.1145/3276774.3276795
 
-[Mortar: An Open Testbed for Portable Building Analytics][18]. Gabe Fierro, Marco Pritoni, Moustafa AbdelBaky, Paul Raftery, Therese Peffer, Greg Thomson, and David E. Culler. 2018. In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276796
+[Plaster: an Integration, Benchmark, and Development Framework for Metadata Normalization Methods][20].     
+Jason Koh, Dezhi Hong, Rajesh Gupta, Kamin Whitehouse, Hongning Wang, and Yuvraj Agarwal. In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018).    
+DOI: https://doi.org/10.1145/3276774.3276794
 
-[Scrabble: Transferrable Semi-Automated Semantic Metadata Normalization Using Intermediate Representation][19]. Jason Koh, Bharathan Balaji, Dhiman Sengupta, Julian McAuley, Rajesh Gupta, and Yuvraj Agarwal. 2018.  In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276795
+#### 2017
 
-[Plaster: an Integration, Benchmark, and Development Framework for Metadata Normalization Methods][20].  Jason Koh, Dezhi Hong, Rajesh Gupta, Kamin Whitehouse, Hongning Wang, and Yuvraj Agarwal. 2018.  In Proceedings of the 5th Conference on Systems for Built Environments (BuildSys 2018). DOI: https://doi.org/10.1145/3276774.3276794
+[HodDB: a Query Processor for Brick][16].    
+Gabe Fierro, David E. Culler. In Proceedings of the 4th ACM International Conference on Systems for Energy-Efficient Built Environment (BuildSys 2017).    
+DOI: https://doi.org/10.1145/3137133.3141449
+
+#### 2016
+
+[Brick: Towards a Unified Metadata Schema For Buildings][6].    
+Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. In Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2016).    
+DOI: https://doi.org/10.1145/2993422.2993577    
+
+[Demo Abstract: Portable Queries Using the Brick Schema for Building Applications][8].    
+Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. In Proceedings of the 3rd ACM International Conference on Systems for Energy-Efficient Built Environments (BuildSys 2016).    
+DOI: https://doi.org/10.1145/2993422.2996411
+
+#### 2015
+
+[Short Paper: Analyzing Metadata Schemas for Buildings —The Good, The Bad, and The Ugly][21].   
+Arka Bhattacharya, Joern Ploennigs, and David Culler. 2015. Short Paper: Analyzing Metadata Schemas for Buildings: The Good, the Bad, and the Ugly. In Proceedings of the 2nd ACM International Conference on Embedded Systems for Energy-Efficient Built Environments (BuildSys 2015).    
+DOI: https://doi.org/10.1145/2821650.2821669
 
 ## White Papers
 
@@ -65,10 +93,6 @@ Memoori 2019
 [Presentation | Brick: Towards a Unified Metadata Schema For Buildings][7]
 BuildSys 2016
 
----
-
-<br/><br/>
-## Building Examples
 
 [1]: https://brickschema.org/ttl/Brick.ttl
 [2]: https://brickschema.org/ttl/BrickFrame.ttl
@@ -90,3 +114,4 @@ BuildSys 2016
 [18]: http://people.eecs.berkeley.edu/~gtfierro/papers/mortar.pdf
 [19]: http://mesl.ucsd.edu/pubs/Jason_BuildSys2018Scrabble.pdf
 [20]: https://jbkoh.github.io/pdf/buildsys2018_plaster.pdf
+[21]: http://sdb.cs.berkeley.edu/sdb/files/publications/sdb/buildsys2015_metadatasurvey.pdf
