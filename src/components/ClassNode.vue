@@ -21,7 +21,7 @@
         <div class="block sm:flex text-gray-600" v-if="classNode.types.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Type</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
-                <ul class="mb-8 text-normal text-gray-200 mt-4 ml-4">
+                <ul class="text-normal text-gray-200 mt-4 ml-4">
                     <li class="text-l text-gray-600 mt-4 ml-4"
                         v-for="type in classNode.types"
                         :key="type">
@@ -39,7 +39,7 @@
         <div class="block sm:flex text-gray-600" v-if="classNode.equivalentClasses.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Equivalent Classes</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
-                <ul class="mb-8 text-normal text-gray-200 mt-4 ml-4">
+                <ul class="text-normal text-gray-200 mt-4 ml-4">
                     <li class="text-l text-gray-600 mt-4 ml-4"
                         v-for="equivalentClass in classNode.equivalentClasses"
                         :key="equivalentClass.id">
@@ -67,7 +67,7 @@
         <div class="block sm:flex text-gray-600" v-if="classNode.superclasses.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Parent Classes</div>
             <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto mt-2">
-                <ul class="mb-8 text-normal text-gray-200 mt-4 ml-4" >
+                <ul class="text-normal text-gray-200 mt-4 ml-4" >
                     <li class="text-l text-gray-600 mt-4 ml-4"
                         v-for="superclass in classNode.superclasses"
                         :key="superclass.id">
@@ -86,7 +86,7 @@
         <div class="block sm:flex text-gray-600" v-if="classNode.subclasses.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Subclasses</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
-                <ul class="mb-8 text-normal text-gray-200 mt-4 ml-4">
+                <ul class="text-normal text-gray-200 mt-4 ml-4">
                     <li class="text-l text-gray-600 mt-4 ml-4"
                         v-for="subclass in classNode.subclasses"
                         :key="subclass.id">
@@ -104,7 +104,7 @@
         <div class="block sm:flex text-gray-600" v-if="classNode.inDomainOf.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">InDomainOf</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
-                <ul class="mb-8 text-normal text-gray-200 mt-4 ml-4">
+                <ul class="text-normal text-gray-200 mt-4 ml-4">
                     <li class="text-l text-gray-600 mt-4 ml-4"
                         v-for="property in classNode.inDomainOf"
                         :key="property.id">
@@ -122,7 +122,7 @@
         <div class="block sm:flex text-gray-600" v-if="classNode.inRangeOf.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">InRangeOf</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
-                <ul class="mb-8 text-normal text-gray-200 mt-4 ml-4">
+                <ul class="text-normal text-gray-200 mt-4 ml-4">
                     <li class="text-l text-gray-600 mt-4 ml-4"
                         v-for="property in classNode.inRangeOf"
                         :key="property.id">
