@@ -90,9 +90,14 @@ Memoori 2019
 [Leaflet | Brick : Metadata Schema for Buildings for Building Applications][9]
 
 ## Presentations
-[Presentation | Brick: Towards a Unified Metadata Schema For Buildings][7]
-BuildSys 2016
 
+#### 2016
+
+[Brick: Towards a Unified Metadata Schema For Buildings][7]. Presented at BuildSys 2016
+
+#### 2019
+
+[Writing Portable Building Analytics with the Brick Metadata Schema](files/acm-e-energy-2019-portable-brick.pdf). Presented at ACM E-Energy 2019
 
 [1]: https://brickschema.org/ttl/Brick.ttl
 [2]: https://brickschema.org/ttl/BrickFrame.ttl
