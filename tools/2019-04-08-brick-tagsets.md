@@ -10,7 +10,7 @@ url: https://brick.andrew.cmu.edu/tagsets
 
 ![background](./images/tagsets-sc.png)
 
-## This a dummy app
+## Introduction
 
 Visualize the Brick's tagset hierarchy interactively.
 
