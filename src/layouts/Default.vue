@@ -44,7 +44,7 @@
 <!--                    </li>-->
 
                     <li>
-                        <g-link aria-label="github" to="//github.com/BuildSysUniformMetadata/Brick"
+                        <g-link aria-label="github" to="//github.com/BrickSchema/brick"
                                 rel="noopener noreferrer" target="_blank" title="Brick @ GitHub">
                             <svg width="20px" height="20px" viewBox="0 0 438.549 438.549" @mouseover="changeFillColor" @mouseout="resetFillColor" >
                                 <path
