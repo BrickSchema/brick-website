@@ -2,6 +2,7 @@
     <Layout>
         <div class="container-inner mx-auto my-16">
             <h1 class="text-4xl font-bold leading-tight">{{ $page.webpage.title }}</h1>
+            <div class="w-1/12 w-2/12 w-3/12 w-4/12 w-5/12 w-6/12 w-6/12 w-7/12 w-8/12 w-9/12 w-10/12 w-11/12 mx-auto"></div>
             <div class="markdown-body my-16 " v-html="$page.webpage.content" />
         </div>
     </Layout>
