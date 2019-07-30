@@ -1,6 +1,6 @@
 # brick-website
 
-[![Website](https://img.shields.io/website/https/brick.andrew.cmu.edu.svg?logo=vue.js&style=for-the-badge)](https://brick.andrew.cmu.edu/) [![Travis CI](https://img.shields.io/travis/BrickSchema/brick-website?logo=travis&style=for-the-badge)](https://travis-ci.org/BrickSchema/brick-website)
+[![Website](https://img.shields.io/website/https/brick.andrew.cmu.edu?logo=vue.js)](https://brick.andrew.cmu.edu/) [![Build Status](https://travis-ci.org/BrickSchema/brick-website.svg?branch=master)](https://travis-ci.org/BrickSchema/brick-website)
 
 This is a website for BrickSchema.
 
