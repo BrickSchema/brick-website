@@ -2,7 +2,7 @@
 title: Brick Ontology
 path: /ontology
 version: 1.1.0
-hierarchy: ['/ontology/#Ontology']
+hierarchy: ['/ontology/#Brick']
 summary: Versions, How to use
 ---
 

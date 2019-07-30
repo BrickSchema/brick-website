@@ -28,7 +28,7 @@
                         <g-link
                                 class="my-1 breadcrumb font-normal"
                                 to="/ontology">
-                            Ontology
+                            Brick
                         </g-link>
                     </li>
                     <li>
