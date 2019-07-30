@@ -115,6 +115,8 @@ nav .active {
 
 div{
     text-align: justify;
+    -ms-scrollbar-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
 }
 
 table {
