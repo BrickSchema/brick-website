@@ -2,7 +2,6 @@
 title: Supporters
 path: /supporters
 summary: Who developed Brick? Who supports Brick?
-show_on_navbar: true
 ---
 
 ## Brick is a joint effort by:
