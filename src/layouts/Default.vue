@@ -1,12 +1,5 @@
 <template>
     <div class="content-wrapper bg-background-primary font-sans text-copy-primary leading-normal flex flex-col min-h-screen">
-        <div v-if="showModal" class="modal-overlay" @click.self="showModal = false">
-            <div class="modal-outer-box" @click.self="showModal = false">
-                <div class="modal shadow-2xl">
-                    <persona-switcher :persona="persona" @personaUpdated="updatePersona" />
-                </div>
-            </div>
-        </div>
         <header class="border-t-14 border-primary-700">
             <nav class="container mx-auto flex flex-wrap justify-between items-center py-8">
                 <div>
@@ -131,20 +124,14 @@
 
 <script>
     import SearchInput from '../components/SearchInput'
-    import PersonaSwitcher from '../components/PersonaSwitcher'
 
     export default {
         components: {
             SearchInput,
-            PersonaSwitcher
-        },
-        mounted() {
-            this.persona = localStorage.getItem('persona') || 'default'
         },
         data() {
             return {
                 isOpen: false,
-                persona: '',
                 showModal: false,
                 githubLogo: null
             }
@@ -152,11 +139,6 @@
         methods: {
             toggle() {
                 this.isOpen = !this.isOpen
-            },
-            updatePersona(persona) {
-                this.persona = persona
-                this.showModal = false;
-                this.$emit('personaUpdated', persona)
             },
             changeFillColor(e) {
                 if(!this.githubLogo && e.target.firstChild)
