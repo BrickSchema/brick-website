@@ -99,24 +99,24 @@ Memoori 2019
 
 [Writing Portable Building Analytics with the Brick Metadata Schema](files/acm-e-energy-2019-portable-brick.pdf). Presented at ACM E-Energy 2019
 
-[1]: https://brickschema.org/ttl/Brick.ttl
-[2]: https://brickschema.org/ttl/BrickFrame.ttl
-[3]: https://brickschema.org/ttl/BrickTag.ttl
-[4]: https://brickschema.org/ttl/BrickUse.ttl
-[5]: https://brickschema.org/papers/Brick-AppliedEnergy-2018-Balaji.pdf
-[6]: https://brickschema.org/papers/Brick-BuildSys-2016-Balaji.pdf
-[7]: https://brickschema.org/papers/Brick_BuildSys_Presentation.pdf
-[8]: https://brickschema.org/papers/DemoBrick-BuildSys-2016-Balaji.pdf
+[1]: /ttl/Brick.ttl
+[2]: /ttl/BrickFrame.ttl
+[3]: /ttl/BrickTag.ttl
+[4]: /ttl/BrickUse.ttl
+[5]: /papers/Brick-AppliedEnergy-2018-Balaji.pdf
+[6]: /papers/Brick-BuildSys-2016-Balaji.pdf
+[7]: /papers/Brick_BuildSys_Presentation.pdf
+[8]: /papers/DemoBrick-BuildSys-2016-Balaji.pdf
 [9]: https://brickschema.org/docs/Brick-Leaflet.pdf
-[10]: https://brickschema.org/ttl/soda_brick.ttl
-[11]: https://brickschema.org/ttl/ghc_brick.ttl
-[12]: https://brickschema.org/ttl/rice_brick.ttl
-[13]: https://brickschema.org/ttl/ebu3b_brick.ttl
-[14]: https://brickschema.org/ttl/gtc_brick.ttl
+[10]: /ttl/soda_brick.ttl
+[11]: /ttl/ghc_brick.ttl
+[12]: /ttl/rice_brick.ttl
+[13]: /ttl/ebu3b_brick.ttl
+[14]: /ttl/gtc_brick.ttl
 [15]: https://www.w3.org/TR/turtle/
-[16]: https://brickschema.org/papers/HodDB-BuildSys-2017-Fierro.pdf
-[17]: https://brickschema.org/papers/HodDB-TOSN-2018-Fierro.pdf
-[18]: https://brickschema.org/papers/Mortar-BuildSys-2018-Fierro.pdf
-[19]: https://brickschema.org/papers/Scrabble-BuildSys-2018-Koh.pdf
-[19]: https://brickschema.org/papers/Plaster-BuildSys-2018-Koh.pdf
-[21]: https://brickschema.org/papers/MetadataGoodBadUgly-BuildSys-2015-Bhattacharya.pdf
+[16]: /papers/HodDB-BuildSys-2017-Fierro.pdf
+[17]: /papers/HodDB-TOSN-2018-Fierro.pdf
+[18]: /papers/Mortar-BuildSys-2018-Fierro.pdf
+[19]: /papers/Scrabble-BuildSys-2018-Koh.pdf
+[20]: /papers/Plaster-BuildSys-2018-Koh.pdf
+[21]: /papers/MetadataGoodBadUgly-BuildSys-2015-Bhattacharya.pdf
