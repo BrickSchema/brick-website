@@ -23,13 +23,13 @@ Turtle is a compact textual format that is understood by most Semantic Web tools
 These five models are representative examples of how Brick can be used to model real buildings.
 For an in-depth discussion of the creation and evaluation of these Brick models, please refer to the [BuildSys 2016][6] and [Applied Energy 2018][5] papers.
 
-Building  |Location| BMS  | Built | Sq Ft | Points | Classified | Relationships
-----------|--------|------|-------|-------|----------|--------------|----------------
-[Soda Hall][10] | Berkeley, CA | Barrington Systems | 1994  | 110,565  | 1,586  | 98.7%  | 1,939
-[Gates Hillman Center][11]  | Pittsburgh, PA, USA  | Automated Logic Controls | 2009  | 217,000 | 8,292  | 99%  | 35,693
-[Rice Hall][12]  | Charlottesville, VA, USA  | | 2011  | 100,000 | 1,300  | 98.5%  | 2,158
-[Engineering Building Unit 3B][13]  | San Diego, CA, USA  | Johnson Controls  | 2004 | 150,000 | 4,594 | 96% | 8,383
-[Green Tech House][14] | Vejle, Denmark | Niagara | 2014 | 38,000 | 956 | 98.8% | 19,086
+| Building                           | Location                 | BMS                      | Built | Sq Ft   | Points | Relationships | Classified |
+|------------------------------------|--------------------------|--------------------------|-------|---------|--------|---------------|------------|
+| [Soda Hall][10]                    | Berkeley, CA             | Barrington Systems       | 1994  | 110,565 | 1,586  | 1,939         | **98.7%**  |
+| [Gates Hillman Center][11]         | Pittsburgh, PA, USA      | Automated Logic Controls | 2009  | 217,000 | 8,292  | 35,693        | **99%**    |
+| [Rice Hall][12]                    | Charlottesville, VA, USA |                          | 2011  | 100,000 | 1,300  | 2,158         | **98.5%**  |
+| [Engineering Building Unit 3B][13] | San Diego, CA, USA       | Johnson Controls         | 2004  | 150,000 | 4,594  | 8,383         | **96%**    |
+| [Green Tech House][14]             | Vejle, Denmark           | Niagara                  | 2014  | 38,000  | 956    | 19,086        | **98.8%**  |
 
 - **Points**: the number of BMS points contained in the model
 - **Relationships**: the number of relationships contained in the model
