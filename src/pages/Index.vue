@@ -22,7 +22,7 @@
       <div class="py-8 bg-gray-100">
         <div class="container-inner mx-auto text-xl pb-8 relative">
 
-          <ul class="text-2xl font-bold mt-4">Learn more:
+          <ul v-if="$page.webpages.edges.length" class="text-2xl font-bold mt-4">Learn more:
             <li v-for="page in $page.webpages.edges" :key="page.node.path">
               <g-link class="text-lg font-medium" :to="page.node.path"> {{ page.node.title }} </g-link>
             </li>
