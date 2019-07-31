@@ -11,7 +11,7 @@ There are many ways to get started using Brick: ranging from exploring and analy
 
 - **Observe** Brick models for 6 real buildings using the [BrickViewer tool](http://viewer.brickschema.org/)
 - **Interact** with over 100 Brick models using the [Brick QueryBuilder tool](https://querybuilder.mortardata.org/)
-- **Download** the Brick models for 6 real buildings from [this page](/resources) for use with ontology exploration tools like [Protege](https://protege.stanford.edu/)
+- **Download** the Brick models for 6 real buildings from [this page](/resources#reference-brick-models) for use with ontology exploration tools like [Protege](https://protege.stanford.edu/)
 
 ### Using Brick for data analysis
 
