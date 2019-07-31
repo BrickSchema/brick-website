@@ -98,14 +98,12 @@
   node{
   id
   label
-  content
   pages: belongsTo(sortBy:"fileInfo.name", order:ASC){
   edges{
   node{
   ...on Webpage{
   title
   path
-  summary
   }
   }
   }
@@ -113,6 +111,7 @@
   }
   }
   }
+
   aboutPage: webpage(path:"/about"){
   content
   }
