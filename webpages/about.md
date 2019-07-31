@@ -22,8 +22,6 @@ Brick is free and open-sourced under the BSD 3-Clause license. The source code f
 
 ![Brick Model Example](images/brick-model-example.png)
 
-_This would go as a caption for the image?_ Example of a simple building model demonstrating how Brick can classify building assets and describe the relationships between them.
-
 ## How Does Brick Compare to X?
 
 [**Project Haystack**](https://project-haystack.org/) is a popular tagging system for describing building assets using semi-structured sets of tags.
