@@ -45,3 +45,8 @@ Sensor Systems           |  **yes**      |       **yes**    |  partial|   no    
 Control Relationships    |  **yes**      |       no         |   no    |   no    |   no
 Sequential Relationships |  **yes**      |       no         |   no    |   no    |   no
 Formal Definitions       |  **yes**      |       no         |   no    |**yes**  |   **yes**
+<br></br>
+
+---
+## Why is the Brick Schema a Game Changer for Smart Buildings?
+`youtube:https://www.youtube.com/watch?v=hetd6cIKueA`
