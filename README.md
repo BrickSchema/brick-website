@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.org/BrickSchema/brick-website.svg?branch=master)](https://travis-ci.org/BrickSchema/brick-website)
 
-This is a website for BrickSchema.
+This is a website for [BrickSchema](https://brickschema.org/).
 
 ## Getting Started
 
