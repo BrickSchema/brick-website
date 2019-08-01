@@ -3763,6 +3763,13 @@ gridsome-plugin-remark-shiki@^0.3.0:
     shiki-languages "^0.1.0"
     unist-util-visit "^1.4.0"
 
+gridsome-plugin-remark-youtube@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/gridsome-plugin-remark-youtube/-/gridsome-plugin-remark-youtube-1.0.1.tgz#f76f213b3568b818b0735497db5432f43e8eb0e6"
+  integrity sha512-HeJ3vrlLFTJrb23DAYU1sApHP2AHrmsm6cWOUIoA+MN9ahBM57lecpttQOBdghzDEqQ30+/iuHhXeGuPGmkUaQ==
+  dependencies:
+    unist-util-visit "^1.4.0"
+
 gridsome-plugin-rss@^1.1.0:
   version "1.1.0"
   resolved "https://registry.yarnpkg.com/gridsome-plugin-rss/-/gridsome-plugin-rss-1.1.0.tgz#de8788ae3bac32911a7717709d82c7d6151b6ecf"
@@ -4037,6 +4044,11 @@ html-comment-regex@^1.1.0:
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/html-comment-regex/-/html-comment-regex-1.1.2.tgz#97d4688aeb5c81886a364faa0cad1dda14d433a7"
   integrity sha512-P+M65QY2JQ5Y0G9KKdlDpo0zK+/OHptU5AaBwUfAIDJZk1MYf32Frm84EcOytfJE0t5JvkAnKlmjsXDnWzCJmQ==
+
+html-element-attributes@^2.0.0:
+  version "2.1.0"
+  resolved "https://registry.yarnpkg.com/html-element-attributes/-/html-element-attributes-2.1.0.tgz#ff674b8716526b8a9ee1d8e454466eda56d6d0cc"
+  integrity sha512-uWNlZuzM3MfRvZLAHWUzwwU6He2NvX9szpXwjG7+hoVqZzY3e0vc6mlujiSnJ/i9zVFZDhBDN33Pm9HNEzcyPg==
 
 html-entities@^1.2.0:
   version "1.2.1"
@@ -5131,6 +5143,11 @@ markdown-escapes@^1.0.0:
   version "1.0.3"
   resolved "https://registry.yarnpkg.com/markdown-escapes/-/markdown-escapes-1.0.3.tgz#6155e10416efaafab665d466ce598216375195f5"
   integrity sha512-XUi5HJhhV5R74k8/0H2oCbCiYf/u4cO/rX8tnGkRvrqhsr5BRNU6Mg0yt/8UIx1iIS8220BNJsDb7XnILhLepw==
+
+md-attr-parser@^1.2.1:
+  version "1.2.1"
+  resolved "https://registry.yarnpkg.com/md-attr-parser/-/md-attr-parser-1.2.1.tgz#1043f6451c33ed3e392b40504df08010f4d03e3d"
+  integrity sha512-dZqt2L4Q7FUcx6ZcuownAxa74Y7d5jcsHRB2MIgQ0vT10Pa+/0Som6hhJ+jgAjP3vnFtrd4aO+ZMc5K7QVfbiQ==
 
 md5-file@^4.0.0:
   version "4.0.0"
@@ -6975,6 +6992,14 @@ relateurl@0.2.x:
   version "0.2.7"
   resolved "https://registry.yarnpkg.com/relateurl/-/relateurl-0.2.7.tgz#54dbf377e51440aca90a4cd274600d3ff2d888a9"
   integrity sha1-VNvzd+UUQKypCkzSdGANP/LYiKk=
+
+remark-attr@^0.8.3:
+  version "0.8.3"
+  resolved "https://registry.yarnpkg.com/remark-attr/-/remark-attr-0.8.3.tgz#0263045acb958e1556b0c6955b5d66a4b36d4d92"
+  integrity sha512-JMP6rmLwhj5VmDRG99kGr+HNXQ6MmAs+UojeAHGMQFiIitEmJZBkmgOBsWadxu/RTACD4XnMuJXY1QWEFdw31A==
+  dependencies:
+    html-element-attributes "^2.0.0"
+    md-attr-parser "^1.2.1"
 
 remark-autolink-headings@^5.0.0:
   version "5.2.0"
