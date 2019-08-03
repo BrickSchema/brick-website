@@ -76,7 +76,7 @@ module.exports = {
         },
         remark: {
           plugins: [['remark-attr'],
-            ['gridsome-plugin-remark-youtube', {width: '100%', align: 'auto'}],
+            ['gridsome-plugin-remark-youtube', {width: '85%', align: 'auto'}],
             [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
           ]
         }

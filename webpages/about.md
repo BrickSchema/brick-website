@@ -48,5 +48,5 @@ Formal Definitions       |  **yes**      |       no         |   no    |**yes**  
 <br></br>
 
 ---
-## Why is the Brick Schema a Game Changer for Smart Buildings?
+## Informational Webinar
 `youtube:https://www.youtube.com/watch?v=hetd6cIKueA`
