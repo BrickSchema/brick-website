@@ -99,10 +99,10 @@ Memoori 2019
 
 [Writing Portable Building Analytics with the Brick Metadata Schema](files/acm-e-energy-2019-portable-brick.pdf). Presented at ACM E-Energy 2019
 
-[1]: /ttl/Brick.ttl
-[2]: /ttl/BrickFrame.ttl
-[3]: /ttl/BrickTag.ttl
-[4]: /ttl/BrickUse.ttl
+[1]: /schema/1.0.3/Brick.ttl
+[2]: /schema/1.0.3/BrickFrame.ttl
+[3]: /schema/1.0.3/BrickTag.ttl
+[4]: /schema/1.0.3/BrickUse.ttl
 [5]: /papers/Brick-AppliedEnergy-2018-Balaji.pdf
 [6]: /papers/Brick-BuildSys-2016-Balaji.pdf
 [7]: /papers/Brick_BuildSys_Presentation.pdf
