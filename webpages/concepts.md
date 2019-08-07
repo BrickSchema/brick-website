@@ -16,9 +16,8 @@ Brick adheres to the following design principles:
 
 * **Completeness**: A schema should represent all the information (such as a sensor’s location, type, etc.) required by building applications.
 * **Expressivity**: A schema should capture diverse relationships across entities without expanding the schema too much.
-* **Consistency**: A schema should be able to enforce consistency in modeling processes across different users.
 * **Usability**: A schema should be not too complex for users to easily understand and use.
-* **Discoverability**: A schema should have a usable query model that apps can rely upon.
+* **Consistency**: A schema should be able to enforce consistency in modeling processes across different users.
 * **Extensibility**: A schema should be easily extensible to cover new concepts in a consistent way.
 
 ## Core Concepts
