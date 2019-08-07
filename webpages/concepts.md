@@ -15,7 +15,7 @@ Brick describes buildings in a machine readable format to enable programmatic ex
 **Entity**: an entity is an abstraction of any physical, logical or virtual item; the actual "things" in a building.
 
 <details>
-<summary>Expand for more detail...</summary>
+<summary>Expand for detail...</summary>
 
 Physical entities are anything that has a physical presence in the world.
 Examples are mechanical equipment such as air handling units, variable air volume boxes, luminaires and lighting systems, networked devices like electric meters, thermostats and electrical vehicle chargers, and spatial elements like rooms and floors.
@@ -47,11 +47,29 @@ Examples of relationships are *encapsulation* (one entity is contained within an
 
 ---
 
-**Graph**: an abstract organizational data structure representing a set of entities (nodes) and relationships (edges).
-Brick is represented by a directed, labeled graph
+**Graph**: an abstract organizational data structure representing a set of entities (nodes) and relationships (edges). Brick is represented by a directed, labeled graph.
+
+<details>
+<summary>Expand for detail...</summary>
+
+This figure is an illustration of a generic directed graph. In the context of Brick, nodes in a graph are entities and the edges of the graph are relationships. The source and destination nodes of an edge indicate the subject and object entities of the relationship given by the name of the edge.
 
 ![node edge graph example](images/node-edge-graph.png)
 
+We recommend reading the [Wikipedia page on the abstract graph data structure](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)).
+
+In Brick, the graph is represented using the RDF data model. The [RDF primer page](https://www.w3.org/TR/rdf11-concepts/) is an excellent introduction to how a graph is represented using RDF.
+
+</details>
+
 ---
 
-**Brick Model**:
+**Brick Model**: a Brick model is a digital representation of a building that adheres to the Brick schema. Entities in a Brick model are classified according to the classes defined by Brick, and are connected using the relationships defined by Brick. Several reference models are [available for download](/resources) on the Resources page under "Reference Brick Models".
+
+<details>
+<summary>Expand for detail...</summary>
+
+![Brick Model Example](images/brick-model-example.png)
+
+This is an example Brick model.
+</details>
