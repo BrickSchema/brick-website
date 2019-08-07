@@ -10,7 +10,20 @@ show_on_navbar: false
 Brick is an ontology-based metadata schema that captures the entities and relationships necessary for effective representations of buildings and their subsystems.
 Brick describes buildings in a machine readable format to enable programmatic exploration of different operational, structural and functional facets of a building.
 
+## Design Principles
+
+Brick adheres to the following design principles:
+
+* **Completeness**: A schema should represent all the information (such as a sensor’s location, type, etc.) required by building applications.
+* **Expressivity**: A schema should capture diverse relationships across entities without expanding the schema too much.
+* **Consistency**: A schema should be able to enforce consistency in modeling processes across different users.
+* **Usability**: A schema should be not too complex for users to easily understand and use.
+* **Discoverability**: A schema should have a usable query model that apps can rely upon.
+* **Extensibility**: A schema should be easily extensible to cover new concepts in a consistent way.
+
 ## Core Concepts
+
+These are the essential concepts of Brick.
 
 **Entity**: an entity is an abstraction of any physical, logical or virtual item; the actual "things" in a building.
 
