@@ -36,7 +36,7 @@
 <!--                        <g-link to="/blog" class="text-copy-primary hover:text-primary-700">Blog</g-link>-->
 <!--                    </li>-->
                     <li class="mr-8 mb-6 lg:mb-0">
-                        <g-link to="/supporters" class="text-copy-primary hover:text-primary-700">Supporters</g-link>
+                        <g-link to="/community" class="text-copy-primary hover:text-primary-700">Community</g-link>
                     </li>
 
                     <li>
