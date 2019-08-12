@@ -61,7 +61,7 @@ Examples of relationships are *encapsulation* (one entity is contained within an
 
 **Graph**: an abstract organizational data structure representing a set of entities (nodes) and relationships (edges). Brick is represented by a directed, labeled graph.
 
-![node edge graph example](images/node-edge-graph.png){class="mx-auto w-10/12"}
+![node edge graph example](images/node-edge-graph.png){class="mx-auto w-6/12"}
 
 <details>
 <summary>Learn more</summary>
