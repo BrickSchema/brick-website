@@ -15,7 +15,7 @@ Brick describes buildings in a machine readable format to enable programmatic ex
 Brick adheres to the following design principles:
 
 * **Completeness**: A schema should represent all the information (such as a sensor’s location, type, etc.) required by building applications.
-* **Expressivity**: A schema should capture diverse relationships across entities without expanding the schema too much.
+* **Expressivity**: A schema should capture the diverse family of entities and relationships between them that are present in a building's BMS and expressed in canonical energy-, operations- and management-oriented applications and scenarios
 * **Usability**: A schema should be not too complex for users to easily understand and use.
 * **Consistency**: A schema should be able to enforce consistency in modeling processes across different users.
 * **Extensibility**: A schema should be easily extensible to cover new concepts in a consistent way.
@@ -27,7 +27,7 @@ These are the essential concepts of Brick.
 **Entity**: an entity is an abstraction of any physical, logical or virtual item; the actual "things" in a building.
 
 <details>
-<summary>Expand for detail...</summary>
+<summary>Learn more</summary>
 
 Physical entities are anything that has a physical presence in the world.
 Examples are mechanical equipment such as air handling units, variable air volume boxes, luminaires and lighting systems, networked devices like electric meters, thermostats and electrical vehicle chargers, and spatial elements like rooms and floors.
@@ -61,12 +61,12 @@ Examples of relationships are *encapsulation* (one entity is contained within an
 
 **Graph**: an abstract organizational data structure representing a set of entities (nodes) and relationships (edges). Brick is represented by a directed, labeled graph.
 
+![node edge graph example](images/node-edge-graph.png){class="mx-auto w-10/12"}
+
 <details>
-<summary>Expand for detail...</summary>
+<summary>Learn more</summary>
 
 This figure is an illustration of a generic directed graph. In the context of Brick, nodes in a graph are entities and the edges of the graph are relationships. The source and destination nodes of an edge indicate the subject and object entities of the relationship given by the name of the edge.
-
-![node edge graph example](images/node-edge-graph.png)
 
 We recommend reading the [Wikipedia page on the abstract graph data structure](https://en.wikipedia.org/wiki/Graph_(abstract_data_type)).
 
@@ -78,10 +78,10 @@ In Brick, the graph is represented using the RDF data model. The [RDF primer pag
 
 **Brick Model**: a Brick model is a digital representation of a building that adheres to the Brick schema. Entities in a Brick model are classified according to the classes defined by Brick, and are connected using the relationships defined by Brick. Several reference models are [available for download](/resources) on the Resources page under "Reference Brick Models".
 
-<details>
-<summary>Expand for detail...</summary>
-
 ![Brick Model Example](images/brick-model-example.png)
+
+<details>
+<summary>Learn more</summary>
 
 This is an example Brick model.
 </details>
