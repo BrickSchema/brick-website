@@ -1,7 +1,7 @@
 ---
 title: Understanding Brick
 path: /concepts
-summary: Understanding Brick
+summary: Overview, Design Principles and Core Concepts
 show_on_navbar: false
 personas: ['business', 'manager', 'developer', 'contributor']
 ---

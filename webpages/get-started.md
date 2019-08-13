@@ -1,7 +1,7 @@
 ---
 title: Get Started
 path: /get-started
-summary: Getting started with the Brick schema
+summary: Exploring existing Brick models, Using Brick for data analysis, Create your own Brick models, Connecting with the Brick Community, and Brick Tutorials
 show_on_navbar: true
 ---
 
