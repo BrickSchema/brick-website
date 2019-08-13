@@ -314,6 +314,7 @@
 
     .markdown-body details summary {
         cursor: pointer;
+        outline: none;
     }
 
     .markdown-body h1,
