@@ -3,6 +3,7 @@ title: Understanding Brick
 path: /concepts
 summary: Understanding Brick
 show_on_navbar: false
+personas: ['business', 'manager', 'developer', 'contributor']
 ---
 
 # Brick Overview

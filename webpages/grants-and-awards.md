@@ -2,7 +2,6 @@
 title: Grants and Awards
 path: /grants-and-awards
 summary: Who supports Brick? Grants and Awards.
-personas: ['business', 'manager', 'developer', 'contributor']
 ---
 
 #### National Science Foundation grants:
