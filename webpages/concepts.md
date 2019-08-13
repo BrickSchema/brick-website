@@ -83,5 +83,5 @@ In Brick, the graph is represented using the RDF data model. The [RDF primer pag
 <details>
 <summary>Learn more</summary>
 
-This is an example Brick model.
+The blue nodes represent entities that are instances of Brick classes.These are the "things" inside our example building. They range from equipment (`AHU1A`, `VAV2-4`), points (`VAV2-4.DPRPOS`), locations (`Room 410`) and logical collections (`VAV2-3Zone`). The colored boxes connected to the instances with dashed lines represent Brick classes; the dashed line represents the "is an instance of" relationship (`rdf:type`). The rest of the class structure has been elided for simplicity. Lastly, the solid directed edges represent Brick relationships between entities.
 </details>
