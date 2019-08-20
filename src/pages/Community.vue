@@ -6,25 +6,25 @@
 
             <div class="my-16 text-3xl font-bold border-b pb-4 border-gray-500">Brick was initiated by:</div>
             <div class="flex flex-wrap">
-                <a class="w-64 m-auto p-4" href="https://cmu.edu">
-                    <g-image src="../../static/logos/research/cmu.png"></g-image>
+                <a class="w-64 m-auto p-10" href="https://cmu.edu">
+                    <g-image src="../../static/logos/research/cmu.jpg"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="https://www.research.ibm.com/labs/ireland/">
+                <a class="w-64 m-auto p-1" href="https://www.research.ibm.com/labs/ireland/">
                     <g-image src="../../static/logos/research/ibm.png"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="https://www.berkeley.edu/">
+                <a class="w-64 m-auto p-2" href="https://www.berkeley.edu/">
                     <g-image src="../../static/logos/research/ucb.png"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="http://www.ucla.edu/">
+                <a class="w-64 m-auto p-12" href="http://www.ucla.edu/">
                     <g-image src="../../static/logos/research/ucla.png"></g-image>
                 </a>
                 <a class="w-64 m-auto p-4" href="https://ucsd.edu/">
                     <g-image src="../../static/logos/research/ucsd.png"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="https://www.sdu.dk/en">
+                <a class="w-64 m-auto p-12" href="https://www.sdu.dk/en">
                     <g-image src="../../static/logos/research/sdu.png"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="https://www.virginia.edu/">
+                <a class="w-64 m-auto p-1" href="https://www.virginia.edu/">
                     <g-image src="../../static/logos/research/uva.png"></g-image>
                 </a>
             </div>
@@ -42,7 +42,7 @@
                 <a class="w-64 m-auto p-4" href="https://innovationsfonden.dk/en">
                     <g-image src="../../static/logos/supporters/ifd.png"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="https://www.intel.com">
+                <a class="w-64 m-auto p-8" href="https://www.intel.com">
                     <g-image src="../../static/logos/supporters/intel.png"></g-image>
                 </a>
                 <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/">
@@ -51,10 +51,10 @@
                 <a class="w-64 m-auto p-4" href="https://www.kaust.edu.sa/en">
                     <g-image src="../../static/logos/supporters/kaust.svg"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="https://www.nsf.gov/">
+                <a class="w-64 m-auto p-8" href="https://www.nsf.gov/">
                     <g-image src="../../static/logos/supporters/nsf.png"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="https://www.topas-eeb.eu/">
+                <a class="w-64 m-auto p-8" href="https://www.topas-eeb.eu/">
                     <g-image src="../../static/logos/supporters/topas.png"></g-image>
                 </a>
             </div>
