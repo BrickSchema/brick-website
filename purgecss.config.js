@@ -21,6 +21,8 @@ module.exports = {
     'g-image',
     'g-image--lazy',
     'g-image--loaded',
+    'slide-fade-enter-active',
+    'slide-fade-enter'
   ],
   extractors: [
     {

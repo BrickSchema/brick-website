@@ -53,7 +53,11 @@
         </header>
 
         <div class="flex-grow">
-            <slot/>
+            <transition name="slide-fade" appear>
+                <main class="flex-grow container mx-auto px-8 my-16 overflow-hidden">
+                    <slot/>
+                </main>
+            </transition>
         </div>
         <footer class="bg-primary-700 text-white">
             <div class="container mx-auto flex flex-col lg:flex-row items-center justify-between py-8">
