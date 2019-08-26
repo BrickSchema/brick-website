@@ -13,7 +13,7 @@ Through the use of powerful Semantic Web technology, Brick can describe the broa
 
 Adopting Brick as the canonical description of a building enables the following:
 
-- Brick lowers the cost of deploying analytics, energy effiency measures and intelligent controls across buildings
+- Brick lowers the cost of deploying analytics, energy efficiency measures and intelligent controls across buildings
 - Brick presents an integrated, cross-vendor representation of the multitude of subsystems in modern buildings: HVAC, lighting, fire, security and so on
 - Brick simplifies the development of smart analytics and control applications
 - Brick reduces the reliance upon the non-standard, unstructured labels endemic to building management systems
