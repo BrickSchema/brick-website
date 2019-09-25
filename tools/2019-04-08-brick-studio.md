@@ -5,7 +5,7 @@ date: 2019-05-08
 summary: Authoring tool for Brick TTL files
 categories: ['viewer', 'editor', 'utility', 'visualization']
 thumbnail: ./images/brick-studio.png
-url: https://brick.andrew.cmu.edu/studio
+url: https://brickschema.github.io/brick-studio/
 ---
 
 ![background](./images/brick-studio-sc.png)

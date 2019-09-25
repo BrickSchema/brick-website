@@ -5,7 +5,7 @@
    summary: BrickDocs is an TTL to Docs generator
    categories: ['docs', 'tagset']
    thumbnail: ./images/brick-docs.png
-   url: https://brick.andrew.cmu.edu/docs
+   url: https://shreyasnagare.github.io/rdf2docs/
 ---
 
 ![background](./images/brick-docs-sc.png)
