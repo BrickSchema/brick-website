@@ -7,6 +7,8 @@ show_on_navbar: true
 
 There are many ways to get started using Brick: ranging from exploring and analyzing existing Brick models to developing data-driven applications using Brick to creating your own Brick model.
 
+The [Concepts page](/concepts) presents an overview of core concepts of Brick.
+
 ### Exploring existing Brick models
 
 - **Observe** Brick models for 6 real buildings using the [BrickViewer tool](http://viewer.brickschema.org/)
