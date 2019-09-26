@@ -16,4 +16,4 @@ tags: ['brick', 'press']
 * [Building better building data, Brick by Brick](https://www.greenbiz.com/article/building-better-building-data-brick-brick)
 * [ASHRAE, Haystack, Brick Collaboration](https://www.automation.com/automation-news/industry/ashrae-bacnet-committee-project-haystack-and-the-brick-initiative-partner-to-integrate-tagging-and-data-modeling-into-ashrae-standard-223p)
 * [Playing Metadata Tag "U R it."](http://www.automatedbuildings.com/news/jan17/interviews/161227115404sullivan.html)
-
+* [Innovating the built environment with digital twins](https://www.pbctoday.co.uk/news/bim-news/innovating-the-built-environment-with-digital-twins/56875/)
