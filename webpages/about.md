@@ -20,7 +20,7 @@ Adopting Brick as the canonical description of a building enables the following:
 
 Brick is free and open-sourced under the BSD 3-Clause license. The source code for Brick, this website, and related tools developed by the Brick team are available on **[GitHub](https://github.com/BrickSchema)**.
 
-![Brick Model Example](images/brick-model-example.png)
+![Brick Model Example](/images/brick-model-example.png)
 
 ## How Does Brick Compare to X?
 

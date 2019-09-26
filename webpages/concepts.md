@@ -62,7 +62,7 @@ Examples of relationships are *encapsulation* (one entity is contained within an
 
 **Graph**: an abstract organizational data structure representing a set of entities (nodes) and relationships (edges). Brick is represented by a directed, labeled graph.
 
-![node edge graph example](images/node-edge-graph.png){class="mx-auto w-6/12"}
+![node edge graph example](/images/node-edge-graph.png){class="mx-auto w-6/12"}
 
 <details>
 <summary>Learn more</summary>
@@ -79,7 +79,7 @@ In Brick, the graph is represented using the RDF data model. The [RDF primer pag
 
 **Brick Model**: a Brick model is a digital representation of a building that adheres to the Brick schema. Entities in a Brick model are classified according to the classes defined by Brick, and are connected using the relationships defined by Brick. Several reference models are [available for download](/resources/#reference-brick-models).
 
-![Brick Model Example](images/brick-model-example.png)
+![Brick Model Example](/images/brick-model-example.png)
 
 <details>
 <summary>Learn more</summary>
