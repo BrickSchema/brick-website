@@ -40,6 +40,10 @@ For an in-depth discussion of the creation and evaluation of these Brick models,
 
 #### 2019
 
+[Who can Access What, and When?: Understanding Minimal Access Requirements of Building Applications][25].
+Jason Koh, Dezhi Hong, Shreyas Nagare, Sudershan Boovaraghavan, Yuvraj Agarwal, and Rajesh K. Gupta. In Proceedings of the 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities and Transportation (BuildSys 2019). November 10, 2019, New York, NY, USA.
+DOI: https://doi.org/10.1145/3360322.3360862
+
 [Beyond a House of Sticks: Formalizing Metadata Tags with Brick][22].
 Gabe Fierro, Jason Koh, Yuvraj Agarwal, Rajesh K. Gupta, and David E. Culler. In Proceedings of the 6th ACM International Conference on Systems for Energy-Efficient Buildings, Cities and Transportation (BuildSys 2019). November 10, 2019, New York, NY, USA.
 DOI: https://doi.org/10.1145/3360322.3360862
@@ -139,3 +143,4 @@ Memoori 2019
 [22]: /papers/HouseOfSticks-BuildSys-2019-Fierro.pdf
 [23]: /papers/BuildingMetadataDataset-DATA-2019-Fierro.pdf
 [24]: /papers/Brick_Memoori_Webinar_Presentation.pdf
+[25]: /papers/WhoWhatWhen-BuildSys-2019-Koh.pdf
