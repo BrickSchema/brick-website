@@ -58,6 +58,10 @@ DOI: https://doi.org/10.1145/3360322.3360862
 Bharathan Balaji, Arka Bhattacharya, Gabriel Fierro, Jingkun Gao, Joshua Gluck, Dezhi Hong, Aslak Johansen, Jason Koh, Joern Ploennigs, Yuvraj Agarwal, Mario Berges, David Culler, Rajesh Gupta, Mikkel Baun Kjærgaard, Mani Srivastava, and Kamin Whitehouse. Applied Energy 226 (2018) 1273-1292.
 DOI: https://doi.org/10.1016/j.apenergy.2018.02.091
 
+[A Large-scale Evaluation of Automated Metadata Inference Approaches on Sensors from Air Handling Units][26].
+Jingkun Gao, Mario Bergés. Advanced Engineering Informatics (2018) Volume 37, Pages 14-30
+DOI: https://doi.org/10.1016/j.aei.2018.04.010
+
 [Design and Analysis of a Query Processor for Brick][17].
 Gabe Fierro and David E. Culler. ACM Transactions on Sensor Networks 14, 3-4, Article 18 (November 2018), 25 pages.
 DOI: https://doi.org/10.1145/3199666
@@ -144,3 +148,4 @@ Memoori 2019
 [23]: /papers/BuildingMetadataDataset-DATA-2019-Fierro.pdf
 [24]: /papers/Brick_Memoori_Webinar_Presentation.pdf
 [25]: /papers/WhoWhatWhen-BuildSys-2019-Koh.pdf
+[26]: /papers/Advanced-Engineering-Informatics-2018-Gao.pdf
