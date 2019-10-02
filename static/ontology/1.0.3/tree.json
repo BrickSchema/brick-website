@@ -3,6 +3,27 @@
         "name": "/ontology/1.0.3/#Classes",
         "children": [
             {
+                "name": "/ontology/1.0.3/classes/FunctionBlock",
+                "children": []
+            },
+            {
+                "name": "/ontology/1.0.3/classes/Signal",
+                "children": [
+                    {
+                        "name": "/ontology/1.0.3/classes/ObservedSignal",
+                        "children": []
+                    },
+                    {
+                        "name": "/ontology/1.0.3/classes/UnobservedSignal",
+                        "children": []
+                    }
+                ]
+            },
+            {
+                "name": "/ontology/1.0.3/classes/Tag",
+                "children": []
+            },
+            {
                 "name": "/ontology/1.0.3/classes/TagSet",
                 "children": [
                     {
@@ -24695,27 +24716,6 @@
                         "children": []
                     }
                 ]
-            },
-            {
-                "name": "/ontology/1.0.3/classes/Signal",
-                "children": [
-                    {
-                        "name": "/ontology/1.0.3/classes/ObservedSignal",
-                        "children": []
-                    },
-                    {
-                        "name": "/ontology/1.0.3/classes/UnobservedSignal",
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "name": "/ontology/1.0.3/classes/FunctionBlock",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.0.3/classes/Tag",
-                "children": []
             }
         ]
     },
