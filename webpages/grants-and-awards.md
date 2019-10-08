@@ -28,4 +28,4 @@ summary: Who supports Brick? Grants and Awards.
 
 #### Intel Corporation
 
-#### Johnson Controls International
+#### Johnson Controls
