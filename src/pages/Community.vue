@@ -45,7 +45,7 @@
                 <a class="w-64 m-auto p-8" href="https://www.intel.com">
                     <g-image src="../../static/logos/supporters/intel.png"></g-image>
                 </a>
-                <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/">
+                <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/digital">
                     <g-image src="../../static/logos/supporters/jci.png"></g-image>
                 </a>
                 <a class="w-64 m-auto p-4" href="https://www.kaust.edu.sa/en">
