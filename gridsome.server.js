@@ -14,6 +14,9 @@ const brickNamespaces = require('./static/ontology/1.1.0/namespaces.json')
 const brickClassesOld = require('./static/ontology/1.0.3/classes.json')
 const brickRelationshipsOld = require('./static/ontology/1.0.3/relationships.json')
 const brickNamespacesOld = require('./static/ontology/1.0.3/namespaces.json')
+const brickClassesVeryOld = require('./static/ontology/1.0.2/classes.json')
+const brickRelationshipsVeryOld = require('./static/ontology/1.0.2/relationships.json')
+const brickNamespacesVeryOld = require('./static/ontology/1.0.2/namespaces.json')
 const { pathPrefix } = require('./gridsome.config')
 
 module.exports = function (api, options) {
@@ -160,6 +163,66 @@ module.exports = function (api, options) {
           })
       })
       brickNamespacesOld.forEach(node=>{
+          namespaces.addNode({
+              id: node.id,
+              type: node.type,
+              version: node.version,
+              value: node.value,
+              path: node.path,
+              labels: node.labels,
+              generatedLabel: node.generatedLabel,
+              generatedAlias: node.generatedAlias,
+              comments: node.comments,
+          })
+      })
+
+
+
+      brickClassesVeryOld.forEach(node=>{
+          classes.addNode({
+              id: node.id,
+              version: node.version,
+              type: node.type,
+              types: node.types,
+              namespace: store.createReference('Namespace', node.namespace),
+              name: node.name,
+              path: node.path,
+              labels: node.labels,
+              generatedLabel: node.generatedLabel,
+              generatedAlias: node.generatedAlias,
+              superclasses: store.createReference('Class', node.superclasses),
+              subclasses: store.createReference('Class', node.subclasses),
+              comments: node.comments,
+              definitions: node.definitions,
+              equivalentClasses: store.createReference('Class', node.equivalentClasses),
+              hierarchy: node.hierarchy,
+              inRangeOf: store.createReference('Relationship', node.inRangeOf),
+              inDomainOf: store.createReference('Relationship', node.inDomainOf)
+          })
+      })
+      brickRelationshipsVeryOld.forEach(node=>{
+          relationships.addNode({
+              id: node.id,
+              version: node.version,
+              type: node.type,
+              types: node.types,
+              namespace: store.createReference('Namespace', node.namespace),
+              name: node.name,
+              path: node.path,
+              labels: node.labels,
+              generatedLabel: node.generatedLabel,
+              generatedAlias: node.generatedAlias,
+              superProperties: store.createReference('Relationship', node.superProperties),
+              subProperties: store.createReference('Relationship', node.subProperties),
+              inverseProperties: store.createReference('Relationship', node.inverseProperties),
+              comments: node.comments,
+              definitions: node.definitions,
+              hierarchy: node.hierarchy,
+              range: store.createReference('Class', node.range),
+              domain: store.createReference('Class', node.domain)
+          })
+      })
+      brickNamespacesVeryOld.forEach(node=>{
           namespaces.addNode({
               id: node.id,
               type: node.type,

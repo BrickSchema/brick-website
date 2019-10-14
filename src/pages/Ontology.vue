@@ -43,6 +43,9 @@
                         <li>
                             <g-link to="/ontology/1.0.3">v1.0.3</g-link>
                         </li>
+                        <li>
+                            <g-link to="/ontology/1.0.2">v1.0.2</g-link>
+                        </li>
                     </div>
                 </ul>
 
