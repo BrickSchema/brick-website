@@ -8,12 +8,6 @@
 const fs = require('fs');
 const path = require('path');
 const pick = require('lodash.pick');
-const brickClasses = require('./static/ontology/1.1.0/classes.json')
-const brickRelationships = require('./static/ontology/1.1.0/relationships.json')
-const brickNamespaces = require('./static/ontology/1.1.0/namespaces.json')
-const brickClassesOld = require('./static/ontology/1.0.3/classes.json')
-const brickRelationshipsOld = require('./static/ontology/1.0.3/relationships.json')
-const brickNamespacesOld = require('./static/ontology/1.0.3/namespaces.json')
 const { pathPrefix } = require('./gridsome.config')
 
 module.exports = function (api, options) {
@@ -122,6 +116,8 @@ module.exports = function (api, options) {
 
       addNodes('1.1.0')
       addNodes('1.0.3')
+      addNodes('1.0.2')
+      addNodes('1.0.0')
 
   })
 
