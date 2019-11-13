@@ -40,8 +40,14 @@
                         <li class="mb-6">
                             <g-link to="/ontology/1.1.0">v1.1.0</g-link>&nbsp;(beta)
                         </li>
-                        <li>
+                        <li class="mb-6">
                             <g-link to="/ontology/1.0.3">v1.0.3</g-link>
+                        </li>
+                        <li class="mb-6">
+                            <g-link to="/ontology/1.0.2">v1.0.2</g-link>
+                        </li>
+                        <li>
+                            <g-link to="/ontology/1.0.0">v1.0.0</g-link>
                         </li>
                     </div>
                 </ul>
