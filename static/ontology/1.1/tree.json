@@ -3,66 +3,6 @@
         "name": "/ontology/1.1/#Classes",
         "children": [
             {
-                "name": "/ontology/1.1/classes/Acceleration_Time",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Active_Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Air_Quality",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Alternating_Current_Frequency",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Angle",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Apparent_Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Atmospheric_Pressure",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Blowdown_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Building_Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Bypass_Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/CO2",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/CO2_Level",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Capacity",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Chilled_Water",
-                "children": []
-            },
-            {
                 "name": "/ontology/1.1/classes/Class",
                 "children": [
                     {
@@ -663,11 +603,537 @@
                         "children": [
                             {
                                 "name": "/ontology/1.1/classes/Quantity",
-                                "children": []
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Air_Quality",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/CO2_Level",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/PM10_Level",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/PM25_Level",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/TVOC_Level",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Angle",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Capacity",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Cloudage",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Conductivity",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Current",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Electric_Current",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Alternating_Current_Frequency",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Current_Angle",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Current_Imbalance",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Current_Magnitude",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Current_Total_Harmonic_Distortion",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Daytime",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Dewpoint",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Direction",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Wind_Direction",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Energy",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Electric_Energy",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Thermal_Energy",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Enthalpy",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Flow",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Flow_Loss",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Frequency",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Alternating_Current_Frequency",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Grains",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Humidity",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Relative_Humidity",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Illuminance",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Irradiance",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Solar_Irradiance",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Level",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/CO2_Level",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/PM10_Level",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/PM25_Level",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/TVOC_Level",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Luminance",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Luminous_Flux",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Luminous_Intensity",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Occupancy",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Occupancy_Count",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Occupancy_Percentage",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Position",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Power",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Electric_Power",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Active_Power",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Apparent_Power",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Complex_Power",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Reactive_Power",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Real_Power",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Peak_Power",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Thermal_Power",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Power_Factor",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Precipitation",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Pressure",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Atmospheric_Pressure",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Static_Pressure",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Velocity_Pressure",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Radiance",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Solar_Radiance",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Speed",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Wind_Speed",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Temperature",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Dry_Bulb_Temperature",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Operative_Temperature",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Radiant_Temperature",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Wet_Bulb_Temperature",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Time",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Acceleration_Time",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Deceleration_Time",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Torque",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Voltage",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Electric_Voltage",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Voltage_Angle",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Voltage_Imbalance",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Voltage_Magnitude",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Weather_Condition",
+                                        "children": []
+                                    }
+                                ]
                             },
                             {
                                 "name": "/ontology/1.1/classes/Substance",
-                                "children": []
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Fluid",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Gas",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Air",
+                                                        "children": [
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Building_Air",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Bypass_Air",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Discharge_Air",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Exhaust_Air",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Mixed_Air",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Outside_Air",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Return_Air",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Supply_Air",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Zone_Air",
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/CO2",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Natural_Gas",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Steam",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Liquid",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Gasoline",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Liquid_CO2",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Oil",
+                                                        "children": [
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Fuel_Oil",
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Water",
+                                                        "children": [
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Blowdown_Water",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Chilled_Water",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "/ontology/1.1/classes/Discharge_Chilled_Water",
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "name": "/ontology/1.1/classes/Supply_Chilled_Water",
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Condenser_Water",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Deionized_Water",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Discharge_Water",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "/ontology/1.1/classes/Discharge_Chilled_Water",
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Domestic_Water",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Entering_Water",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Hot_Water",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "/ontology/1.1/classes/Supply_Hot_Water",
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Leaving_Water",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Makeup_Water",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Return_Water",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Supply_Water",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "/ontology/1.1/classes/Supply_Chilled_Water",
+                                                                        "children": []
+                                                                    },
+                                                                    {
+                                                                        "name": "/ontology/1.1/classes/Supply_Hot_Water",
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Solid",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Frost",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Hail",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Ice",
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ]
                     },
@@ -4340,431 +4806,7 @@
                 ]
             },
             {
-                "name": "/ontology/1.1/classes/Class",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Cloudage",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Complex_Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Condenser_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Conductivity",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Current",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Current_Angle",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Current_Imbalance",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Current_Magnitude",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Current_Total_Harmonic_Distortion",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Daytime",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Deceleration_Time",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Deionized_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Dewpoint",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Direction",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Discharge_Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Discharge_Water",
-                "children": [
-                    {
-                        "name": "/ontology/1.1/classes/Discharge_Chilled_Water",
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "name": "/ontology/1.1/classes/Domestic_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Dry_Bulb_Temperature",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Electric_Current",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Electric_Energy",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Electric_Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Electric_Voltage",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Energy",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Entering_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Enthalpy",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Exhaust_Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/FeatureOfInterest",
-                "children": [
-                    {
-                        "name": "/ontology/1.1/classes/Substance",
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "name": "/ontology/1.1/classes/Flow",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Flow_Loss",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Fluid",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Frequency",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Frost",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Fuel_Oil",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Gas",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Gasoline",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Grains",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Hail",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Hot_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Humidity",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Ice",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Illuminance",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Irradiance",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Leaving_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Level",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Liquid",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Liquid_CO2",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Luminance",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Luminous_Flux",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Luminous_Intensity",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Makeup_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Mixed_Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Natural_Gas",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/ObservableProperty",
-                "children": [
-                    {
-                        "name": "/ontology/1.1/classes/Quantity",
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "name": "/ontology/1.1/classes/Occupancy",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Occupancy_Count",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Occupancy_Percentage",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Oil",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Operative_Temperature",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Outside_Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/PM10_Level",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/PM25_Level",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Peak_Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Position",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Power_Factor",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Precipitation",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Pressure",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Radiance",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Radiant_Temperature",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Reactive_Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Real_Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Relative_Humidity",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Return_Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Return_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Solar_Irradiance",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Solar_Radiance",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Solid",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Speed",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Static_Pressure",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Steam",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Supply_Air",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Supply_Hot_Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Supply_Water",
-                "children": [
-                    {
-                        "name": "/ontology/1.1/classes/Supply_Chilled_Water",
-                        "children": []
-                    }
-                ]
-            },
-            {
-                "name": "/ontology/1.1/classes/TVOC_Level",
-                "children": []
-            },
-            {
                 "name": "/ontology/1.1/classes/Tag",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Temperature",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Thermal_Energy",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Thermal_Power",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Time",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Torque",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Velocity_Pressure",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Voltage",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Voltage_Angle",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Voltage_Imbalance",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Voltage_Magnitude",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Water",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Weather_Condition",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Wet_Bulb_Temperature",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Wind_Direction",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Wind_Speed",
-                "children": []
-            },
-            {
-                "name": "/ontology/1.1/classes/Zone_Air",
                 "children": []
             }
         ]
