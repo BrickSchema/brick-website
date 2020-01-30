@@ -39,6 +39,7 @@
 
                 <div class="container-inner mx-auto my-16">
                     <h1 class="text-4xl font-bold leading-tight">{{ $page.ontologyPage.title }}</h1>
+                    <h2 v-if="$page.ontologyPage.subversion != $page.ontologyPage.version" class="text-2xl leading-tight text-gray-500">(v{{ $page.ontologyPage.subversion }})</h2>
                     <div class="markdown-body my-16 " v-html="$page.ontologyPage.content" />
                 </div>
 
@@ -56,6 +57,7 @@
     title
     content
     version
+    subversion
     hierarchy
     }
 
@@ -67,13 +69,11 @@
 
 <script>
     import axios from 'axios'
-    // import RecursiveTree from '../components/RecursiveTree'
     import HierarchyTree from '../components/HierarchyTree'
     import OntologySearchInput from '../components/OntologySearchInput'
     export default {
         components: {
             OntologySearchInput,
-            // RecursiveTree,
             HierarchyTree
         },
         data(){
