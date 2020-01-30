@@ -16,7 +16,7 @@ if (process.env.NODE_ENV === 'production') postcssPlugins.push(purgecss())
 module.exports = {
   siteName: 'BrickSchema',
   siteDescription: 'A uniform metadata schema for buildings',
-  siteUrl: 'https://brick.andrew.cmu.edu',
+  siteUrl: 'https://brickschema.org',
   plugins: [
     {
       use: '@gridsome/source-filesystem',
@@ -100,13 +100,13 @@ module.exports = {
         contentTypeName: 'Post',
         feedOptions: {
           title: 'BrickSchema',
-          feed_url: 'https://https://brick.andrew.cmu.edu/rss.xml',
-          site_url: 'https://https://brick.andrew.cmu.edu/'
+          feed_url: 'https://brickschema.org/rss.xml',
+          site_url: 'https://brickschema.org/'
         },
         feedItemOptions: node => ({
           title: node.title,
           description: node.summary,
-          url: 'https://https://brick.andrew.cmu.edu' + node.path,
+          url: 'https://brickschema.org' + node.path,
           author: 'Shreyas Nagare',
           date: node.date
         }),
