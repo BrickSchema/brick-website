@@ -1147,6 +1147,10 @@
                                         "name": "/ontology/1.1/classes/Air_Alarm",
                                         "children": [
                                             {
+                                                "name": "/ontology/1.1/classes/Air_Flow_Loss_Alarm",
+                                                "children": []
+                                            },
+                                            {
                                                 "name": "/ontology/1.1/classes/Air_Temperature_Alarm",
                                                 "children": [
                                                     {
@@ -1618,12 +1622,7 @@
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Start_Stop_Command",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Domestic_Hot_Water_System_Start_Stop_Command",
-                                                        "children": []
-                                                    }
-                                                ]
+                                                "children": []
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Steam_On_Off_Command",
@@ -1657,10 +1656,6 @@
                                         "name": "/ontology/1.1/classes/Reset_Command",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Fan_Speed_Reset_Command",
-                                                "children": []
-                                            },
-                                            {
                                                 "name": "/ontology/1.1/classes/Fault_Reset_Command",
                                                 "children": []
                                             },
@@ -1670,7 +1665,12 @@
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Speed_Reset_Command",
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Fan_Speed_Reset_Command",
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -2721,7 +2721,12 @@
                                     },
                                     {
                                         "name": "/ontology/1.1/classes/Demand_Sensor",
-                                        "children": []
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Peak_Power_Demand_Sensor",
+                                                "children": []
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "/ontology/1.1/classes/Dewpoint_Sensor",
@@ -2994,7 +2999,20 @@
                                         "children": [
                                             {
                                                 "name": "/ontology/1.1/classes/Electrical_Power_Sensor",
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Active_Power_Sensor",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Peak_Power_Demand_Sensor",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Reactive_Power_Sensor",
+                                                        "children": []
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Thermal_Power_Sensor",
@@ -3894,10 +3912,6 @@
                                                 ]
                                             },
                                             {
-                                                "name": "/ontology/1.1/classes/Outside_Air_Temperature_High_Reset_Setpoint",
-                                                "children": []
-                                            },
-                                            {
                                                 "name": "/ontology/1.1/classes/Temperature_Differential_Reset_Setpoint",
                                                 "children": [
                                                     {
@@ -3915,16 +3929,7 @@
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Supply_Air_Temperature_Reset_Differential_Setpoint",
-                                                        "children": [
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Supply_Air_Temperature_Reset_High_Setpoint",
-                                                                "children": []
-                                                            },
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Supply_Air_Temperature_Reset_Low_Setpoint",
-                                                                "children": []
-                                                            }
-                                                        ]
+                                                        "children": []
                                                     }
                                                 ]
                                             },
@@ -3943,6 +3948,14 @@
                                                                 "children": []
                                                             }
                                                         ]
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Outside_Air_Temperature_High_Reset_Setpoint",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Supply_Air_Temperature_Reset_High_Setpoint",
+                                                        "children": []
                                                     }
                                                 ]
                                             },
@@ -3953,15 +3966,7 @@
                                                         "name": "/ontology/1.1/classes/Hot_Water_Supply_Temperature_Low_Reset_Setpoint",
                                                         "children": [
                                                             {
-                                                                "name": "/ontology/1.1/classes/Medium_Temperature_Hot_Water_Discharge_Temperature_High_Reset_Setpoint",
-                                                                "children": []
-                                                            },
-                                                            {
                                                                 "name": "/ontology/1.1/classes/Medium_Temperature_Hot_Water_Discharge_Temperature_Low_Reset_Setpoint",
-                                                                "children": []
-                                                            },
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Medium_Temperature_Hot_Water_Supply_Temperature_High_Reset_Setpoint",
                                                                 "children": []
                                                             },
                                                             {
@@ -3972,6 +3977,10 @@
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Outside_Air_Temperature_Low_Reset_Setpoint",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Supply_Air_Temperature_Reset_Low_Setpoint",
                                                         "children": []
                                                     }
                                                 ]
@@ -4049,11 +4058,11 @@
                                                                 ]
                                                             },
                                                             {
-                                                                "name": "/ontology/1.1/classes/Maximum_Discharge_Air_Temperature_Setpoint",
+                                                                "name": "/ontology/1.1/classes/Max_Discharge_Air_Temperature_Setpoint",
                                                                 "children": []
                                                             },
                                                             {
-                                                                "name": "/ontology/1.1/classes/Minimum_Discharge_Air_Temperature_Setpoint",
+                                                                "name": "/ontology/1.1/classes/Min_Discharge_Air_Temperature_Setpoint",
                                                                 "children": []
                                                             }
                                                         ]
