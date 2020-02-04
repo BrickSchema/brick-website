@@ -59,7 +59,7 @@
   {
   metaData{
   pathPrefix
-  cacheCommitId
+  cacheVersion
   }
   }
 </static-query>
@@ -73,7 +73,7 @@ export default {
     SearchFocus,
   },
   created() {
-    axios(this.$static.metaData.pathPrefix + `/search.json?version=${this.$static.metaData.cacheCommitId}`).then(response => {
+    axios(this.$static.metaData.pathPrefix + `/search.json?version=${this.$static.metaData.cacheVersion}`).then(response => {
       this.posts = response.data
     })
     .catch(error => {
