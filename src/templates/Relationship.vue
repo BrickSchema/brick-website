@@ -229,6 +229,7 @@
     }
     metaData{
     pathPrefix
+    cacheVersion
     }
     }
 </page-query>
@@ -256,7 +257,7 @@
             }
         },
         created() {
-            axios(`${this.$page.metaData.pathPrefix}/ontology/${this.$page.class.version}/tree.json`).then(response => {
+            axios(`${this.$page.metaData.pathPrefix}/ontology/${this.$page.class.version}/tree.json?version=${this.$page.metaData.cacheVersion}`).then(response => {
                 this.tree = response.data;
             })
                 .catch(error => {

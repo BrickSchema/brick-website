@@ -58,6 +58,7 @@
 
     metaData{
     pathPrefix
+    cacheVersion
     }
 
     }
@@ -85,7 +86,7 @@
             }
         },
         created() {
-            axios(`${this.$page.metaData.pathPrefix}/ontology/${this.version}/tree.json`).then(response => {
+            axios(`${this.$page.metaData.pathPrefix}/ontology/${this.version}/tree.json?version=${this.$page.metaData.cacheVersion}`).then(response => {
                 this.tree = response.data;
             })
                 .catch(error => {
