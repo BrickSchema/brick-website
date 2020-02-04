@@ -15,6 +15,7 @@ const brickClassesOld = require('./static/ontology/1.0.3/classes.json')
 const brickRelationshipsOld = require('./static/ontology/1.0.3/relationships.json')
 const brickNamespacesOld = require('./static/ontology/1.0.3/namespaces.json')
 const { pathPrefix } = require('./gridsome.config')
+const cacheCommitId = "22e448e4"
 
 module.exports = function (api, options) {
   api.loadSource(store => {
@@ -47,6 +48,7 @@ module.exports = function (api, options) {
       Using page-queries,   axios( this.$page.metaData.pathPrefix   + "/fileName" )
       */
       store.addMetaData('pathPrefix', cleanedPathPrefix)
+      store.addMetaData('cacheCommitId', cacheCommitId)
       const classes = store.addContentType({
           typeName:'Class',
       })

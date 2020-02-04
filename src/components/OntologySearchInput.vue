@@ -59,6 +59,7 @@
   {
   metaData{
   pathPrefix
+  cacheCommitId
   }
   }
 </static-query>
@@ -75,7 +76,7 @@
       version: ''
     },
     created() {
-      const indexFileUrl = this.version ? `/ontology/${this.version}/search.json` :"/search.json";
+      const indexFileUrl = this.version ? `/ontology/${this.version}/search.json?version=${this.$page.metaData.cacheCommitId}` :"/search.json?version=${this.$page.metaData.cacheCommitId}";
       axios(this.$static.metaData.pathPrefix + indexFileUrl).then(response => {
         this.tagsets = response.data
       })
