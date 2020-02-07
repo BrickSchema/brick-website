@@ -11,6 +11,9 @@ show_on_navbar: true
 The Brick ontology is distributed as a set of [Turtle][15] files.
 Turtle is a compact textual format that is understood by most Semantic Web tools.
 
+**If you wish to join our community please [REGISTER][27] so that we can send you importannt
+updates.  Your information will be strictly used for us to understand the community's
+interest and help advance our research and development.**
 
 - **Latest Version (1.0.3)**:
    - [Brick.ttl][1]: Brick classes and tagsets
@@ -149,3 +152,4 @@ Memoori 2019
 [24]: /papers/Brick_Memoori_Webinar_Presentation.pdf
 [25]: /papers/WhoWhatWhen-BuildSys-2019-Koh.pdf
 [26]: /papers/Advanced-Engineering-Informatics-2018-Gao.pdf
+[27]: /docs/email.html
