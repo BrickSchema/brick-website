@@ -152,4 +152,3 @@ Memoori 2019
 [24]: /papers/Brick_Memoori_Webinar_Presentation.pdf
 [25]: /papers/WhoWhatWhen-BuildSys-2019-Koh.pdf
 [26]: /papers/Advanced-Engineering-Informatics-2018-Gao.pdf
-[27]: /docs/email.html
