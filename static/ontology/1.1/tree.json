@@ -29,67 +29,8 @@
                                         "children": []
                                     },
                                     {
-                                        "name": "/ontology/1.1/classes/Meter",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Building_Meter",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Power_Meter",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Thermal_Power_Meter",
-                                                        "children": [
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Cooling_Thermal_Power_Meter",
-                                                                "children": []
-                                                            },
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Heating_Thermal_Power_Meter",
-                                                                "children": []
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Water_Meter",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Chilled_Water_Meter",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "name": "/ontology/1.1/classes/PlugStrip",
                                         "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Power_System",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Power_Meter",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Thermal_Power_Meter",
-                                                        "children": [
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Cooling_Thermal_Power_Meter",
-                                                                "children": []
-                                                            },
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Heating_Thermal_Power_Meter",
-                                                                "children": []
-                                                            }
-                                                        ]
-                                                    }
-                                                ]
-                                            }
-                                        ]
                                     }
                                 ]
                             },
@@ -140,7 +81,12 @@
                                     },
                                     {
                                         "name": "/ontology/1.1/classes/CRAC",
-                                        "children": []
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Standby_CRAC",
+                                                "children": []
+                                            }
+                                        ]
                                     },
                                     {
                                         "name": "/ontology/1.1/classes/Chiller",
@@ -444,8 +390,88 @@
                                 ]
                             },
                             {
+                                "name": "/ontology/1.1/classes/Meter",
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Building_Meter",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Building_Chilled_Water_Meter",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Building_Electrical_Meter",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Building_Gas_Meter",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Building_Hot_Water_Meter",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Building_Water_Meter",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Electrical_Meter",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Building_Electrical_Meter",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Gas_Meter",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Building_Gas_Meter",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Water_Meter",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Building_Water_Meter",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Chilled_Water_Meter",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Building_Chilled_Water_Meter",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Hot_Water_Meter",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Building_Hot_Water_Meter",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
                                 "name": "/ontology/1.1/classes/Shading_System",
-                                "children": []
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Louver",
+                                        "children": []
+                                    }
+                                ]
                             },
                             {
                                 "name": "/ontology/1.1/classes/Solar_Panel",
@@ -467,11 +493,25 @@
                                         "children": [
                                             {
                                                 "name": "/ontology/1.1/classes/Chilled_Water_Meter",
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Building_Chilled_Water_Meter",
+                                                        "children": []
+                                                    }
+                                                ]
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Chilled_Water_Valve",
                                                 "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Hot_Water_Meter",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Building_Hot_Water_Meter",
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -501,8 +541,26 @@
                                         "name": "/ontology/1.1/classes/Water_Meter",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Chilled_Water_Meter",
+                                                "name": "/ontology/1.1/classes/Building_Water_Meter",
                                                 "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Chilled_Water_Meter",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Building_Chilled_Water_Meter",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Hot_Water_Meter",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Building_Hot_Water_Meter",
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     }
@@ -2723,6 +2781,24 @@
                                         "name": "/ontology/1.1/classes/Demand_Sensor",
                                         "children": [
                                             {
+                                                "name": "/ontology/1.1/classes/Cooling_Demand_Sensor",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Average_Cooling_Demand_Sensor",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Heating_Demand_Sensor",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Average_Heating_Demand_Sensor",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
                                                 "name": "/ontology/1.1/classes/Peak_Power_Demand_Sensor",
                                                 "children": []
                                             }
@@ -2770,6 +2846,23 @@
                                     {
                                         "name": "/ontology/1.1/classes/Energy_Sensor",
                                         "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Energy_Usage_Sensor",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Daily_Energy_Usage_Sensor",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Monthly_Energy_Usage_Sensor",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Yearly_Energy_Usage_Sensor",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
                                             {
                                                 "name": "/ontology/1.1/classes/Today_Peak_Energy_Sensor",
                                                 "children": []
@@ -3293,6 +3386,10 @@
                                                                 "children": []
                                                             },
                                                             {
+                                                                "name": "/ontology/1.1/classes/Differential_Supply_Return_Water_Temperature_Sensor",
+                                                                "children": []
+                                                            },
+                                                            {
                                                                 "name": "/ontology/1.1/classes/Hot_Water_Return_Temperature_Sensor",
                                                                 "children": [
                                                                     {
@@ -3323,6 +3420,23 @@
                                     {
                                         "name": "/ontology/1.1/classes/Usage_Sensor",
                                         "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Energy_Usage_Sensor",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Daily_Energy_Usage_Sensor",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Monthly_Energy_Usage_Sensor",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Yearly_Energy_Usage_Sensor",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
                                             {
                                                 "name": "/ontology/1.1/classes/Steam_Usage_Sensor",
                                                 "children": [
