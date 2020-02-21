@@ -2317,12 +2317,7 @@
                                                             },
                                                             {
                                                                 "name": "/ontology/1.1/classes/Supply_Water_Differential_Pressure_Proportional_Band_Parameter",
-                                                                "children": [
-                                                                    {
-                                                                        "name": "/ontology/1.1/classes/Discharge_Water_Differential_Pressure_Proportional_Band_Parameter",
-                                                                        "children": []
-                                                                    }
-                                                                ]
+                                                                "children": []
                                                             }
                                                         ]
                                                     },
