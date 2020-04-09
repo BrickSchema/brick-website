@@ -154,7 +154,12 @@
     opacity: 0;
   }
   .search-results{
-    height: -webkit-fill-available | max-content;
+    height: 100%;
+    height: max-content;
+    height: stretch;
+    height: fill-available;
+    height: -moz-available;
+    height: -webkit-fill-available;
   }
 </style>
 
