@@ -154,7 +154,7 @@
     opacity: 0;
   }
   .search-results{
-    height: -webkit-fill-available;
+    height: -webkit-fill-available | max-content;
   }
 </style>
 
