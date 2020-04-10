@@ -4165,14 +4165,6 @@
                                                                         "children": []
                                                                     }
                                                                 ]
-                                                            },
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Max_Discharge_Air_Temperature_Setpoint",
-                                                                "children": []
-                                                            },
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Min_Discharge_Air_Temperature_Setpoint",
-                                                                "children": []
                                                             }
                                                         ]
                                                     },
@@ -4462,11 +4454,12 @@
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Emergency_Power_Off_Enable_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Enable_Status",
-                                                "children": []
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Enable_Status",
+                                                        "children": []
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -4643,11 +4636,12 @@
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Emergency_Power_Off_Enable_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Enable_Status",
-                                                        "children": []
+                                                        "children": [
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Enable_Status",
+                                                                "children": []
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
