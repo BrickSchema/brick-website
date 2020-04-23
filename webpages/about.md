@@ -37,14 +37,14 @@ Brick includes a tagging system similar to Haystack that augments tags with form
 
 Modeling Support         | **Brick** | **Project Haystack** | **IFC** | **BOT** | **SAREF**
 -------------------------|-----------|----------------------|---------|---------|----------
-HVAC Systems             |  **yes**      |       **yes**    |   no    |   no    |   no
-Lighting Systems         |  **yes**      |       partial    |   no    |   no    |   no
-Electrical Systems       |  **yes**      |       **yes**    |   no    |   no    |   no
+HVAC Systems             |  **yes**      |       **yes**    |**yes**  |   no    |   no
+Lighting Systems         |  **yes**      |       partial    |**yes**  |   no    |   no
+Electrical Systems       |  **yes**      |       **yes**    |**yes**  |   no    |   no
 Spatial Information      |  **yes**      |       no         |**yes**  |**yes**  |   no
-Sensor Systems           |  **yes**      |       **yes**    |  partial|   no    |   **yes**
-Control Relationships    |  **yes**      |       no         |   no    |   no    |   no
-Sequential Relationships |  **yes**      |       no         |   no    |   no    |   no
-Formal Definitions       |  **yes**      |       no         |   no    |**yes**  |   **yes**
+Sensor Systems           |  **yes**      |       **yes**    |generic  |   no    |   **yes**
+Control Relationships    |  **yes**      |       no         |generic  |   no    |   no
+Operational Relationships|  **yes**      |       no         |generic  |   no    |   no
+Formal Definitions       |  **yes**      |       no         |**yes**  |**yes**  |   **yes**
 <br></br>
 
 ---
