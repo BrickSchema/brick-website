@@ -9,6 +9,8 @@ There are many ways to get started using Brick: ranging from exploring and analy
 
 The [Concepts page](/concepts) presents an overview of core concepts of Brick.
 
+The [Relationships memo](/relationships) provides some guidance and documentation on how to use Brick relationships.
+
 ### Exploring existing Brick models
 
 - **Observe** Brick models for 6 real buildings using the [BrickViewer tool](http://viewer.brickschema.org/)
