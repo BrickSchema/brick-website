@@ -58,6 +58,8 @@ Classes also have a set of associated tags, which provide helpful annotations fo
 **Relationship**: a relationship defines the nature of a link between two related entities.
 Examples of relationships are *encapsulation* (one entity is contained within another), *sequence* (one entity takes effect before another in some process) and *instantiation* (one entity's type is given by another entity).
 
+For a more detailed look at relationships in Brick and how/when to use them, see our [relationships memo](/relationships).
+
 ---
 
 **Graph**: an abstract organizational data structure representing a set of entities (nodes) and relationships (edges). Brick is represented by a directed, labeled graph.
