@@ -4,6 +4,16 @@
 
             <h1 class="text-4xl font-bold leading-tight">Community</h1>
 
+            <div class="my-16 text-3xl font-bold border-b pb-4 border-gray-500">Brick is being used at:</div>
+            <div class="flex flex-wrap">
+                <a class="w-64 m-auto p-10" href="https://bractlet.com/">
+                    <g-image src="../../static/logos/success-stories/bractlet.png"></g-image>
+                </a>
+                <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/digital">
+                    <g-image src="../../static/logos/supporters/jci.png"></g-image>
+                </a>
+            </div>
+
             <div class="my-16 text-3xl font-bold border-b pb-4 border-gray-500">Brick was initiated by:</div>
             <div class="flex flex-wrap">
                 <a class="w-64 m-auto p-10" href="https://cmu.edu">
