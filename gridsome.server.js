@@ -60,6 +60,7 @@ module.exports = function (api, options) {
       })
 
       brickClasses.forEach(node=>{
+          if (node.path.charAt(0) == '/')
               classes.addNode({
                   id: node.id,
                   version: node.version,
@@ -82,6 +83,7 @@ module.exports = function (api, options) {
               })
       })
       brickRelationships.forEach(node=>{
+          if (node.path.charAt(0) == '/')
           relationships.addNode({
               id: node.id,
               version: node.version,
@@ -104,6 +106,7 @@ module.exports = function (api, options) {
           })
       })
       brickNamespaces.forEach(node=>{
+          if (node.path.charAt(0) == '/')
           namespaces.addNode({
               id: node.id,
               type: node.type,
@@ -118,6 +121,7 @@ module.exports = function (api, options) {
       })
 
       brickClassesOld.forEach(node=>{
+          if (node.path.charAt(0) == '/')
           classes.addNode({
               id: node.id,
               version: node.version,
@@ -140,6 +144,7 @@ module.exports = function (api, options) {
           })
       })
       brickRelationshipsOld.forEach(node=>{
+          if (node.path.charAt(0) == '/')
           relationships.addNode({
               id: node.id,
               version: node.version,
@@ -162,6 +167,7 @@ module.exports = function (api, options) {
           })
       })
       brickNamespacesOld.forEach(node=>{
+          if (node.path.charAt(0) == '/')
           namespaces.addNode({
               id: node.id,
               type: node.type,
