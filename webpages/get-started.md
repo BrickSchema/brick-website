@@ -55,7 +55,7 @@ Several tutorials have been developed for Brick and its related tools.
 [2]: https://docs.google.com/presentation/d/1wgT5S8fgo13cqDPx7DbygWuqAhIp4uxAenP4oDsMaVI/edit?usp=sharing
 [3]: https://github.com/BuildSysUniformMetadata/brick-tutorial-buildsys2017
 [4]: https://groups.google.com/d/forum/brickschema
-[5]: https://github.com/BrickSchema/brick-owl-dl/issues
+[5]: https://github.com/BrickSchema/Brick/issues
 [6]: https://github.com/BrickSchema/brick-website/issues
 [7]: https://brickschema.org/
 [8]: https://tutorial.mortardata.org/

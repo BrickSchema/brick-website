@@ -9,6 +9,15 @@
                         "name": "/ontology/1.1/classes/Equipment",
                         "children": [
                             {
+                                "name": "/ontology/1.1/classes/Camera",
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Surveillance_Camera",
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
                                 "name": "/ontology/1.1/classes/Electrical_System",
                                 "children": [
                                     {
@@ -212,6 +221,10 @@
                                             {
                                                 "name": "/ontology/1.1/classes/Evaporative_Heat_Exchanger",
                                                 "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Heat_Wheel",
+                                                "children": []
                                             }
                                         ]
                                     },
@@ -284,10 +297,6 @@
                                         "children": [
                                             {
                                                 "name": "/ontology/1.1/classes/Heat_Wheel_VFD",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Preheat_Valve_VFD",
                                                 "children": []
                                             }
                                         ]
@@ -465,6 +474,88 @@
                                 ]
                             },
                             {
+                                "name": "/ontology/1.1/classes/Safety_Equipment",
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/AED",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Automated_External_Defibrillator",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Emergency_Wash_Station",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Drench_Hose",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Eye_Wash_Station",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Safety_Shower",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/First_Aid_Kit",
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Security_Equipment",
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Access_Control_Equipment",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Access_Reader",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Intercom_Equipment",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Emergency_Phone",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Video_Intercom",
+                                                "children": []
+                                            }
+                                        ]
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Intrusion_Detection_Equipment",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Video_Surveillance_Equipment",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/NVR",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Network_Video_Recorder",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Surveillance_Camera",
+                                                "children": []
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
                                 "name": "/ontology/1.1/classes/Shading_System",
                                 "children": [
                                     {
@@ -576,61 +667,67 @@
                         "name": "/ontology/1.1/classes/Location",
                         "children": [
                             {
-                                "name": "/ontology/1.1/classes/Basement",
-                                "children": []
-                            },
-                            {
                                 "name": "/ontology/1.1/classes/Building",
                                 "children": []
                             },
                             {
-                                "name": "/ontology/1.1/classes/City",
-                                "children": []
-                            },
-                            {
                                 "name": "/ontology/1.1/classes/Floor",
-                                "children": []
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Basement",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Rooftop",
+                                        "children": []
+                                    }
+                                ]
                             },
                             {
                                 "name": "/ontology/1.1/classes/Outside",
                                 "children": []
                             },
                             {
-                                "name": "/ontology/1.1/classes/Roof",
+                                "name": "/ontology/1.1/classes/Site",
                                 "children": []
                             },
                             {
-                                "name": "/ontology/1.1/classes/Room",
+                                "name": "/ontology/1.1/classes/Space",
                                 "children": [
                                     {
-                                        "name": "/ontology/1.1/classes/Laboratory",
+                                        "name": "/ontology/1.1/classes/Room",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Cold_Box",
-                                                "children": []
+                                                "name": "/ontology/1.1/classes/Laboratory",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Cold_Box",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Environment_Box",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Freezer",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Hot_Box",
+                                                        "children": []
+                                                    }
+                                                ]
                                             },
                                             {
-                                                "name": "/ontology/1.1/classes/Environment_Box",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Freezer",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Hot_Box",
+                                                "name": "/ontology/1.1/classes/Server_Room",
                                                 "children": []
                                             }
                                         ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Server_Room",
-                                        "children": []
                                     }
                                 ]
                             },
                             {
-                                "name": "/ontology/1.1/classes/Space",
+                                "name": "/ontology/1.1/classes/Storey",
                                 "children": []
                             },
                             {
@@ -661,349 +758,7 @@
                         "children": [
                             {
                                 "name": "/ontology/1.1/classes/Quantity",
-                                "children": [
-                                    {
-                                        "name": "/ontology/1.1/classes/Air_Quality",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/CO2_Level",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/PM10_Level",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/PM25_Level",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/TVOC_Level",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Angle",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Capacity",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Cloudage",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Conductivity",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Current",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Electric_Current",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Alternating_Current_Frequency",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Current_Angle",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Current_Imbalance",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Current_Magnitude",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Current_Total_Harmonic_Distortion",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Daytime",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Dewpoint",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Direction",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Wind_Direction",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Energy",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Electric_Energy",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Thermal_Energy",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Enthalpy",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Flow",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Flow_Loss",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Frequency",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Alternating_Current_Frequency",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Grains",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Humidity",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Relative_Humidity",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Illuminance",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Irradiance",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Solar_Irradiance",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Level",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/CO2_Level",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/PM10_Level",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/PM25_Level",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/TVOC_Level",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Luminance",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Luminous_Flux",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Luminous_Intensity",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Occupancy",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Occupancy_Count",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Occupancy_Percentage",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Position",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Power",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Electric_Power",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Active_Power",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Apparent_Power",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Complex_Power",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Reactive_Power",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Real_Power",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Peak_Power",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Thermal_Power",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Power_Factor",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Precipitation",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Pressure",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Atmospheric_Pressure",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Static_Pressure",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Velocity_Pressure",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Radiance",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Solar_Radiance",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Speed",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Wind_Speed",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Temperature",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Dry_Bulb_Temperature",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Operative_Temperature",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Radiant_Temperature",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Wet_Bulb_Temperature",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Time",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Acceleration_Time",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Deceleration_Time",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Torque",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Voltage",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Electric_Voltage",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Voltage_Angle",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Voltage_Imbalance",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Voltage_Magnitude",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Weather_Condition",
-                                        "children": []
-                                    }
-                                ]
+                                "children": []
                             },
                             {
                                 "name": "/ontology/1.1/classes/Substance",
@@ -1240,7 +995,7 @@
                                                 ]
                                             },
                                             {
-                                                "name": "/ontology/1.1/classes/Discharge_Air_Smoke_Detected_Alarm",
+                                                "name": "/ontology/1.1/classes/Discharge_Air_Smoke_Detection_Alarm",
                                                 "children": []
                                             }
                                         ]
@@ -1277,10 +1032,6 @@
                                             {
                                                 "name": "/ontology/1.1/classes/Emergency_Generator_Alarm",
                                                 "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Emergency_Power_Loss_Alarm",
-                                                "children": []
                                             }
                                         ]
                                     },
@@ -1316,7 +1067,7 @@
                                         ]
                                     },
                                     {
-                                        "name": "/ontology/1.1/classes/Liquid_Detected_Alarm",
+                                        "name": "/ontology/1.1/classes/Liquid_Detection_Alarm",
                                         "children": []
                                     },
                                     {
@@ -1336,12 +1087,7 @@
                                         "children": [
                                             {
                                                 "name": "/ontology/1.1/classes/Power_Loss_Alarm",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Emergency_Power_Loss_Alarm",
-                                                        "children": []
-                                                    }
-                                                ]
+                                                "children": []
                                             }
                                         ]
                                     },
@@ -1362,10 +1108,10 @@
                                         "name": "/ontology/1.1/classes/Smoke_Alarm",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Smoke_Detected_Alarm",
+                                                "name": "/ontology/1.1/classes/Smoke_Detection_Alarm",
                                                 "children": [
                                                     {
-                                                        "name": "/ontology/1.1/classes/Discharge_Air_Smoke_Detected_Alarm",
+                                                        "name": "/ontology/1.1/classes/Discharge_Air_Smoke_Detection_Alarm",
                                                         "children": []
                                                     }
                                                 ]
@@ -1484,12 +1230,7 @@
                                     },
                                     {
                                         "name": "/ontology/1.1/classes/Cooling_Command",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Highest_Zone_Cooling_Command",
-                                                "children": []
-                                            }
-                                        ]
+                                        "children": []
                                     },
                                     {
                                         "name": "/ontology/1.1/classes/Damper_Command",
@@ -1625,10 +1366,6 @@
                                         ]
                                     },
                                     {
-                                        "name": "/ontology/1.1/classes/Lockout_Command",
-                                        "children": []
-                                    },
-                                    {
                                         "name": "/ontology/1.1/classes/Luminance_Command",
                                         "children": []
                                     },
@@ -1662,21 +1399,11 @@
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Off_Command",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Exhaust_Fan_Fire_Control_Panel_Off_Command",
-                                                        "children": []
-                                                    }
-                                                ]
+                                                "children": []
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/On_Command",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Exhaust_Fan_Fire_Control_Panel_On_Command",
-                                                        "children": []
-                                                    }
-                                                ]
+                                                "children": []
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Start_Stop_Command",
@@ -1723,30 +1450,7 @@
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Speed_Reset_Command",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Fan_Speed_Reset_Command",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Run_Request_Command",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Shutdown_Command",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Hot_Water_Shutdown_Command",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Unoccupied_Hot_Water_Shutdown_Command",
-                                                        "children": []
-                                                    }
-                                                ]
+                                                "children": []
                                             }
                                         ]
                                     },
@@ -2581,6 +2285,24 @@
                                                 "children": []
                                             },
                                             {
+                                                "name": "/ontology/1.1/classes/Lockout_Temperature_Differential_Parameter",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Outside_Air_Lockout_Temperature_Differential_Parameter",
+                                                        "children": [
+                                                            {
+                                                                "name": "/ontology/1.1/classes/High_Outside_Air_Lockout_Temperature_Differential_Parameter",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Low_Outside_Air_Lockout_Temperature_Differential_Parameter",
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
+                                            },
+                                            {
                                                 "name": "/ontology/1.1/classes/Low_Freeze_Protect_Temperature_Parameter",
                                                 "children": []
                                             },
@@ -2672,10 +2394,6 @@
                                     {
                                         "name": "/ontology/1.1/classes/Adjust_Sensor",
                                         "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Temperature_Adjust_Sensor",
-                                                "children": []
-                                            },
                                             {
                                                 "name": "/ontology/1.1/classes/Warm_Cool_Adjust_Sensor",
                                                 "children": []
@@ -3000,7 +2718,7 @@
                                         "name": "/ontology/1.1/classes/Humidity_Sensor",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Air_Humidity_Sensor",
+                                                "name": "/ontology/1.1/classes/Relative_Humidity_Sensor",
                                                 "children": [
                                                     {
                                                         "name": "/ontology/1.1/classes/Discharge_Air_Humidity_Sensor",
@@ -3012,10 +2730,6 @@
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Outside_Air_Humidity_Sensor",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Relative_Humidity_Sensor",
                                                         "children": []
                                                     },
                                                     {
@@ -3248,19 +2962,6 @@
                                                         "name": "/ontology/1.1/classes/Outside_Air_Temperature_Sensor",
                                                         "children": [
                                                             {
-                                                                "name": "/ontology/1.1/classes/Outside_Air_Lockout_Temperature_Differential_Sensor",
-                                                                "children": [
-                                                                    {
-                                                                        "name": "/ontology/1.1/classes/High_Outside_Air_Lockout_Temperature_Differential_Sensor",
-                                                                        "children": []
-                                                                    },
-                                                                    {
-                                                                        "name": "/ontology/1.1/classes/Low_Outside_Air_Lockout_Temperature_Differential_Sensor",
-                                                                        "children": []
-                                                                    }
-                                                                ]
-                                                            },
-                                                            {
                                                                 "name": "/ontology/1.1/classes/Outside_Air_Temperature_Enable_Differential_Sensor",
                                                                 "children": [
                                                                     {
@@ -3300,20 +3001,16 @@
                                                                 "children": []
                                                             },
                                                             {
-                                                                "name": "/ontology/1.1/classes/Highest_Zone_Air_Temperature_Sensor",
-                                                                "children": []
-                                                            },
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Lowest_Zone_Air_Temperature_Sensor",
-                                                                "children": []
-                                                            },
-                                                            {
                                                                 "name": "/ontology/1.1/classes/Warmest_Zone_Air_Temperature_Sensor",
                                                                 "children": []
                                                             }
                                                         ]
                                                     }
                                                 ]
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Frost_Sensor",
+                                                "children": []
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Water_Temperature_Sensor",
@@ -3496,12 +3193,7 @@
                                         "children": [
                                             {
                                                 "name": "/ontology/1.1/classes/Return_Air_CO2_Setpoint",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Max_Return_Air_CO2_Setpoint",
-                                                        "children": []
-                                                    }
-                                                ]
+                                                "children": []
                                             }
                                         ]
                                     },
@@ -3535,12 +3227,7 @@
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Discharge_Water_Differential_Pressure_Deadband_Setpoint",
-                                                        "children": [
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Thermal_Energy_Storage_Discharge_Water_Differential_Pressure_Deadband_Setpoint",
-                                                                "children": []
-                                                            }
-                                                        ]
+                                                        "children": []
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Hot_Water_Differential_Pressure_Deadband_Setpoint",
@@ -3548,12 +3235,7 @@
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Supply_Water_Differential_Pressure_Deadband_Setpoint",
-                                                        "children": [
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Thermal_Energy_Storage_Supply_Water_Differential_Pressure_Deadband_Setpoint",
-                                                                "children": []
-                                                            }
-                                                        ]
+                                                        "children": []
                                                     }
                                                 ]
                                             },
@@ -3740,10 +3422,6 @@
                                                         ]
                                                     },
                                                     {
-                                                        "name": "/ontology/1.1/classes/Fan_Air_Flow_Setpoint",
-                                                        "children": []
-                                                    },
-                                                    {
                                                         "name": "/ontology/1.1/classes/Outside_Air_Flow_Setpoint",
                                                         "children": []
                                                     },
@@ -3827,23 +3505,6 @@
                                         "children": []
                                     },
                                     {
-                                        "name": "/ontology/1.1/classes/Mode_Setpoint",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Dual_Band_Mode_Setpoint",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Occupied_Mode_Setpoint",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Unoccupied_Mode_Setpoint",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "name": "/ontology/1.1/classes/Pressure_Setpoint",
                                         "children": [
                                             {
@@ -3881,12 +3542,7 @@
                                                             },
                                                             {
                                                                 "name": "/ontology/1.1/classes/Discharge_Water_Differential_Pressure_Deadband_Setpoint",
-                                                                "children": [
-                                                                    {
-                                                                        "name": "/ontology/1.1/classes/Thermal_Energy_Storage_Discharge_Water_Differential_Pressure_Deadband_Setpoint",
-                                                                        "children": []
-                                                                    }
-                                                                ]
+                                                                "children": []
                                                             },
                                                             {
                                                                 "name": "/ontology/1.1/classes/Hot_Water_Differential_Pressure_Deadband_Setpoint",
@@ -3894,12 +3550,7 @@
                                                             },
                                                             {
                                                                 "name": "/ontology/1.1/classes/Supply_Water_Differential_Pressure_Deadband_Setpoint",
-                                                                "children": [
-                                                                    {
-                                                                        "name": "/ontology/1.1/classes/Thermal_Energy_Storage_Supply_Water_Differential_Pressure_Deadband_Setpoint",
-                                                                        "children": []
-                                                                    }
-                                                                ]
+                                                                "children": []
                                                             }
                                                         ]
                                                     },
@@ -3982,40 +3633,17 @@
                                         ]
                                     },
                                     {
-                                        "name": "/ontology/1.1/classes/Request_Setpoint",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Cooling_Request_Setpoint",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Cooling_Request_Percent_Setpoint",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Heating_Request_Setpoint",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Heating_Request_Percent_Setpoint",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "name": "/ontology/1.1/classes/Reset_Setpoint",
                                         "children": [
                                             {
                                                 "name": "/ontology/1.1/classes/Discharge_Air_Flow_Reset_Setpoint",
                                                 "children": [
                                                     {
-                                                        "name": "/ontology/1.1/classes/Discharge_Air_Flow_Reset_High_Setpoint",
+                                                        "name": "/ontology/1.1/classes/Discharge_Air_Flow_High_Reset_Setpoint",
                                                         "children": []
                                                     },
                                                     {
-                                                        "name": "/ontology/1.1/classes/Discharge_Air_Flow_Reset_Low_Setpoint",
+                                                        "name": "/ontology/1.1/classes/Discharge_Air_Flow_Low_Reset_Setpoint",
                                                         "children": []
                                                     }
                                                 ]
@@ -4027,11 +3655,11 @@
                                                         "name": "/ontology/1.1/classes/Discharge_Air_Temperature_Reset_Differential_Setpoint",
                                                         "children": [
                                                             {
-                                                                "name": "/ontology/1.1/classes/Discharge_Air_Temperature_Reset_High_Setpoint",
+                                                                "name": "/ontology/1.1/classes/Discharge_Air_Temperature_High_Reset_Setpoint",
                                                                 "children": []
                                                             },
                                                             {
-                                                                "name": "/ontology/1.1/classes/Discharge_Air_Temperature_Reset_Low_Setpoint",
+                                                                "name": "/ontology/1.1/classes/Discharge_Air_Temperature_Low_Reset_Setpoint",
                                                                 "children": []
                                                             }
                                                         ]
@@ -4063,7 +3691,7 @@
                                                         "children": []
                                                     },
                                                     {
-                                                        "name": "/ontology/1.1/classes/Supply_Air_Temperature_Reset_High_Setpoint",
+                                                        "name": "/ontology/1.1/classes/Supply_Air_Temperature_High_Reset_Setpoint",
                                                         "children": []
                                                     }
                                                 ]
@@ -4089,7 +3717,7 @@
                                                         "children": []
                                                     },
                                                     {
-                                                        "name": "/ontology/1.1/classes/Supply_Air_Temperature_Reset_Low_Setpoint",
+                                                        "name": "/ontology/1.1/classes/Supply_Air_Temperature_Low_Reset_Setpoint",
                                                         "children": []
                                                     }
                                                 ]
@@ -4101,20 +3729,7 @@
                                         "children": [
                                             {
                                                 "name": "/ontology/1.1/classes/Differential_Speed_Setpoint",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Discharge_Fan_Differential_Speed_Setpoint",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Return_Fan_Differential_Speed_Setpoint",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Supply_Fan_Differential_Speed_Setpoint",
-                                                        "children": []
-                                                    }
-                                                ]
+                                                "children": []
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Rated_Speed_Setpoint",
@@ -4434,34 +4049,8 @@
                                         "children": []
                                     },
                                     {
-                                        "name": "/ontology/1.1/classes/Emergency_Air_Flow_Status",
-                                        "children": []
-                                    },
-                                    {
                                         "name": "/ontology/1.1/classes/Emergency_Generator_Status",
                                         "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_Status",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_Activated_By_High_Temperature_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_Activated_By_Leak_Detection_System_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_Enable_Status",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Enable_Status",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
                                     },
                                     {
                                         "name": "/ontology/1.1/classes/Emergency_Push_Button_Status",
@@ -4472,10 +4061,6 @@
                                         "children": [
                                             {
                                                 "name": "/ontology/1.1/classes/Heat_Exchanger_System_Enable_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Run_Enable_Status",
                                                 "children": []
                                             }
                                         ]
@@ -4488,7 +4073,7 @@
                                         "name": "/ontology/1.1/classes/Fan_Status",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Fan_Start_Stop_Status",
+                                                "name": "/ontology/1.1/classes/Fan_On_Off_Status",
                                                 "children": []
                                             }
                                         ]
@@ -4496,10 +4081,6 @@
                                     {
                                         "name": "/ontology/1.1/classes/Fault_Status",
                                         "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Fault_Indicator_Status",
-                                                "children": []
-                                            },
                                             {
                                                 "name": "/ontology/1.1/classes/Humidifier_Fault_Status",
                                                 "children": []
@@ -4521,10 +4102,6 @@
                                     },
                                     {
                                         "name": "/ontology/1.1/classes/Freeze_Status",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Hand_Auto_Status",
                                         "children": []
                                     },
                                     {
@@ -4604,10 +4181,6 @@
                                                         "children": []
                                                     }
                                                 ]
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/System_Mode_Status",
-                                                "children": []
                                             }
                                         ]
                                     },
@@ -4624,24 +4197,15 @@
                                         "name": "/ontology/1.1/classes/Off_Status",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_Status",
+                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Status",
                                                 "children": [
                                                     {
-                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_Activated_By_High_Temperature_Status",
+                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Activated_By_High_Temperature_Status",
                                                         "children": []
                                                     },
                                                     {
-                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_Activated_By_Leak_Detection_System_Status",
+                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Activated_By_Leak_Detection_System_Status",
                                                         "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_Enable_Status",
-                                                        "children": [
-                                                            {
-                                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Enable_Status",
-                                                                "children": []
-                                                            }
-                                                        ]
                                                     }
                                                 ]
                                             },
@@ -4649,27 +4213,19 @@
                                                 "name": "/ontology/1.1/classes/On_Off_Status",
                                                 "children": [
                                                     {
-                                                        "name": "/ontology/1.1/classes/Cooling_On_Off_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Dehumidification_On_Off_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/EconCycle_On_Off_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Heating_On_Off_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Humidification_On_Off_Status",
+                                                        "name": "/ontology/1.1/classes/Fan_On_Off_Status",
                                                         "children": []
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Locally_On_Off_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Motor_On_Off_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Pump_On_Off_Status",
                                                         "children": []
                                                     },
                                                     {
@@ -4684,15 +4240,45 @@
                                                                 "children": []
                                                             }
                                                         ]
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Start_Stop_Status",
+                                                        "children": [
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Cooling_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Dehumidification_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/EconCycle_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Heating_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Humidification_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Run_Status",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "/ontology/1.1/classes/Run_Request_Status",
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Overridden_Off_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Turn_Off_Status",
                                                 "children": []
                                             }
                                         ]
@@ -4701,27 +4287,19 @@
                                         "name": "/ontology/1.1/classes/On_Off_Status",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Cooling_On_Off_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Dehumidification_On_Off_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/EconCycle_On_Off_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Heating_On_Off_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Humidification_On_Off_Status",
+                                                "name": "/ontology/1.1/classes/Fan_On_Off_Status",
                                                 "children": []
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Locally_On_Off_Status",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Motor_On_Off_Status",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Pump_On_Off_Status",
                                                 "children": []
                                             },
                                             {
@@ -4736,6 +4314,40 @@
                                                         "children": []
                                                     }
                                                 ]
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Start_Stop_Status",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Cooling_Start_Stop_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Dehumidification_Start_Stop_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/EconCycle_Start_Stop_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Heating_Start_Stop_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Humidification_Start_Stop_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Run_Status",
+                                                        "children": [
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Run_Request_Status",
+                                                                "children": []
+                                                            }
+                                                        ]
+                                                    }
+                                                ]
                                             }
                                         ]
                                     },
@@ -4746,27 +4358,19 @@
                                                 "name": "/ontology/1.1/classes/On_Off_Status",
                                                 "children": [
                                                     {
-                                                        "name": "/ontology/1.1/classes/Cooling_On_Off_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Dehumidification_On_Off_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/EconCycle_On_Off_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Heating_On_Off_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Humidification_On_Off_Status",
+                                                        "name": "/ontology/1.1/classes/Fan_On_Off_Status",
                                                         "children": []
                                                     },
                                                     {
                                                         "name": "/ontology/1.1/classes/Locally_On_Off_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Motor_On_Off_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Pump_On_Off_Status",
                                                         "children": []
                                                     },
                                                     {
@@ -4781,15 +4385,45 @@
                                                                 "children": []
                                                             }
                                                         ]
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Start_Stop_Status",
+                                                        "children": [
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Cooling_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Dehumidification_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/EconCycle_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Heating_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Humidification_Start_Stop_Status",
+                                                                "children": []
+                                                            },
+                                                            {
+                                                                "name": "/ontology/1.1/classes/Run_Status",
+                                                                "children": [
+                                                                    {
+                                                                        "name": "/ontology/1.1/classes/Run_Request_Status",
+                                                                        "children": []
+                                                                    }
+                                                                ]
+                                                            }
+                                                        ]
                                                     }
                                                 ]
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Overridden_On_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Turn_On_Status",
                                                 "children": []
                                             }
                                         ]
@@ -4861,36 +4495,6 @@
                                         "children": []
                                     },
                                     {
-                                        "name": "/ontology/1.1/classes/Start_Stop_Status",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Fan_Start_Stop_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Motor_Start_Stop_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Pump_Start_Stop_Status",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Run_Status",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Run_Enable_Status",
-                                                        "children": []
-                                                    },
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Run_Request_Status",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
                                         "name": "/ontology/1.1/classes/System_Shutdown_Status",
                                         "children": []
                                     },
@@ -4898,11 +4502,24 @@
                                         "name": "/ontology/1.1/classes/System_Status",
                                         "children": [
                                             {
-                                                "name": "/ontology/1.1/classes/Heat_Exchanger_System_Enable_Status",
+                                                "name": "/ontology/1.1/classes/Emergency_Air_Flow_System_Status",
                                                 "children": []
                                             },
                                             {
-                                                "name": "/ontology/1.1/classes/System_Mode_Status",
+                                                "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Status",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Activated_By_High_Temperature_Status",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System_Activated_By_Leak_Detection_System_Status",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Heat_Exchanger_System_Enable_Status",
                                                 "children": []
                                             },
                                             {
@@ -4945,6 +4562,10 @@
             },
             {
                 "name": "/ontology/1.1/relationships/hasOutputSubstance",
+                "children": []
+            },
+            {
+                "name": "/ontology/1.1/relationships/hasUnit",
                 "children": []
             },
             {

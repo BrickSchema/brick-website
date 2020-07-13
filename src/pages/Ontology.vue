@@ -38,10 +38,10 @@
                     <div class="text-3xl font-bold mb-8 w-full border-b-2 pb-4">Versions</div>
                     <div class="text-2xl font-bold">
                         <li class="mb-6">
-                            <g-link to="/ontology/1.1">v1.1</g-link>&nbsp;(beta)
+                            <g-link to="/ontology/1.1">v1.1</g-link>
                         </li>
                         <li>
-                            <g-link to="/ontology/1.0.3">v1.0.3</g-link>
+                            <g-link to="/ontology/1.0.3">v1.0.3</g-link>&nbsp;(no longer supported)
                         </li>
                     </div>
                 </ul>
