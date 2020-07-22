@@ -18,10 +18,18 @@
                                 ]
                             },
                             {
-                                "name": "/ontology/1.1/classes/Electrical_System",
+                                "name": "/ontology/1.1/classes/Electrical_Equipment",
                                 "children": [
                                     {
-                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System",
+                                        "name": "/ontology/1.1/classes/Breaker_Panel",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Bus_Riser",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Disconnect_Switch",
                                         "children": []
                                     },
                                     {
@@ -38,7 +46,19 @@
                                         "children": []
                                     },
                                     {
+                                        "name": "/ontology/1.1/classes/Motor_Control_Center",
+                                        "children": []
+                                    },
+                                    {
                                         "name": "/ontology/1.1/classes/PlugStrip",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Switchgear",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Transformer",
                                         "children": []
                                     }
                                 ]
@@ -48,12 +68,8 @@
                                 "children": []
                             },
                             {
-                                "name": "/ontology/1.1/classes/Fire_Safety_System",
+                                "name": "/ontology/1.1/classes/Fire_Safety_Equipment",
                                 "children": [
-                                    {
-                                        "name": "/ontology/1.1/classes/FCP",
-                                        "children": []
-                                    },
                                     {
                                         "name": "/ontology/1.1/classes/Fire_Control_Panel",
                                         "children": []
@@ -62,6 +78,10 @@
                             },
                             {
                                 "name": "/ontology/1.1/classes/Furniture",
+                                "children": []
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Gas_Distribution",
                                 "children": []
                             },
                             {
@@ -106,19 +126,6 @@
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Centrifugal_Chiller",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Coil",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Cooling_Coil",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Heating_Coil",
                                                 "children": []
                                             }
                                         ]
@@ -215,6 +222,19 @@
                                         "name": "/ontology/1.1/classes/Heat_Exchanger",
                                         "children": [
                                             {
+                                                "name": "/ontology/1.1/classes/Coil",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Cooling_Coil",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Heating_Coil",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            },
+                                            {
                                                 "name": "/ontology/1.1/classes/Condenser_Heat_Exchanger",
                                                 "children": []
                                             },
@@ -309,6 +329,10 @@
                                                 "children": []
                                             },
                                             {
+                                                "name": "/ontology/1.1/classes/Gas_Valve",
+                                                "children": []
+                                            },
+                                            {
                                                 "name": "/ontology/1.1/classes/Heating_Valve",
                                                 "children": [
                                                     {
@@ -331,6 +355,10 @@
                                             },
                                             {
                                                 "name": "/ontology/1.1/classes/Isolation_Valve",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Steam_Valve",
                                                 "children": []
                                             },
                                             {
@@ -359,11 +387,7 @@
                                 ]
                             },
                             {
-                                "name": "/ontology/1.1/classes/Heating_Ventilation_Air_Conditioning_System",
-                                "children": []
-                            },
-                            {
-                                "name": "/ontology/1.1/classes/Lighting_System",
+                                "name": "/ontology/1.1/classes/Lighting_Equipment",
                                 "children": [
                                     {
                                         "name": "/ontology/1.1/classes/Interface",
@@ -397,6 +421,10 @@
                                         ]
                                     }
                                 ]
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Louver",
+                                "children": []
                             },
                             {
                                 "name": "/ontology/1.1/classes/Meter",
@@ -556,109 +584,19 @@
                                 ]
                             },
                             {
-                                "name": "/ontology/1.1/classes/Shading_System",
-                                "children": [
-                                    {
-                                        "name": "/ontology/1.1/classes/Louver",
-                                        "children": []
-                                    }
-                                ]
-                            },
-                            {
                                 "name": "/ontology/1.1/classes/Solar_Panel",
                                 "children": []
                             },
                             {
-                                "name": "/ontology/1.1/classes/Steam_System",
+                                "name": "/ontology/1.1/classes/Steam_Distribution",
                                 "children": []
                             },
                             {
-                                "name": "/ontology/1.1/classes/Water_System",
-                                "children": [
-                                    {
-                                        "name": "/ontology/1.1/classes/CWS",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Chilled_Water_System",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Chilled_Water_Meter",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Building_Chilled_Water_Meter",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Chilled_Water_Valve",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Hot_Water_Meter",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Building_Hot_Water_Meter",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/HWS",
-                                        "children": []
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Hot_Water_System",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Domestic_Hot_Water_System",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Domestic_Hot_Water_Valve",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Preheat_Hot_Water_Valve",
-                                                "children": []
-                                            }
-                                        ]
-                                    },
-                                    {
-                                        "name": "/ontology/1.1/classes/Water_Meter",
-                                        "children": [
-                                            {
-                                                "name": "/ontology/1.1/classes/Building_Water_Meter",
-                                                "children": []
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Chilled_Water_Meter",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Building_Chilled_Water_Meter",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            },
-                                            {
-                                                "name": "/ontology/1.1/classes/Hot_Water_Meter",
-                                                "children": [
-                                                    {
-                                                        "name": "/ontology/1.1/classes/Building_Hot_Water_Meter",
-                                                        "children": []
-                                                    }
-                                                ]
-                                            }
-                                        ]
-                                    }
-                                ]
+                                "name": "/ontology/1.1/classes/Water_Distribution",
+                                "children": []
                             },
                             {
-                                "name": "/ontology/1.1/classes/Weather",
+                                "name": "/ontology/1.1/classes/Weather_Station",
                                 "children": []
                             }
                         ]
@@ -4529,6 +4467,87 @@
                                         ]
                                     }
                                 ]
+                            }
+                        ]
+                    },
+                    {
+                        "name": "/ontology/1.1/classes/System",
+                        "children": [
+                            {
+                                "name": "/ontology/1.1/classes/Domestic_Hot_Water_System",
+                                "children": []
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Electrical_System",
+                                "children": []
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Gas_System",
+                                "children": []
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Heating_Ventilation_Air_Conditioning_System",
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Steam_System",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Water_System",
+                                        "children": [
+                                            {
+                                                "name": "/ontology/1.1/classes/Chilled_Water_System",
+                                                "children": []
+                                            },
+                                            {
+                                                "name": "/ontology/1.1/classes/Hot_Water_System",
+                                                "children": [
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Heat_Recovery_Hot_Water_System",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Preheat_Hot_Water_System",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Radiation_Hot_Water_System",
+                                                        "children": []
+                                                    },
+                                                    {
+                                                        "name": "/ontology/1.1/classes/Reheat_Hot_Water_System",
+                                                        "children": []
+                                                    }
+                                                ]
+                                            }
+                                        ]
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Lighting_System",
+                                "children": []
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Safety_System",
+                                "children": [
+                                    {
+                                        "name": "/ontology/1.1/classes/Emergency_Air_Flow_System",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Emergency_Power_Off_System",
+                                        "children": []
+                                    },
+                                    {
+                                        "name": "/ontology/1.1/classes/Fire_Safety_System",
+                                        "children": []
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "/ontology/1.1/classes/Shading_System",
+                                "children": []
                             }
                         ]
                     }
