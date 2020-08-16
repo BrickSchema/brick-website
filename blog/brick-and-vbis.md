@@ -1,14 +1,10 @@
 ---
-title: Press Releases
-path: /press-releases
-summary: Brick Press Releases
-show_on_navbar: true
+title: Brick and VBIS
+path: brick-and-vbis
+date: 2020-08-15
+summary: Brick and VBIS Collaboration
+tags: ['brick', 'press']
 ---
-
-
-## <a name="brick-and-vbis"></a>Brick and VBIS
-
-#### 14 August 2020 
 
 We are pleased to announce the signing of a Memorandum of Understanding (MOU) between Brick and VBIS to collaborate and integrate the developments. 
 
