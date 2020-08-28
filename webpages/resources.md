@@ -155,4 +155,4 @@ Memoori 2019
 [25]: /papers/WhoWhatWhen-BuildSys-2019-Koh.pdf
 [26]: /papers/Advanced-Engineering-Informatics-2018-Gao.pdf
 [27]: /schema/1.1/Brick.ttl
-[28]: https://github.com/BrickSchema/Brick/releases/latest
+[28]: https://github.com/BrickSchema/Brick/releases/download/nightly/Brick.ttl
