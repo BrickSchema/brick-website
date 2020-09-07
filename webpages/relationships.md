@@ -43,7 +43,7 @@ We list each of the Brick relationships related to each of the modeling perspect
 
 ### Composition
 
-`brick:hasPart`: the *subject* has some component or part identified by *object*; used to describe both physical and logical composition. This relationship is not typically used to desscribe the physical location of the *object* except in the case where the location of the *object* is fundamental to the identity of the *subject*. For example, a chair being located in a room is not fundamental to the definition of a room because a room can exist independent of whether or not a chair is located in it -- here, we would use the `brick:hasLocation` relationship (see below). However, a damper being "located" in a VAV is fundamental to the definition of a VAV because a VAV must be able to modulate the volume of air. In this case, we would use the `brick:hasPart` relationship.
+`brick:hasPart`: the *subject* has some component or part identified by *object*; used to describe both physical and logical composition. This relationship is not typically used to describe the physical location of the *object* except in the case where the location of the *object* is fundamental to the identity of the *subject*. For example, a chair being located in a room is not fundamental to the definition of a room because a room can exist independent of whether or not a chair is located in it -- here, we would use the `brick:hasLocation` relationship (see below). However, a damper being "located" in a VAV is fundamental to the definition of a VAV because a VAV must be able to modulate the volume of air. In this case, we would use the `brick:hasPart` relationship.
 
 ### Topology
 
@@ -90,6 +90,6 @@ Brick allows many relationships to be defined in two different directions throug
 | `hasPoint`   | `isPointOf` |
 | `hasPart`    | `isPartOf` |
 | `hasLocation`| `isLocationOf` |
-| `hasFeeds`   | `isFedBy` |
+| `feeds`   | `isFedBy` |
 
-In all cases where we have `subject relationship object`, an equvalent statement is `object inverse-relationship subject`.
+In all cases where we have `subject relationship object`, an equivalent statement is `object inverse-relationship subject`.
