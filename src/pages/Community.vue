@@ -13,7 +13,7 @@
                     <g-image src="../../static/logos/supporters/jci.png"></g-image>
                 </a>
                 <a class="w-64 m-auto p-4" href="https://www.onboarddata.io/">
-                    <g-image src="../../static/logos/supporters/onboard.png"></g-image>
+                    <g-image src="../../static/logos/success-stories/onboard.png"></g-image>
                 </a>
             </div>
 
