@@ -12,6 +12,9 @@
                 <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/digital">
                     <g-image src="../../static/logos/supporters/jci.png"></g-image>
                 </a>
+                <a class="w-64 m-auto p-4" href="https://www.onboarddata.io/">
+                    <g-image src="../../static/logos/success-stories/onboard.png"></g-image>
+                </a>
             </div>
 
             <div class="my-16 text-3xl font-bold border-b pb-4 border-gray-500">Brick collaborates with</div>
