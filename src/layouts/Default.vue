@@ -19,9 +19,6 @@
                     <li class="mr-8 mb-6 lg:mb-0">
                         <search-input />
                     </li>
-                    <li class="mr-8 mb-6 lg:mb-0">
-                        <g-link to="/#home" class="text-copy-primary hover:text-primary-700">Home</g-link>
-                    </li>
 
                     <li class="mr-8 mb-6 lg:mb-0">
                         <a href="https://docs.brickschema.org" class="text-copy-primary hover:text-primary-700 truncate">Docs</a>
