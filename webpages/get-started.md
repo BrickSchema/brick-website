@@ -11,6 +11,8 @@ The [Concepts page](/concepts) presents an overview of core concepts of Brick.
 
 The [Relationships memo](/relationships) provides some guidance and documentation on how to use Brick relationships.
 
+The [Public Roadmap](http://roadmap.brickschema.org/) outlines the near-term and long-term features of Brick that are under development.
+
 ### Exploring existing Brick models
 
 - **Observe** Brick models for 6 real buildings using the [BrickViewer tool](http://viewer.brickschema.org/)
