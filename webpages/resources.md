@@ -43,6 +43,20 @@ For an in-depth discussion of the creation and evaluation of these Brick models,
 ## Academic Publications
 ---
 
+#### 2020
+
+[Shepherding Metadata Through the Building Lifecycle][30]
+Gabe Fierro, Anand Krishnan Prakash, Cory Mosiman, Marco Pritoni, Paul Raftery, Michael Wetter, David E Culler. In Proceedings of the 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys 2020). November 18, 2020, Virtual Event.
+DOI: https://doi.org/10.1145/3408308.3427627
+
+[Demo Abstract: Interactive Metadata Integration with Brick][31]
+Gabe Fierro, Anand Krishnan Prakash, Cory Mosiman, Marco Pritoni, Paul Raftery, Michael Wetter, David E Culler. In Proceedings of the 7th ACM International Conference on Systems for Energy-Efficient Buildings, Cities, and Transportation (BuildSys 2020). November 18, 2020, Virtual Event.
+DOI: https://doi.org/10.1145/3408308.3431125
+
+[Formalizing Tag-Based Metadata with the Brick Ontology][29].
+Gabe Fierro, Jason Koh, Shreyas Nagare, Xiaolin Zang, Yuvraj Agarwal, Rajesh K. Gupta, and David E. Culler. Frontiers in Built Environment, Vol 6 (September 2020).
+DOI: https://doi.org/10.1145/3360322.3360862
+
 #### 2019
 
 [Who can Access What, and When?: Understanding Minimal Access Requirements of Building Applications][25].
@@ -156,3 +170,6 @@ Memoori 2019
 [26]: /papers/Advanced-Engineering-Informatics-2018-Gao.pdf
 [27]: /schema/1.1/Brick.ttl
 [28]: https://github.com/BrickSchema/Brick/releases/download/nightly/Brick.ttl
+[29]: /papers/Fierro_Frontier20_Formalizing.pdf
+[30]: /papers/shepherding2020fierro.pdf
+[31]: /papers/interactive2020fierro.pdf
