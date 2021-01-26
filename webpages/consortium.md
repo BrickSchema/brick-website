@@ -46,7 +46,7 @@ The Communications Committee will be responsible for the Brick public presence a
 ### Working Groups
 The Technical Committee (and other committees) can charter working groups to engage the membership and open source community on development of the Brick standard.
 At present, there are four working groups: the Ontology Development working group, the Tools working group, the Public Dataset working group, and the Applications and Analytics working group.
-The working groups are developing open source software and documentation and participation is welcome from anyone, not just formal members of the Brick Consortium.
+**The working groups are developing open source software and documentation and participation is welcome from anyone, not just formal members of the Brick Consortium.**
 
 ## Membership in Brick
 
