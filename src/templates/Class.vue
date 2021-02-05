@@ -66,7 +66,7 @@
                     <div class="l-auto h-auto sm:w-1/6 h-12 bg-gray-100 rounded-lg  px-4 py-2 mt-4 ml-4">IRI</div>
                     <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto">
                         <div class="rounded-lg px-4 py-2 mt-4 ml-4 iri">
-                            <a class="font-normal text-gray-600 border-b" :href="'http://www.linked.data.gov.au/def/pylode/brick.html#'+$page.class.id.split('#').pop().toLowerCase()" target="_blank">{{ $page.class.id.split('^').pop() }}</a>
+                            <a class="font-normal text-gray-600 border-b" :href="$page.class.id.split('^').pop()" target="_blank">{{ $page.class.id.split('^').pop() }}</a>
                         </div>
                     </div>
                 </div>
