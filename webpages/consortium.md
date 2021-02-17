@@ -17,7 +17,7 @@ The consortium also funds the research of work related to Brick and the built en
 
 The consortium is committed to ensuring the Brick specification is not encumbered with proprietary intellectual property.
 
-The [rules of the consortium][1] are available for review.
+The [rules of the consortium][1] are available for review, as is a [membership form][2].
 
 ## The organization of the Brick Consortium.
 
@@ -72,4 +72,4 @@ Contributing Member      |  no      |       no         |**yes**  |**yes**  |   $
 For information on joining the Brick Consortium, please contact [Erik Paulson](mailto:erik.paulson@jci.com)
 
 [1]: /docs/Brick_Membership_Rules_Jan_25_2021.pdf
-
+[2]: /docs/Brick_membership_form_feb_2021.pdf
