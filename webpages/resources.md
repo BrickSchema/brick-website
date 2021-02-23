@@ -18,10 +18,8 @@ Turtle is a compact textual format that is understood by most Semantic Web tools
    - [Brick.ttl][28]: The most recent build of Brick as of 2am UTC every day. Contains the latest changes, but also the latest bugs. Helpful for development; for stability, use the stable version linked above.
 
 - **Old Versions**:
-    - **v1.1.1**:
-       - [Brick.ttl][32]: Brick classes and tagsets
-    - **v1.1.0**:
-       - [Brick.ttl][27]: Brick classes and tagsets
+    - **v1.1.1**: [Brick.ttl][32]: Brick classes and tagsets
+    - **v1.1.0**: [Brick.ttl][27]: Brick classes and tagsets
     - **Old Version (1.0.3) -- Not supported**:
        - [Brick.ttl][1]: Brick classes and tagsets
        - [BrickFrame.ttl][2]: Brick relationship definitions
