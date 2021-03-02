@@ -28,10 +28,11 @@ We’ll also spend time discussing the Brick Roadmap. While we’ll discuss what
 - If you are a potential adopter of Brick, what's necessary for you to get Brick into your products?
 - What are you willing to work on?
 
-The session will be recorded so, if you’re not able to attend, we will provide a link after the event.
-
 Brick is open source and you do not need to be a member of the Brick consortium to use Brick or contribute to its development. However, by being a Consortium member, you will have more opportunity to shape the standard as well as helping to support future Brick development and research projects.
 
-[Click here to join the February 23rd sesssion](https://teams.microsoft.com/l/meetup-join/19%3ameeting_MWFiMjdhMjItNDM5NS00YWY2LWIyMDQtMWI5MGEzMDA4NDgw%40thread.v2/0?context=%7b%22Tid%22%3a%22a1f1e214-7ded-45b6-81a1-9e8ae3459641%22%2c%22Oid%22%3a%22866df12e-1042-4e4e-9e38-fe91823793b9%22%7d)
+You can [view a recording](https://www.youtube.com/watch?v=wlkNDCRIdSw) of the session here
+`youtube:https://www.youtube.com/watch?v=wlkNDCRIdSw`
 
-[Click here to join the March 1st Session](https://teams.microsoft.com/l/meetup-join/19%3ameeting_Zjk2YzBkNDMtZmU4My00OGUwLWE0ODYtMGZmNDVjMzdkZmQz%40thread.v2/0?context=%7b%22Tid%22%3a%22a1f1e214-7ded-45b6-81a1-9e8ae3459641%22%2c%22Oid%22%3a%22866df12e-1042-4e4e-9e38-fe91823793b9%22%7d)
+The slides for the presentation are avaialble [here][1]
+
+[1]: /docs/Consortium_Kickoff_2021.pdf
