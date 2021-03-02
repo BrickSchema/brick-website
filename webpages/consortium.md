@@ -18,6 +18,7 @@ The consortium also funds the research of work related to Brick and the built en
 The consortium is committed to ensuring the Brick specification is not encumbered with proprietary intellectual property.
 
 The [rules of the consortium][1] are available for review, as is a [membership form][2].
+We hosted a virtual open house in 2021, and the [video and slides are available.](/blog/brick-consortium-virtual-kickoff)
 
 ## The organization of the Brick Consortium.
 
