@@ -1,7 +1,7 @@
 <template>
     <div class="border-l w-full" v-bind:class="current?'bg-gray-200':'bg-white'">
         <div v-if="tree.name" class="flex text-black font-thin">
-            <span @click.prevent="expanded=!expanded" v-if="tree.children.length"
+            <span @click.prevent="expanded=!expanded" v-if="tree.children && tree.children.length"
                    class="text-normal px-2 cursor-pointer">{{expanded ? '▾' : '▸'}}</span>
             <span v-else class="type">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
@@ -16,7 +16,7 @@
 
 <static-query>
     {
-    metaData{
+    metadata{
     pathPrefix
     }
     }

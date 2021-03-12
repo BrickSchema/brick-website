@@ -8,7 +8,7 @@
 
                 <div>
                     <div v-if="false" class="flex">
-                    <span @click="expanded=!expanded" v-if="tree.length"
+                    <span @click="expanded=!expanded" v-if="tree && tree.length"
                           class="text-normal px-2 cursor-pointer">{{expanded ? '▾' : '▸'}}</span>
                         <span v-else class="type">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
@@ -72,7 +72,7 @@
                 </div>
 
 
-                <div class="block sm:flex text-gray-600" v-if="$page.class.types.length">
+                <div class="block sm:flex text-gray-600" v-if="$page.class.types && $page.class.types.length">
                     <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Type</div>
                     <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                         <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -90,7 +90,7 @@
                 </div>
 
 
-                <div class="block sm:flex text-gray-600" v-if="$page.class.equivalentClasses.length">
+                <div class="block sm:flex text-gray-600" v-if="$page.class.equivalentClasses && $page.class.equivalentClasses.length">
                     <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Equivalent Classes</div>
                     <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                         <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -108,7 +108,7 @@
                 </div>
 
 
-                <div class="block sm:flex text-gray-600" v-if="$page.class.definitions.length && $page.class.definitions[0].length">
+                <div class="block sm:flex text-gray-600" v-if="$page.class.definitions && $page.class.definitions.length && $page.class.definitions[0].length">
                     <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Definitions</div>
                     <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto">
                         <div class="rounded-lg px-4 py-2 mt-4 ml-4 definition" :key="definition" v-for="definition in $page.class.definitions">
@@ -118,7 +118,7 @@
                 </div>
 
 
-                <div class="block sm:flex text-gray-600" v-if="$page.class.superclasses.length">
+                <div class="block sm:flex text-gray-600" v-if="$page.class.superclasses && $page.class.superclasses.length">
                     <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Parent Classes</div>
                     <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto mt-2">
                         <ul class="text-normal text-gray-200 mt-4 ml-4" >
@@ -137,7 +137,7 @@
                 </div>
 
 
-                <div class="block sm:flex text-gray-600" v-if="$page.class.subclasses.length">
+                <div class="block sm:flex text-gray-600" v-if="$page.class.subclasses && $page.class.subclasses.length">
                     <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Subclasses</div>
                     <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                         <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -155,7 +155,7 @@
                 </div>
 
 
-                <div class="block sm:flex text-gray-600" v-if="$page.class.inDomainOf.length">
+                <div class="block sm:flex text-gray-600" v-if="$page.class.inDomainOf && $page.class.inDomainOf.length">
                     <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">InDomainOf</div>
                     <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                         <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -173,7 +173,7 @@
                 </div>
 
 
-                <div class="block sm:flex text-gray-600" v-if="$page.class.inRangeOf.length">
+                <div class="block sm:flex text-gray-600" v-if="$page.class.inRangeOf && $page.class.inRangeOf.length">
                     <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">InRangeOf</div>
                     <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                         <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -234,7 +234,7 @@
     }
     }
 
-    metaData{
+    metadata{
     pathPrefix
     cacheVersion
     }
@@ -264,7 +264,7 @@
             }
         },
         created() {
-            axios(`${this.$page.metaData.pathPrefix}/ontology/${this.$page.class.version}/tree.json?version=${this.$page.metaData.cacheVersion}`).then(response => {
+            axios(`${this.$page.metadata.pathPrefix}/ontology/${this.$page.class.version}/tree.json?version=${this.$page.metadata.cacheVersion}`).then(response => {
                 this.tree = response.data;
             })
                 .catch(error => {

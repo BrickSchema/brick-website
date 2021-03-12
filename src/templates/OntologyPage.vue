@@ -8,7 +8,7 @@
 
                 <div class="h-auto">
                     <div v-if="false" class="flex">
-                    <span @click="expanded=!expanded" v-if="tree.length"
+                    <span @click="expanded=!expanded" v-if="tree && tree.length"
                           class="text-normal px-2 cursor-pointer">{{expanded ? '▾' : '▸'}}</span>
                         <span v-else class="type">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
 
@@ -61,7 +61,7 @@
     hierarchy
     }
 
-    metaData{
+    metadata{
     pathPrefix
     cacheVersion
     }
@@ -89,7 +89,7 @@
             }
         },
         created() {
-            axios(`${this.$page.metaData.pathPrefix}/ontology/${this.$page.ontologyPage.version}/tree.json?version=${this.$page.metaData.cacheVersion}`).then(response => {
+            axios(`${this.$page.metadata.pathPrefix}/ontology/${this.$page.ontologyPage.version}/tree.json?version=${this.$page.metadata.cacheVersion}`).then(response => {
                 this.tree = response.data;
             })
                 .catch(error => {
