@@ -1,6 +1,6 @@
 ---
 title: Brick Viewer
-path: tools/BrickViewer
+path: /tools/BrickViewer
 date: 2019-04-09
 summary: Visualize Brick TTL Classes
 categories: ['viewer', 'visualization']
