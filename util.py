@@ -39,6 +39,11 @@ def get_alias(iri):
 
 
 def generate_doc_src(doc_spec):
+
+    all_classes = []
+    all_relationships = []
+    all_namespaces = []
+
     for version in doc_spec:
         g = Graph()
 
@@ -311,6 +316,27 @@ def generate_doc_src(doc_spec):
             relationship_tree["children"], [relationship_tree["name"]]
         )
 
+        # Namespaces
+        namespaces = []
+        for prefix, namespace in g.namespaces():
+            namespaces.append(
+                {
+                    "id": f"{version}^{namespace}",
+                    "type": "namespace",
+                    "version": version,
+                    "value": prefix,
+                    "path": f"/ontology/{version}/namespaces/{prefix}",
+                    "labels": [],
+                    "generatedLabel": minify(namespace),
+                    "generatedAlias": get_alias(namespace),
+                    "comments": [],
+                }
+            )
+
+        all_classes += classes
+        all_relationships += relationships
+        all_namespaces += namespaces
+
         tree = [class_tree, relationship_tree]
         directory = f"./static/ontology/{version}"
         if not os.path.exists(directory):
@@ -321,6 +347,8 @@ def generate_doc_src(doc_spec):
             json.dump(classes, file)
         with open(f"{directory}/relationships.json", "w") as file:
             json.dump(relationships, file)
+        with open(f"{directory}/namespaces.json", "w") as file:
+            json.dump(namespaces, file)
 
         # Search index
         search = []
@@ -339,21 +367,9 @@ def generate_doc_src(doc_spec):
         with open(f"{directory}/search.json", "w") as file:
             json.dump(search, file)
 
-        # Namespaces
-        namespaces = []
-        for prefix, namespace in g.namespaces():
-            namespaces.append(
-                {
-                    "id": f"{version}^{namespace}",
-                    "type": "namespace",
-                    "version": version,
-                    "value": prefix,
-                    "path": f"/ontology/{version}/namespaces/{prefix}",
-                    "labels": [],
-                    "generatedLabel": minify(namespace),
-                    "generatedAlias": get_alias(namespace),
-                    "comments": [],
-                }
-            )
-        with open(f"{directory}/namespaces.json", "w") as file:
-            json.dump(namespaces, file)
+    with open("./static/ontology/all_classes.json", "w") as file:
+        json.dump(all_classes, file)
+    with open("./static/ontology/all_relationships.json", "w") as file:
+        json.dump(all_relationships, file)
+    with open("./static/ontology/all_namespaces.json", "w") as file:
+        json.dump(all_namespaces, file)
