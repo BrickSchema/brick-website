@@ -271,7 +271,7 @@ def generate_doc_src(doc_spec):
                     )
                     if klass[0][:4] == "http"
                 ],
-                "inDomainOf": [
+                "domain": [
                     f"{version}^{klass[0]}"
                     for klass in g.query(
                         f"SELECT DISTINCT ?klass WHERE {{ <{iri}> rdfs:domain/(owl:equivalentClass|^owl:equivalentClass)* ?klass . }}"
