@@ -16,6 +16,8 @@ git clone https://github.com/BrickSchema/brick-website.git
 ```sh
 cd brick-website
 npm install
+python3 -m pip install rdflib
+python3 generate_doc_src.py
 npm run develop
 ```
 This will start a local development server. The server will start at http://localhost:8080/ with hot-reloading etc.
