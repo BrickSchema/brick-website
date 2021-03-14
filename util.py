@@ -86,7 +86,7 @@ def generate_doc_src(doc_spec):
                 "namespace": f"{version}^{get_ns(iri)}",
                 "type": "class",
                 "types": [
-                    f"{version}^{instance_type[0]}"
+                    f"{instance_type[0]}"
                     for instance_type in g.query(
                         f"SELECT DISTINCT ?instance_type WHERE {{ <{iri}> (owl:equivalentClass|^owl:equivalentClass)*/a ?instance_type . }}"
                     )
@@ -207,7 +207,7 @@ def generate_doc_src(doc_spec):
                 "namespace": f"{version}^{get_ns(iri)}",
                 "type": "relationship",
                 "types": [
-                    f"{version}^{instance_type[0]}"
+                    f"{instance_type[0]}"
                     for instance_type in g.query(
                         f"SELECT DISTINCT ?instance_type WHERE {{ <{iri}> a ?instance_type . }}"
                     )
