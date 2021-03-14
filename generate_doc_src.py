@@ -26,13 +26,13 @@ doc_spec["1.1"]["relationships"]["type_restriction"] = [
 ]
 
 
-# # Brick v1.2
-# doc_spec["1.2"]["input"] = ["static/schema"]
-# doc_spec["1.2"]["ns_restriction"] = ["https://brickschema.org/schema/Brick#"]
-# doc_spec["1.2"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl#Class"]
-# doc_spec["1.2"]["relationships"]["type_restriction"] = [
-#     "http://www.w3.org/2002/07/owl#ObjectProperty"
-# ]
+# Brick v1.2
+doc_spec["1.2"]["input"] = ["static/schema"]
+doc_spec["1.2"]["ns_restriction"] = ["https://brickschema.org/schema/Brick#"]
+doc_spec["1.2"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl#Class"]
+doc_spec["1.2"]["relationships"]["type_restriction"] = [
+    "http://www.w3.org/2002/07/owl#ObjectProperty"
+]
 
 
 generate_doc_src(doc_spec)
