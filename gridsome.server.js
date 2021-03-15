@@ -37,25 +37,25 @@ module.exports = function (api, options) {
       =====
       <static-query>        <!-- or a page-query -->
       {
-        metaData{
+        metadata{
           pathPrefix
         }
       }
       </static-query>
       Requests for static files should look like this:
       ===============================================
-      Using static-queries: axios( this.$static.metaData.pathPrefix + "/fileName" )
-      Using page-queries,   axios( this.$page.metaData.pathPrefix   + "/fileName" )
+      Using static-queries: axios( this.$static.metadata.pathPrefix + "/fileName" )
+      Using page-queries,   axios( this.$page.metadata.pathPrefix   + "/fileName" )
       */
-      store.addMetaData('pathPrefix', cleanedPathPrefix)
-      store.addMetaData('cacheVersion', cacheVersion)
-      const classes = store.addContentType({
+      store.addMetadata('pathPrefix', cleanedPathPrefix)
+      store.addMetadata('cacheVersion', cacheVersion)
+      const classes = store.addCollection({
           typeName:'Class',
       })
-      const relationships = store.addContentType({
+      const relationships = store.addCollection({
           typeName:'Relationship',
       })
-      const namespaces = store.addContentType({
+      const namespaces = store.addCollection({
           typeName:'Namespace',
       })
 

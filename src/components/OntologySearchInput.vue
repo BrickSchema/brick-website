@@ -36,7 +36,7 @@
           <a
                   v-for="(post, index) in results"
                   :key="index"
-                  :href="$static.metaData.pathPrefix + post.item.path"
+                  :href="$static.metadata.pathPrefix + post.item.path"
                   @click="reset"
                   class="bg-background-form border-b border-gray-400 text-xl cursor-pointer p-4 search-hover text-gray-700 text-left"
                   :class="{ 'search-highlighted' : index === highlightedIndex }"
@@ -57,7 +57,7 @@
 
 <static-query>
   {
-  metaData{
+  metadata{
   pathPrefix
   cacheVersion
   }
@@ -76,8 +76,8 @@
       version: ''
     },
     created() {
-      const indexFileUrl = this.version ? `/ontology/${this.version}/search.json?version=${this.$page.metaData.cacheVersion}` :"/search.json?version=${this.$page.metaData.cacheVersion}";
-      axios(this.$static.metaData.pathPrefix + indexFileUrl).then(response => {
+      const indexFileUrl = this.version ? `/ontology/${this.version}/search.json?version=${this.$page.metadata.cacheVersion}` :"/search.json?version=${this.$page.metadata.cacheVersion}";
+      axios(this.$static.metadata.pathPrefix + indexFileUrl).then(response => {
         this.tagsets = response.data
       })
               .catch(error => {

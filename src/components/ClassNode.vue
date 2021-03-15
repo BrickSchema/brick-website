@@ -18,7 +18,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="classNode.types.length">
+        <div class="block sm:flex text-gray-600" v-if="classNode.types && classNode.types.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Type</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -36,7 +36,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="classNode.equivalentClasses.length">
+        <div class="block sm:flex text-gray-600" v-if="classNode.equivalentClasses && classNode.equivalentClasses.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Equivalent Classes</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -54,7 +54,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="classNode.definitions.length && classNode.definitions[0].length">
+        <div class="block sm:flex text-gray-600" v-if="classNode.definitions && classNode.definitions.length && classNode.definitions[0].length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Definitions</div>
             <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto">
                 <div class="rounded-lg px-4 py-2 mt-4 ml-4 definition" :key="definition" v-for="definition in classNode.definitions">
@@ -64,7 +64,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="classNode.superclasses.length">
+        <div class="block sm:flex text-gray-600" v-if="classNode.superclasses && classNode.superclasses.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Parent Classes</div>
             <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4" >
@@ -83,7 +83,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="classNode.subclasses.length">
+        <div class="block sm:flex text-gray-600" v-if="classNode.subclasses && classNode.subclasses.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Subclasses</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -101,7 +101,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="classNode.inDomainOf.length">
+        <div class="block sm:flex text-gray-600" v-if="classNode.inDomainOf && classNode.inDomainOf.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">InDomainOf</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -119,7 +119,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="classNode.inRangeOf.length">
+        <div class="block sm:flex text-gray-600" v-if="classNode.inRangeOf && classNode.inRangeOf.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">InRangeOf</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">

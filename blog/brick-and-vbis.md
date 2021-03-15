@@ -1,6 +1,6 @@
 ---
 title: Brick and VBIS
-path: blog/brick-and-vbis
+path: /blog/brick-and-vbis
 date: 2020-08-15
 summary: Brick and VBIS Collaboration
 tags: ['brick', 'press']

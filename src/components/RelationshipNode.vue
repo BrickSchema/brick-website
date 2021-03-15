@@ -18,7 +18,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="relationshipNode.types.length">
+        <div class="block sm:flex text-gray-600" v-if="relationshipNode.types && relationshipNode.types.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Type</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -36,7 +36,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="relationshipNode.definitions.length && relationshipNode.definitions[0].length">
+        <div class="block sm:flex text-gray-600" v-if="relationshipNode.definitions && relationshipNode.definitions.length && relationshipNode.definitions[0].length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Definitions</div>
             <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto">
                 <div class="rounded-lg px-4 py-2 mt-4 ml-4 definition" :key="definition" v-for="definition in relationshipNode.definitions">
@@ -46,7 +46,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="relationshipNode.superProperties.length">
+        <div class="block sm:flex text-gray-600" v-if="relationshipNode.superProperties && relationshipNode.superProperties.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Parent Properties</div>
             <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4" >
@@ -65,7 +65,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="relationshipNode.subProperties.length">
+        <div class="block sm:flex text-gray-600" v-if="relationshipNode.subProperties && relationshipNode.subProperties.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">SubProperties</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -83,7 +83,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="relationshipNode.inverseProperties.length">
+        <div class="block sm:flex text-gray-600" v-if="relationshipNode.inverseProperties && relationshipNode.inverseProperties.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Inverse</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -101,7 +101,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="relationshipNode.domain.length">
+        <div class="block sm:flex text-gray-600" v-if="relationshipNode.domain && relationshipNode.domain.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Domain</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">
@@ -119,7 +119,7 @@
         </div>
 
 
-        <div class="block sm:flex text-gray-600" v-if="relationshipNode.range.length">
+        <div class="block sm:flex text-gray-600" v-if="relationshipNode.range && relationshipNode.range.length">
             <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Range</div>
             <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
                 <ul class="text-normal text-gray-200 mt-4 ml-4">

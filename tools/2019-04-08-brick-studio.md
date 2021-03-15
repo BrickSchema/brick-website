@@ -1,6 +1,6 @@
 ---
 title: BrickStudio
-path: tools/BrickStudio
+path: /tools/BrickStudio
 date: 2019-05-08
 summary: Authoring tool for Brick TTL files
 categories: ['viewer', 'editor', 'utility', 'visualization']

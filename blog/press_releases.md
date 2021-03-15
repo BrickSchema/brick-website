@@ -1,6 +1,6 @@
 ---
 title: Press Releases
-path: press-releases
+path: /press-releases
 date: 2019-07-30
 summary: Press releases involving Brick
 tags: ['brick', 'press']
