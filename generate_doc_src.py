@@ -34,9 +34,8 @@ doc_spec["1.2"]["relationships"]["type_restriction"] = [
     "http://www.w3.org/2002/07/owl#ObjectProperty"
 ]
 
-
-generate_doc_src(doc_spec)
-
+if __name__ == "__main__":
+    generate_doc_src(doc_spec)
 
 # Structure
 # doc_spec = {

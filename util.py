@@ -131,7 +131,7 @@ def generate_doc_src(doc_spec):
                 "equivalentClasses": [
                     f"{version}^{klass[0]}"
                     for klass in g.query(
-                        f"SELECT DISTINCT ?klass WHERE {{ <{iri}> (owl:equivalentClass|^owl:equivalentClass)* ?klass . }}"
+                        f"SELECT DISTINCT ?klass WHERE {{ <{iri}> (owl:equivalentClass|^owl:equivalentClass)* ?klass . FILTER (?klass != <{iri}>) . }}"
                     )
                     if klass[0][:4] == "http"
                 ],
