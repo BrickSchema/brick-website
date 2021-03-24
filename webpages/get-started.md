@@ -39,6 +39,8 @@ The [Public Roadmap](http://roadmap.brickschema.org/) outlines the near-term and
 
 **[Website Issue Tracker][6]**: The Website GitHub issues page is intended for discussing and proposing changes to the [Brick website][7]. Posting requires the creaion of a free Github account.
 
+**[Working Groups][12]**: Brick developments are organized through a set of working groups which meet every week at internationally-friendly times.
+
 ---
 
 ## Brick Tutorials
@@ -64,3 +66,4 @@ Several tutorials have been developed for Brick and its related tools.
 [9]: http://buildsys.acm.org/2017/tutorial/
 [10]: https://docs.google.com/presentation/d/14dxGyYBYzdweKZRSR3GLCAyR7VS9KqZeD6BWdBUQwt0/edit?usp=sharing
 [11]: https://energy.acm.org/conferences/eenergy/2019/tutorial.php
+[12]: /blog/working-groups
