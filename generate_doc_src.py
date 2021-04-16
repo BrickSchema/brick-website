@@ -1,7 +1,18 @@
 from util import generate_doc_src, auto_dict
+from rdflib import Graph
+from urllib.error import URLError
 
+# Pull the latest Brick.ttl to /static/schema
+try:
+    g = Graph()
+    g.parse("https://github.com/brickschema/Brick/releases/latest/download/Brick.ttl", format="turtle")
+    g.serialize("static/schema/Brick.ttl", format="turtle")
+except URLError as e:
+    print("[WARN]: Unable to pull the latest version of Brick!")
+
+
+# Doc config
 doc_spec = auto_dict()
-
 
 # Brick v1.0.3
 doc_spec["1.0.3"]["input"] = ["static/schema/1.0.3"]
@@ -27,7 +38,7 @@ doc_spec["1.1"]["relationships"]["type_restriction"] = [
 
 
 # Brick v1.2
-doc_spec["1.2"]["input"] = ["static/schema"]
+doc_spec["1.2"]["input"] = ["static/schema/1.2"]
 doc_spec["1.2"]["ns_restriction"] = ["https://brickschema.org/schema/Brick#"]
 doc_spec["1.2"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl#Class"]
 doc_spec["1.2"]["relationships"]["type_restriction"] = [
