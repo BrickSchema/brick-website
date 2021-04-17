@@ -4,9 +4,11 @@ from urllib.error import URLError
 
 # Pull the latest Brick.ttl to /static/schema
 try:
+    print("[ ] Fetching the latest version of Brick.ttl...", end="\r")
     g = Graph()
     g.parse("https://github.com/brickschema/Brick/releases/latest/download/Brick.ttl", format="turtle")
     g.serialize("static/schema/Brick.ttl", format="turtle")
+    print("[✓] Fetching the latest version of Brick.ttl   ")
 except URLError as e:
     print("[WARN]: Unable to pull the latest version of Brick!")
 
