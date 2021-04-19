@@ -39,12 +39,12 @@ def get_alias(iri):
 
 
 def generate_doc_src(doc_spec):
-
     all_classes = []
     all_relationships = []
     all_namespaces = []
 
     for version in doc_spec:
+        print(f"[ ] Brick v{version}...", end="\r")
         g = Graph()
 
         for directory in doc_spec[version]["input"]:
@@ -90,7 +90,6 @@ def generate_doc_src(doc_spec):
                     for instance_type in g.query(
                         f"SELECT DISTINCT ?instance_type WHERE {{ <{iri}> (owl:equivalentClass|^owl:equivalentClass)*/a ?instance_type . }}"
                     )
-                    if instance_type[0][:4] == "http"
                 ],
                 "name": minify(iri),
                 "path": f"/ontology/{version}/classes/{minify(iri)}",
@@ -107,14 +106,12 @@ def generate_doc_src(doc_spec):
                     for superclass in g.query(
                         f"SELECT DISTINCT ?superclass WHERE {{ <{iri}> rdfs:subClassOf/(owl:equivalentClass|^owl:equivalentClass)* ?superclass . }}"
                     )
-                    if superclass[0][:4] == "http"
                 ],
                 "subclasses": [
                     f"{version}^{subclass[0]}"
                     for subclass in g.query(
                         f"SELECT DISTINCT ?subclass WHERE {{ ?subclass (owl:equivalentClass|^owl:equivalentClass)*/rdfs:subClassOf <{iri}> . }}"
                     )
-                    if subclass[0][:4] == "http"
                 ],
                 "comments": [
                     comment[0]
@@ -133,22 +130,19 @@ def generate_doc_src(doc_spec):
                     for klass in g.query(
                         f"SELECT DISTINCT ?klass WHERE {{ <{iri}> (owl:equivalentClass|^owl:equivalentClass)* ?klass . FILTER (?klass != <{iri}>) . }}"
                     )
-                    if klass[0][:4] == "http"
                 ],
                 "hierarchy": hierarchy,
                 "inRangeOf": [
                     f"{version}^{relationship[0]}"
                     for relationship in g.query(
-                        f"SELECT DISTINCT ?relationship WHERE {{ ?relationship rdfs:range/(owl:equivalentClass|^owl:equivalentClass)* <{iri}> . }}"
+                        f"SELECT DISTINCT ?relationship WHERE {{ ?relationship rdfs:range ?range_class . <{iri}> (owl:equivalentClass|^owl:equivalentClass|rdfs:subClassOf)* ?range_class. }}"
                     )
-                    if relationship[0][:4] == "http"
                 ],
                 "inDomainOf": [
                     f"{version}^{relationship[0]}"
                     for relationship in g.query(
-                        f"SELECT DISTINCT ?relationship WHERE {{ ?relationship rdfs:domain/(owl:equivalentClass|^owl:equivalentClass)* <{iri}> . }}"
+                        f"SELECT DISTINCT ?relationship WHERE {{ ?relationship rdfs:domain ?domain_class . <{iri}> (owl:equivalentClass|^owl:equivalentClass|rdfs:subClassOf)* ?domain_class. }}"
                     )
-                    if relationship[0][:4] == "http"
                 ],
             }
 
@@ -211,7 +205,6 @@ def generate_doc_src(doc_spec):
                     for instance_type in g.query(
                         f"SELECT DISTINCT ?instance_type WHERE {{ <{iri}> a ?instance_type . }}"
                     )
-                    if instance_type[0][:4] == "http"
                 ],
                 "name": minify(iri),
                 "path": f"/ontology/{version}/relationships/{minify(iri)}",
@@ -228,14 +221,12 @@ def generate_doc_src(doc_spec):
                     for superproperty in g.query(
                         f"SELECT DISTINCT ?superproperty WHERE {{ <{iri}> rdfs:subPropertyOf ?superproperty . }}"
                     )
-                    if superproperty[0][:4] == "http"
                 ],
                 "subProperties": [
                     f"{version}^{subproperty[0]}"
                     for subproperty in g.query(
                         f"SELECT DISTINCT ?subproperty WHERE {{ ?subproperty rdfs:subPropertyOf <{iri}> . }}"
                     )
-                    if subproperty[0][:4] == "http"
                 ],
                 "comments": [
                     comment[0]
@@ -254,14 +245,12 @@ def generate_doc_src(doc_spec):
                     for klass in g.query(
                         f"SELECT DISTINCT ?klass WHERE {{ <{iri}> (owl:equivalentClass|^owl:equivalentClass)* ?klass . }}"
                     )
-                    if klass[0][:4] == "http"
                 ],
                 "inverseProperties": [
                     f"{version}^{relationship[0]}"
                     for relationship in g.query(
                         f"SELECT DISTINCT ?relationship WHERE {{ <{iri}> (owl:inverseOf|^owl:inverseOf) ?relationship . }}"
                     )
-                    if relationship[0][:4] == "http"
                 ],
                 "hierarchy": hierarchy,
                 "range": [
@@ -269,14 +258,12 @@ def generate_doc_src(doc_spec):
                     for klass in g.query(
                         f"SELECT DISTINCT ?klass WHERE {{ <{iri}> rdfs:range/(owl:equivalentClass|^owl:equivalentClass)* ?klass . }}"
                     )
-                    if klass[0][:4] == "http"
                 ],
                 "domain": [
                     f"{version}^{klass[0]}"
                     for klass in g.query(
                         f"SELECT DISTINCT ?klass WHERE {{ <{iri}> rdfs:domain/(owl:equivalentClass|^owl:equivalentClass)* ?klass . }}"
                     )
-                    if klass[0][:4] == "http"
                 ],
             }
 
@@ -367,9 +354,13 @@ def generate_doc_src(doc_spec):
         with open(f"{directory}/search.json", "w") as file:
             json.dump(search, file)
 
+        print(f"[✓] Brick v{version}   ")
+
+    print(f"[ ] Saving JSON files...", end="\r")
     with open("./static/ontology/all_classes.json", "w") as file:
         json.dump(all_classes, file)
     with open("./static/ontology/all_relationships.json", "w") as file:
         json.dump(all_relationships, file)
     with open("./static/ontology/all_namespaces.json", "w") as file:
         json.dump(all_namespaces, file)
+    print(f"[✓] Saving JSON files   ")
