@@ -10,6 +10,8 @@ const path = require("path");
 const pick = require("lodash.pick");
 const brickClasses = require("./static/ontology/all_classes.json");
 const brickRelationships = require("./static/ontology/all_relationships.json");
+const brickEntityProperties = require("./static/ontology/all_entity_properties.json");
+const brickShapes = require("./static/ontology/all_shapes.json");
 const brickNamespaces = require("./static/ontology/all_namespaces.json");
 const { pathPrefix } = require("./gridsome.config");
 const cacheVersion = new Date().getTime();
@@ -116,6 +118,65 @@ module.exports = function (api, options) {
                     hierarchy: node.hierarchy,
                     range: store.createReference("Class", node.range),
                     domain: store.createReference("Class", node.domain),
+                });
+        });
+        brickEntityProperties.forEach((node) => {
+            if (node.path.charAt(0) == "/")
+                relationships.addNode({
+                    id: node.id,
+                    version: node.version,
+                    type: node.type,
+                    types: node.types,
+                    namespace: store.createReference("Namespace", node.namespace),
+                    name: node.name,
+                    path: node.path,
+                    labels: node.labels,
+                    generatedLabel: node.generatedLabel,
+                    generatedAlias: node.generatedAlias,
+                    superProperties: store.createReference(
+                        "Relationship",
+                        node.superProperties
+                    ),
+                    subProperties: store.createReference(
+                        "Relationship",
+                        node.subProperties
+                    ),
+                    inverseProperties: store.createReference(
+                        "Relationship",
+                        node.inverseProperties
+                    ),
+                    comments: node.comments,
+                    definitions: node.definitions,
+                    hierarchy: node.hierarchy,
+                    range: store.createReference("Class", node.range),
+                    domain: store.createReference("Class", node.domain),
+                });
+        });
+        brickShapes.forEach((node) => {
+            if (node.path.charAt(0) == "/")
+                classes.addNode({
+                    id: node.id,
+                    version: node.version,
+                    type: node.type,
+                    types: node.types,
+                    namespace: store.createReference("Namespace", node.namespace),
+                    name: node.name,
+                    path: node.path,
+                    labels: node.labels,
+                    generatedLabel: node.generatedLabel,
+                    generatedAlias: node.generatedAlias,
+                    superclasses: store.createReference("Class", node.superclasses),
+                    subclasses: store.createReference("Class", node.subclasses),
+                    comments: node.comments,
+                    definitions: node.definitions,
+                    equivalentClasses: store.createReference(
+                        "Class",
+                        node.equivalentClasses
+                    ),
+                    hierarchy: node.hierarchy,
+                    inRangeOf: store.createReference("Relationship", node.inRangeOf),
+                    inDomainOf: store.createReference("Relationship", node.inDomainOf),
+                    shaclDetails: node.shaclDetails,
                 });
         });
         brickNamespaces.forEach((node) => {
