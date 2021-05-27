@@ -1,7 +1,7 @@
 import json
 from collections import defaultdict
 
-from rdflib import Graph, URIRef, RDFS, query
+from rdflib import Graph, URIRef, RDFS, query, Namespace
 
 from rdflib.term import BNode
 
@@ -79,7 +79,7 @@ def generate_doc_src(doc_spec):
     for version in doc_spec:
         print(f"[ ] Brick v{version}...", end="\r")
         g = Graph()
-
+        g.bind("sh", Namespace("http://www.w3.org/ns/shacl#"))
         for directory in doc_spec[version]["input"]:
             for root, dirs, files in os.walk(directory):
                 if root != directory:
@@ -496,7 +496,7 @@ def generate_doc_src(doc_spec):
                         )
                     ],
                     "name": minify(iri),
-                    "path": f"/ontology/{version}/shapes/{minify(iri)}",
+                    "path": f"/ontology/{version}/classes/{minify(iri)}",
                     "labels": [
                         label[0]
                         for label in g.query(
@@ -555,7 +555,7 @@ def generate_doc_src(doc_spec):
                 for brick_shape in brick_shapes:
                     iri = brick_shape["iri"]
                     del brick_shape["iri"]
-                    brick_shape["name"] = f"/ontology/{version}/shapes/{minify(iri)}"
+                    brick_shape["name"] = f"/ontology/{version}/classes/{minify(iri)}"
                     brick_shape["children"] = []
                     shapes.append(
                         get_shape_details(iri, hierarchy + [brick_shape["name"]])
