@@ -16,7 +16,7 @@
                     </div>
 
                     <g-link v-if="expanded" v-for="branch in tree" :key="branch.name" class="flex" :to="branch.name">
-                        <hierarchy-tree :tree="branch" :hierarchy="[`/ontology/${$page.ontologyPage.version}/#Classes`,`/ontology/${$page.ontologyPage.version}/#Relationships`, ``]"></hierarchy-tree>
+                        <hierarchy-tree :tree="branch" :hierarchy="[`/ontology/${$page.ontologyPage.version}/#Classes`,`/ontology/${$page.ontologyPage.version}/#Relationships`,`/ontology/${$page.ontologyPage.version}/#EntityProperties`,`/ontology/${$page.ontologyPage.version}/#Shapes`, ``]"></hierarchy-tree>
                     </g-link>
                 </div>
             </div>

@@ -189,7 +189,33 @@
                         </ul>
                     </div>
                 </div>
-
+                <div v-if="$page.class.shaclDetails.length">
+                    <div v-for="(details, prop) in JSON.parse($page.class.shaclDetails)">
+                    <div class="block sm:flex text-gray-600" v-if="prop.length">
+                        <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg capitalize break-words px-4 py-2 mt-4 ml-4">{{prop.split("#").pop()}} {{Object.keys(details).map(t => `(${t.split("#").pop()})`).join("\n")}}</div>
+                        <div class="l-auto h-auto sm:w-5/6 h-12 overflow-auto mt-2">
+                            <ul class="text-normal text-gray-200 mt-4 ml-4">
+                                <li class="text-l text-gray-600 mt-4 ml-4"
+                                    v-for="value in Object.values(details)[0]"
+                                    :key="value">
+                                    <a
+                                            target="_blank"
+                                            v-if="value.startsWith('http')"
+                                            :href="value"
+                                            class="block mr-4 text-gray-700 font-normal">
+                                        {{ value.split("/").pop().split("#").pop() }}
+                                    </a>
+                                    <div
+                                            v-else
+                                            class="block mr-4 text-gray-700 font-normal">
+                                        {{ value.split("/").pop().split("#").pop() }}
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                </div>
             </div>
         </div>
     </Layout>
@@ -211,6 +237,7 @@
     types
     generatedLabel
     definitions
+    shaclDetails
     superclasses(sortBy:"generatedLabel", order:ASC){
     generatedLabel
     path
