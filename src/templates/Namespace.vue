@@ -26,7 +26,9 @@
     node{
     ...on Class{
     id
-    name
+    name{
+    id
+    }
     labels
     version
     generatedLabel
@@ -67,7 +69,9 @@
     id
     generatedLabel
     definitions
-    name
+    name{
+    id
+    }
     namespace{
     path
     value
