@@ -55,7 +55,7 @@
                 </ul>
 
                 <div class="mt-16 mb-8 ml-4 text-3xl">
-                    <g-link class="leading-tight mt-16 mb-8 mr-2 font-normal text-gray-700 hover:text-primary-700" :to="`${$page.class.namespace.path}#${$page.class.name}`">{{ $page.class.namespace.value }}</g-link>:
+                    <g-link class="leading-tight mt-16 mb-8 mr-2 font-normal text-gray-700 hover:text-primary-700" v-if="$page.class.namespace" :to="`${$page.class.namespace.path}#${$page.class.name}`">{{ $page.class.namespace.value }}</g-link>:
                     <span class="font-bold leading-tight mt-16 mb-8 mr-4">{{ $page.class.generatedLabel }}</span>
                     <span class="text-xs font-bold bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded font-left my-auto align-middle">{{ $page.class.type.toUpperCase() }}</span>
                     <span class="text-xs bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded my-auto align-middle">{{ `v${$page.class.version}` }}</span>
@@ -113,6 +113,15 @@
                     <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto">
                         <div class="rounded-lg px-4 py-2 mt-4 ml-4 definition" :key="definition" v-for="definition in $page.class.definitions">
                             {{definition}}
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block sm:flex text-gray-600" v-if="$page.class.comments && $page.class.comments.length && $page.class.comments[0].length">
+                    <div class="l-auto h-auto sm:w-1/6 bg-gray-100 h-12 rounded-lg  px-4 py-2 mt-4 ml-4">Comments</div>
+                    <div class="l-auto h-auto sm:w-5/6  h-12 overflow-auto">
+                        <div class="rounded-lg px-4 py-2 mt-4 ml-4 definition" :key="comment" v-for="comment in $page.class.comments">
+                            {{comment}}
                         </div>
                     </div>
                 </div>
@@ -236,8 +245,9 @@
     type
     types
     generatedLabel
-    definitions
+    comments
     shaclDetails
+    definitions
     superclasses(sortBy:"generatedLabel", order:ASC){
     generatedLabel
     path

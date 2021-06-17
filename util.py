@@ -1,9 +1,7 @@
 import json
 from collections import defaultdict
 
-from rdflib import Graph, URIRef, RDFS, query, Namespace
-
-from rdflib.term import BNode
+from rdflib import Graph, Namespace, URIRef, BNode, query, RDFS, OWL, SKOS
 
 auto_dict = lambda: defaultdict(auto_dict)
 import os
@@ -79,7 +77,13 @@ def generate_doc_src(doc_spec):
     for version in doc_spec:
         print(f"[ ] Brick v{version}...", end="\r")
         g = Graph()
-        g.bind("sh", Namespace("http://www.w3.org/ns/shacl#"))
+        SH = Namespace("http://www.w3.org/ns/shacl#")
+
+        # Add namespaces used in the queries
+        g.bind("skos", SKOS)
+        g.bind("owl", OWL)
+        g.bind("sh", SH)
+
         for directory in doc_spec[version]["input"]:
             for root, dirs, files in os.walk(directory):
                 if root != directory:
@@ -344,16 +348,19 @@ def generate_doc_src(doc_spec):
             "name": f"/ontology/{version}/#EntityProperties",
             "children": [],
         }
-        root_entity_properties = g.query(
-            """SELECT ?iri WHERE {
-             ?iri a brick:EntityProperty .
-             FILTER NOT EXISTS {
-                ?iri rdfs:subPropertyOf ?something .
-                FILTER ( %s )
-             }
-         }"""
-            % (ns_restriction_str("?something"))
-        )
+        try:
+            root_entity_properties = g.query(
+                """SELECT ?iri WHERE {
+                ?iri a brick:EntityProperty .
+                FILTER NOT EXISTS {
+                    ?iri rdfs:subPropertyOf ?something .
+                    FILTER ( %s )
+                }
+            }"""
+                % (ns_restriction_str("?something"))
+            )
+        except:
+            root_entity_properties = []
         for iri in root_entity_properties:
             entity_property_tree["children"].append({"iri": iri[0]})
 
