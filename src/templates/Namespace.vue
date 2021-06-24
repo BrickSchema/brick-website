@@ -10,6 +10,9 @@
             <div v-if="Object.keys(classNode.node).length"  v-for="classNode in $page.namespace.belongsTo.classes" class="border-t mb-8 pt-8">
                 <class-node :class-node="classNode.node" class="mt-0"></class-node>
             </div>
+            <div v-for="usageDetail in $page.namespace.usageDetails">
+                <div class="markdown-body mt-16 ml-4" v-html="usageDetail.content" />
+            </div>
         </div>
     </Layout>
 </template>
@@ -27,6 +30,9 @@
     ...on Class{
     id
     name
+    usageDetails{
+    content
+    }
     labels
     version
     generatedLabel

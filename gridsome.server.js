@@ -52,6 +52,18 @@ module.exports = function (api, options) {
                 */
         store.addMetadata("pathPrefix", cleanedPathPrefix);
         store.addMetadata("cacheVersion", cacheVersion);
+
+        let usageData = {}
+        const usageDetails = store.getContentType('UsageDetail').collection.data;
+        usageDetails.forEach(usageDetail=>{
+            usageDetail.targets.forEach(id=>{
+                if(!usageData[id]){
+                    usageData[id] = []
+                }
+                usageData[id].push(usageDetail.id)
+            })
+        })
+
         const classes = store.addCollection({
             typeName: "Class",
         });
@@ -66,11 +78,11 @@ module.exports = function (api, options) {
             if (node.path.charAt(0) == "/")
                 classes.addNode({
                     id: node.id,
+                    name: node.name,
                     version: node.version,
                     type: node.type,
                     types: node.types,
                     namespace: store.createReference("Namespace", node.namespace),
-                    name: node.name,
                     path: node.path,
                     labels: node.labels,
                     generatedLabel: node.generatedLabel,
@@ -86,17 +98,18 @@ module.exports = function (api, options) {
                     hierarchy: node.hierarchy,
                     inRangeOf: store.createReference("Relationship", node.inRangeOf),
                     inDomainOf: store.createReference("Relationship", node.inDomainOf),
+                    usageDetails: store.createReference("UsageDetail", usageData[node.id]),
                 });
         });
         brickRelationships.forEach((node) => {
             if (node.path.charAt(0) == "/")
                 relationships.addNode({
                     id: node.id,
+                    name: node.name,
                     version: node.version,
                     type: node.type,
                     types: node.types,
                     namespace: store.createReference("Namespace", node.namespace),
-                    name: node.name,
                     path: node.path,
                     labels: node.labels,
                     generatedLabel: node.generatedLabel,
@@ -118,17 +131,18 @@ module.exports = function (api, options) {
                     hierarchy: node.hierarchy,
                     range: store.createReference("Class", node.range),
                     domain: store.createReference("Class", node.domain),
+                    usageDetails: store.createReference("UsageDetail", usageData[node.id]),
                 });
         });
         brickEntityProperties.forEach((node) => {
             if (node.path.charAt(0) == "/")
                 relationships.addNode({
                     id: node.id,
+                    name: node.name,
                     version: node.version,
                     type: node.type,
                     types: node.types,
                     namespace: store.createReference("Namespace", node.namespace),
-                    name: node.name,
                     path: node.path,
                     labels: node.labels,
                     generatedLabel: node.generatedLabel,
@@ -150,17 +164,18 @@ module.exports = function (api, options) {
                     hierarchy: node.hierarchy,
                     range: store.createReference("Class", node.range),
                     domain: store.createReference("Class", node.domain),
+                    usageDetails: store.createReference("UsageDetail", usageData[node.id]),
                 });
         });
         brickShapes.forEach((node) => {
             if (node.path.charAt(0) == "/")
                 classes.addNode({
                     id: node.id,
+                    name: node.name,
                     version: node.version,
                     type: node.type,
                     types: node.types,
                     namespace: store.createReference("Namespace", node.namespace),
-                    name: node.name,
                     path: node.path,
                     labels: node.labels,
                     generatedLabel: node.generatedLabel,
@@ -177,6 +192,7 @@ module.exports = function (api, options) {
                     inRangeOf: store.createReference("Relationship", node.inRangeOf),
                     inDomainOf: store.createReference("Relationship", node.inDomainOf),
                     shaclDetails: node.shaclDetails,
+                    usageDetails: store.createReference("UsageDetail", usageData[node.id]),
                 });
         });
         brickNamespaces.forEach((node) => {
@@ -191,6 +207,7 @@ module.exports = function (api, options) {
                     generatedLabel: node.generatedLabel,
                     generatedAlias: node.generatedAlias,
                     comments: node.comments,
+                    usageDetails: store.createReference("UsageDetail", usageData[node.id]),
                 });
         });
     });
