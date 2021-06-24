@@ -14,7 +14,7 @@
     "@gridsome/transformer-remark": "0.6.3",
     "axios": "0.21.1",
     "gridsome": "0.7.22",
-    "gridsome-plugin-remark-shiki": "0.3.0",
+    "gridsome-plugin-remark-shiki": "^0.3.0",
     "gridsome-plugin-remark-youtube": "1.0.1",
     "gridsome-plugin-rss": "1.1.0",
     "lodash.pick": "4.4.0",
