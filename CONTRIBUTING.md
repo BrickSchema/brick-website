@@ -67,3 +67,22 @@ If you are a personaY, check out these pages:
 ```
 Where `/about` is the webpage with "/about" as its path.
  
+# Adding usage details on the ontology page
+
+All markdown files in the [usageDetails](/usageDetails) directory are converted to usageDetails.
+
+## Example usage detail:
+
+```md
+---
+targets: 
+    - 1.2^https://brickschema.org/schema/Brick#TimeseriesReference
+    - 1.2^https://brickschema.org/schema/Brick#storedAt
+---
+
+## Example usage
+
+## Sample Query
+```
+
+The `targets` list indicates the set of ontology pages the usage detail contents should be added to, and must have elements in the format: `<brick_version>^<iri>` (where `<iri>` can point to any Brick class, relationship, shape or entity property).
