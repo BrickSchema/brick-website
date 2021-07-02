@@ -95,7 +95,9 @@
 
 <script>
     export default {
-        name: "Community"
+      metaInfo: {
+        title: "Community"
+      },
     }
 </script>
 

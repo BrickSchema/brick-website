@@ -21,7 +21,9 @@
 
 <script>
     export default {
-        name: "Members"
+      metaInfo: {
+        title: "Members"
+      },
     }
 </script>
 
