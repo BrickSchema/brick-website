@@ -31,18 +31,14 @@
                         <g-link to="/ontology" class="text-copy-primary hover:text-primary-700">Ontology</g-link>
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
-                        <g-link to="/tools" class="text-copy-primary hover:text-primary-700">Tools</g-link>
-                    </li>
-                    <li class="mr-8 mb-6 lg:mb-0">
-                        <g-link to="/blog" class="text-copy-primary hover:text-primary-700">Blog</g-link>
-                    </li>
-                    <li class="mr-8 mb-6 lg:mb-0">
                         <g-link to="/community" class="text-copy-primary hover:text-primary-700">Community</g-link>
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
                         <g-link to="/consortium" class="text-copy-primary hover:text-primary-700">Consortium</g-link>
                     </li>
-
+                    <li class="mr-8 mb-6 lg:mb-0">
+                        <g-link to="/members" class="text-copy-primary hover:text-primary-700">Members</g-link>
+                    </li>
                     <li>
                         <g-link aria-label="github" to="//github.com/BrickSchema/brick"
                                 rel="noopener noreferrer" target="_blank" title="Brick @ GitHub">
