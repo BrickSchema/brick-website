@@ -30,12 +30,6 @@ module.exports = {
             create: true
           }
         },
-        remark: {
-          plugins: [['remark-attr'],
-            ['gridsome-plugin-remark-youtube', {width: '85%', align: 'auto'}],
-            ['gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-          ]
-        }
       }
     },
     {
@@ -50,11 +44,13 @@ module.exports = {
             create: true
           }
         },
-        remark: {
-          plugins: [['remark-attr'],
-            ['gridsome-plugin-remark-shiki', {theme: 'Material-Theme-Palenight', skipInline: true}]
-          ]
-        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'usageDetails/**/*.md',
+        typeName: 'UsageDetail',
       }
     },
     {
@@ -75,12 +71,6 @@ module.exports = {
             route: 'personas/:id'
           }
         },
-        remark: {
-          plugins: [['remark-attr'],
-            ['gridsome-plugin-remark-youtube', {width: '85%', align: 'auto'}],
-            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-          ]
-        }
       }
     },
     {
@@ -88,11 +78,13 @@ module.exports = {
       options: {
         path: 'ontologyPages/**/*.md',
         typeName: 'OntologyPage',
-        remark: {
-          plugins: [['remark-attr'],
-            [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ]
-          ]
-        }
+      }
+    },
+    {
+      use: '@gridsome/source-filesystem',
+      options: {
+        path: 'usageDetails/**/*.md',
+        typeName: 'UsageDetail',
       }
     },
     {
@@ -129,6 +121,11 @@ module.exports = {
       externalLinksTarget: '_blank',
       externalLinksRel: ['nofollow', 'noopener', 'noreferrer'],
       anchorClassName: 'icon icon-link',
+      plugins: [
+        ['remark-attr'],
+        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ],
+        ['gridsome-plugin-remark-youtube', {width: '85%', align: 'auto'}],
+      ]
     }
   },
   css: {

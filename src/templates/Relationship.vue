@@ -184,7 +184,9 @@
                         </ul>
                     </div>
                 </div>
-
+                <div v-for="usageDetail in $page.class.usageDetails">
+                    <div class="markdown-body mt-16 ml-4" v-html="usageDetail.content" />
+                </div>
             </div>
         </div>
     </Layout>
@@ -197,6 +199,9 @@
     generatedLabel
     definitions
     name
+    usageDetails{
+    content
+    }
     namespace{
     path
     value
