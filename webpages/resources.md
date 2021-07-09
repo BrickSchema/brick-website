@@ -4,6 +4,15 @@ path: /resources
 summary: Downloads for Brick core files, papers and example buildings
 show_on_navbar: true
 ---
+## Table of Contents 
+---
+
+- [Brick Distribution](#brick-distribution)
+- [Brick Tools](#brick-tools)
+- [Reference Brick Models](#reference-brick-models)
+- [Academic Publications](#academic-publications)
+- [White Papers](#white-papers)
+- [Presentations](#presentations)
 
 ## Brick Distribution
 ---
@@ -25,6 +34,11 @@ Turtle is a compact textual format that is understood by most Semantic Web tools
        - [BrickFrame.ttl][2]: Brick relationship definitions
        - [BrickTag.ttl][3]: Brick tags (internal)
        - [BrickUse.ttl][4]: Brick "uses" relationships (internal)
+
+## Brick Tools
+---
+
+You can find all the tools that can help you with creating, maintaining, analyzing or visualizing a Brick model [here][34].
 
 ## Reference Brick Models
 ---
@@ -178,3 +192,4 @@ Memoori 2019
 [31]: /papers/interactive2020fierro.pdf
 [32]: /schema/1.1.1/Brick.ttl
 [33]: /schema/1.2.0/Brick.ttl
+[34]: /tools
