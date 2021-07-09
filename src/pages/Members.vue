@@ -2,7 +2,7 @@
     <Layout>
         <div class="container-inner m-auto py-16 px-8">
 
-            <div class="my-16 text-3xl font-bold border-b pb-4 border-gray-500">Members</div>
+            <h1 class="text-4xl font-bold leading-tight pb-16 border-b mb-8">Members</h1>
 
             <div class="flex flex-wrap">
                 <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/digital">
