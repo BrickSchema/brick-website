@@ -4,6 +4,8 @@
 
             <h1 class="text-4xl font-bold leading-tight">Community</h1>
 
+            <div class="my-16 text-xl pb-4 border-gray-500">Click <g-link to="/blog">here</g-link> to read our blog posts. </div>
+
             <div class="my-16 text-3xl font-bold border-b pb-4 border-gray-500">Brick is being used at:</div>
             <div class="flex flex-wrap">
                 <a class="w-64 m-auto p-10" href="https://bractlet.com/">
