@@ -23,7 +23,7 @@ Two working groups have been launched:
 
 ## Google Calendar
 
-- [Calendar link](https://calendar.google.com/calendar/embed?src=vrjj76hu51bjue824bdo7ujucg%40group.calendar.google.com&ctz=America%2FLos_Angeles)
+- [Calendar link](https://calendar.google.com/calendar/embed?src=vrjj76hu51bjue824bdo7ujucg%40group.calendar.google.com)
 - [.ics file](https://calendar.google.com/calendar/ical/vrjj76hu51bjue824bdo7ujucg%40group.calendar.google.com/public/basic.ics)
 
-<iframe src="https://calendar.google.com/calendar/embed?src=vrjj76hu51bjue824bdo7ujucg%40group.calendar.google.com&ctz=America%2FLos_Angeles" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
+<iframe src="https://calendar.google.com/calendar/embed?src=vrjj76hu51bjue824bdo7ujucg%40group.calendar.google.com" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
