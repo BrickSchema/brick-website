@@ -303,6 +303,7 @@ def generate_doc_src(doc_spec):
                         f"SELECT DISTINCT ?klass WHERE {{ <{iri}> rdfs:domain/(owl:equivalentClass|^owl:equivalentClass)* ?klass . }}"
                     )
                 ],
+                "shaclDetails": get_shacl_details(g, iri),
             }
 
         def expand_relationship_tree(brick_relationships, hierarchy=[]):
