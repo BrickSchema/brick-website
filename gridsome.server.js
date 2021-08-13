@@ -98,6 +98,7 @@ module.exports = function (api, options) {
                     hierarchy: node.hierarchy,
                     inRangeOf: store.createReference("Relationship", node.inRangeOf),
                     inDomainOf: store.createReference("Relationship", node.inDomainOf),
+                    shaclDetails: node.shaclDetails,
                     usageDetails: store.createReference("UsageDetail", usageData[node.id]),
                 });
         });
