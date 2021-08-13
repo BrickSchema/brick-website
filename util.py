@@ -1,10 +1,10 @@
 import json
+import os
 from collections import defaultdict
 
 from rdflib import Graph, Namespace, URIRef, BNode, query, RDFS, OWL, SKOS
 
 auto_dict = lambda: defaultdict(auto_dict)
-import os
 
 
 def minify(iri):
@@ -44,7 +44,7 @@ def get_shacl_details(graph, shape):
         <%s> sh:property ?prop .
         ?prop sh:path ?propname .
         ?prop sh:in/rdf:rest*/rdf:first ?enum .
-    }"""%(shape)
+    }""" % (shape)
     for row in graph.query(q):
         propname = str(row[0])
         enum = str(row[1])
@@ -56,7 +56,7 @@ def get_shacl_details(graph, shape):
         <%s> sh:property ?prop .
         ?prop sh:path ?propname .
         ?prop sh:datatype ?datatype .
-    }"""%(shape)
+    }""" % (shape)
     for row in graph.query(q):
         propname = str(row[0])
         datatype = str(row[1])
@@ -72,7 +72,6 @@ def generate_doc_src(doc_spec):
     all_entity_properties = []
     all_shapes = []
     all_namespaces = []
-
 
     for version in doc_spec:
         print(f"[ ] Brick v{version}...", end="\r")
