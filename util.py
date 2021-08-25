@@ -104,9 +104,9 @@ def generate_doc_src(doc_spec):
         class_tree = {"name": f"/ontology/{version}/#Classes", "children": []}
         root_classes = g.query(
             """SELECT DISTINCT ?iri WHERE {
-             ?iri a owl:Class .
+             ?iri rdfs:subClassOf brick:Class .
              FILTER NOT EXISTS {
-                ?iri rdfs:subClassOf ?something .
+                ?iri a sh:NodeShape .
                 FILTER ( %s )
              }
          }"""
