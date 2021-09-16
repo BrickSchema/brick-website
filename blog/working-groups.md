@@ -20,7 +20,7 @@ Two working groups have been launched:
     - Every two weeks starting Monday, March 15: 9:00 - 10:00am Pacific Time on [Zoom](https://mines.zoom.us/j/95499292212?pwd=ZVVGd1RFZXU5MVRPL2o2NU9sNGNKdz09)
 
 - **Data Working Group**: this working group gathers, develops and documents example Brick models (both for full buildings as well as individual systems) and building data sets that can inform research and illustrate idiomatic use of Brick.
-    - Every two weeks starting Wednesday, Sept 22: 4:00 - 5:00pm Pacific Time on [Zoom](https://mines.zoom.us/j/92482992122?pwd=OC84WnVDcW1BTEFNUGoyZ2ZWZHpNdz09)
+    - Every two weeks starting Wednesday, Oct 6: 4:00 - 5:00pm Pacific Time on [Zoom](https://mines.zoom.us/j/92482992122?pwd=OC84WnVDcW1BTEFNUGoyZ2ZWZHpNdz09)
     - Every two weeks starting Monday, Sept 27: 8:00 - 9:00am Pacific Time on [Zoom](https://mines.zoom.us/j/96983354945?pwd=cGJ5OWpTRnplandlOFQyd2tKWXB1UT09)
 
 
