@@ -36,7 +36,7 @@
                         <g-link
                                 class="my-1 breadcrumb font-normal"
                                 :to="`/ontology/${$page.class.version}`">
-                            v{{ $page.class.version }}
+                            {{ `${$page.class.version.charAt(0)>'9'?'':'v'}${$page.class.version}` }}
                         </g-link>
                     </li>
 
