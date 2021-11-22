@@ -1,6 +1,7 @@
 from util import generate_doc_src, auto_dict
 from rdflib import Graph
 from urllib.error import URLError
+import os
 
 # Pull the latest Brick.ttl to /static/schema
 try:
@@ -46,6 +47,25 @@ doc_spec["1.2"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl
 doc_spec["1.2"]["relationships"]["type_restriction"] = [
     "http://www.w3.org/2002/07/owl#ObjectProperty"
 ]
+
+# Pull the latest Brick.ttl nightly to /static/schema
+try:
+    print("[ ] Fetching the latest nightly build of Brick.ttl...", end="\r")
+    g = Graph()
+    g.parse("https://github.com/BrickSchema/Brick/releases/download/nightly/Brick.ttl", format="turtle")
+    os.makedirs("static/schema/nightly")
+    g.serialize("static/schema/nightly/Brick.ttl", format="turtle")
+    print("[✓] Fetching the latest nightly build of Brick.ttl   ")
+
+    # Brick v1.2
+    doc_spec["nightly"]["input"] = ["static/schema/nightly"]
+    doc_spec["nightly"]["ns_restriction"] = ["https://brickschema.org/schema/Brick#"]
+    doc_spec["nightly"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl#Class"]
+    doc_spec["nightly"]["relationships"]["type_restriction"] = [
+        "http://www.w3.org/2002/07/owl#ObjectProperty"
+    ]
+except URLError as e:
+    print("[WARN]: Unable to pull the latest version of Brick!")
 
 if __name__ == "__main__":
     generate_doc_src(doc_spec)
