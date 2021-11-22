@@ -53,7 +53,7 @@
                     <g-link class="leading-tight mt-16 mb-8 mr-2 font-normal text-gray-700 hover:text-primary-700" :to="`${$page.class.namespace.path}#${$page.class.name}`">{{ $page.class.namespace.value }}</g-link>:
                     <span class="font-bold leading-tight mt-16 mb-8 mr-4">{{ $page.class.generatedLabel }}</span>
                     <span class="text-xs font-bold bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded font-left my-auto align-middle">{{ $page.class.type.toUpperCase().split('_').join(' ') }}</span>
-                    <span class="text-xs bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded my-auto align-middle">{{ `v${$page.class.version}` }}</span>
+                    <span class="text-xs bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded my-auto align-middle">{{ `${$page.class.version.charAt(0)>'9'?'':'v'}${$page.class.version}` }}</span>
                 </div>
 
 

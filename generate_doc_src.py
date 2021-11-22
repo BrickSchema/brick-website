@@ -53,15 +53,15 @@ try:
     print("[ ] Fetching the latest nightly build of Brick.ttl...", end="\r")
     g = Graph()
     g.parse("https://github.com/BrickSchema/Brick/releases/download/nightly/Brick.ttl", format="turtle")
-    os.makedirs("static/schema/nightly")
+    os.makedirs("static/schema/nightly", exist_ok=True)
     g.serialize("static/schema/nightly/Brick.ttl", format="turtle")
     print("[✓] Fetching the latest nightly build of Brick.ttl   ")
 
     # Brick v1.2
-    doc_spec["nightly"]["input"] = ["static/schema/nightly"]
-    doc_spec["nightly"]["ns_restriction"] = ["https://brickschema.org/schema/Brick#"]
-    doc_spec["nightly"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl#Class"]
-    doc_spec["nightly"]["relationships"]["type_restriction"] = [
+    doc_spec["Nightly"]["input"] = ["static/schema/nightly"]
+    doc_spec["Nightly"]["ns_restriction"] = ["https://brickschema.org/schema/Brick#"]
+    doc_spec["Nightly"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl#Class"]
+    doc_spec["Nightly"]["relationships"]["type_restriction"] = [
         "http://www.w3.org/2002/07/owl#ObjectProperty"
     ]
 except URLError as e:

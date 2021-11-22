@@ -4,7 +4,7 @@
         <g-link class="leading-tight mt-16 mb-8 mr-2 font-normal text-gray-700 hover:text-primary-700" :to="`${relationshipNode.namespace.path}#${relationshipNode.name.id}`">{{ relationshipNode.namespace.value }}</g-link>:
         <span class="font-bold leading-tight mt-16 mb-8 mr-4">{{ relationshipNode.generatedLabel }}</span>
         <span class="text-xs font-bold bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded font-left my-auto align-middle">{{ relationshipNode.type.toUpperCase() }}</span>
-        <span class="text-xs bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded my-auto align-middle">{{ `v${relationshipNode.version}` }}</span>
+        <span class="text-xs bg-primary-700 text-white my-auto mx-2 p-1 px-2 rounded my-auto align-middle">{{ `${relationshipNode.version.charAt(0)>'9'?'':'v'}${relationshipNode.version}` }}</span>
     </div>
 
 
