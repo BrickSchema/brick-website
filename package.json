@@ -1,5 +1,5 @@
 {
-  "name": "brick-vue-website",
+  "name": "brick-website",
   "private": true,
   "scripts": {
     "build": "gridsome build",
