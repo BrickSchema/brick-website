@@ -11,3 +11,4 @@ static/search.json
 .idea
 static/hierarchy
 static/ontology
+static/schema/Brick.ttl

@@ -38,6 +38,9 @@
                     <div class="text-3xl font-bold mb-8 w-full border-b-2 pb-4">Versions</div>
                     <div class="text-2xl font-bold">
                         <li class="mb-6">
+                            <g-link to="/ontology/nightly">Nightly</g-link>
+                        </li>
+                        <li class="mb-6">
                             <g-link to="/ontology/1.2">v1.2</g-link>
                         </li>
                         <li class="mb-6">
@@ -45,6 +48,15 @@
                         </li>
                         <li>
                             <g-link to="/ontology/1.0.3">v1.0.3</g-link>&nbsp;(no longer supported)
+                        </li>
+                    </div>
+                </ul>
+                <ul class="text-xl container-inner mx-auto my-16">
+                    <div class="text-4xl font-bold mb-12">Google Digital Buildings Ontology</div>
+                    <div class="text-3xl font-bold mb-8 w-full border-b-2 pb-4">Versions</div>
+                    <div class="text-2xl font-bold">
+                        <li class="mb-6">
+                            <g-link to="/ontology/digitalbuildings">v0.0.1</g-link>
                         </li>
                     </div>
                 </ul>
