@@ -12,7 +12,7 @@ There are two meetings of each working group: one in the morning (Pacific) and o
 Two working groups have been launched:
 
 - **Ontology Development Working Group**: this working group discusses additions, extensions and fixes to the Brick ontology definition. This includes, but is not limited to, new classes, modeling domains, changes to the ontology structure, and documentation for Brick.
-    - Every third Thursday, from 10:00 - 11:00 AM, Pacific Time on [Zoom](https://mines.zZoomoom.us/j/96983354945?pwd=cGJ5OWpTRnplandlOFQyd2tKWXB1UT09)
+    - Every third Thursday, from 10:00 - 11:00 AM, Pacific Time on [Zoom](https://mines.zoom.us/j/96983354945?pwd=cGJ5OWpTRnplandlOFQyd2tKWXB1UT09)
     - Every fourth Wednesday, from 4:00 - 5:00 PM, Pacific Time on [Zoom](https://mines.zoom.us/j/96983354945?pwd=cGJ5OWpTRnplandlOFQyd2tKWXB1UT09)
 
 - **Tooling Working Group**: this working group develops, tests and documents open-source software that facilitates use of Brick. This includes software for producing Brick models from existing representations and software/libraries/databases for  querying, managing and storing Brick models.
