@@ -5,14 +5,20 @@
             <h1 class="text-4xl font-bold leading-tight pb-16 border-b mb-8">Members</h1>
 
             <div class="flex flex-wrap">
-                <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/digital">
-                    <g-image src="../../static/logos/supporters/jci.png"></g-image>
-                </a>
-                <a class="w-64 m-auto p-10" href="https://mapped.com/">
-                    <g-image src="../../static/logos/members/mapped.svg"></g-image>
+                <a class="w-64 m-auto p-10" href="https://www.carrier.com/">
+                    <g-image alt="Carrier Logo" src="../../static/logos/members/carrier.png"></g-image>
                 </a>
                 <a class="w-64 m-auto p-10" href="https://clockworksanalytics.com/">
-                    <g-image src="../../static/logos/members/clockworks.svg"></g-image>
+                    <g-image alt="Clockworks Analytics Logo" src="../../static/logos/members/clockworks.svg"></g-image>
+                </a>
+                <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/">
+                    <g-image alt="Johnson Controls logo" src="../../static/logos/supporters/jci.png"></g-image>
+                </a>
+                <a class="w-64 m-auto p-10" href="https://mapped.com/">
+                    <g-image alt="Mapped logo" src="../../static/logos/members/mapped.svg"></g-image>
+                </a>
+                <a class="w-64 m-auto p-10" href="https://se.com/">
+                    <g-image alt="Schneider Electric logo" src="../../static/logos/members/se.png"></g-image>
                 </a>
             </div>
         </div>

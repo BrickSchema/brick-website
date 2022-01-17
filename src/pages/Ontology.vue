@@ -38,6 +38,9 @@
                     <div class="text-3xl font-bold mb-8 w-full border-b-2 pb-4">Versions</div>
                     <div class="text-2xl font-bold">
                         <li class="mb-6">
+                            <g-link to="/ontology/Nightly/classes/Equipment">Nightly</g-link>
+                        </li>
+                        <li class="mb-6">
                             <g-link to="/ontology/1.2">v1.2</g-link>
                         </li>
                         <li class="mb-6">

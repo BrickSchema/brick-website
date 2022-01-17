@@ -74,7 +74,7 @@ def generate_doc_src(doc_spec):
     all_namespaces = []
 
     for version in doc_spec:
-        print(f"[ ] Brick v{version}...", end="\r")
+        print(f"[ ] Brick {'v' if version[0] <= '9' else ''}{version}...", end="\r")
         g = Graph()
         SH = Namespace("http://www.w3.org/ns/shacl#")
 
@@ -651,7 +651,7 @@ def generate_doc_src(doc_spec):
         with open(f"{directory}/search.json", "w") as file:
             json.dump(search, file)
 
-        print(f"[✓] Brick v{version}   ")
+        print(f"[✓] Brick {'v' if version[0] <= '9' else ''}{version}   ")
 
     print(f"[ ] Saving JSON files...", end="\r")
     with open("./static/ontology/all_classes.json", "w") as file:
