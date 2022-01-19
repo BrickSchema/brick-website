@@ -37,7 +37,7 @@
                         <g-link to="/consortium" class="text-copy-primary hover:text-primary-700">Consortium</g-link>
                     </li>
                     <li class="mr-8 mb-6 lg:mb-0">
-                        <g-link to="/members" class="text-copy-primary hover:text-primary-700">Members</g-link>
+                        <g-link to="/blog" class="text-copy-primary hover:text-primary-700">News</g-link>
                     </li>
                     <li>
                         <g-link aria-label="github" to="//github.com/BrickSchema/brick"

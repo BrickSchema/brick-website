@@ -20,6 +20,37 @@ The consortium is committed to ensuring the Brick specification is not encumbere
 The [rules of the consortium][1] are available for review, as is a [membership form][2].
 We hosted a virtual open house in 2021, and the [video and slides are available.](/blog/brick-consortium-virtual-kickoff)
 
+<div class="container-inner m-auto py-16 px-8">
+<h2 class="text-4xl font-bold leading-tight pb-16 border-b mb-8">Commerical Members</h2>
+<div class="flex flex-wrap">
+<a class="w-64 m-auto p-10" href="https://www.carrier.com/"> <image alt="Carrier Logo" src="/logos/members/carrier.png"></image> </a>
+<a class="w-64 m-auto p-10" href="https://clockworksanalytics.com/"> <image alt="Clockworks Analytics Logo" src="/logos/members/clockworks.svg"></image> </a>
+<a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/">
+<image alt="Johnson Controls logo" src="/logos/supporters/jci.png"></image>
+</a>
+<a class="w-64 m-auto p-10" href="https://mapped.com/">
+<image alt="Mapped logo" src="/logos/members/mapped.svg"></image>
+</a>
+<a class="w-64 m-auto p-10" href="https://se.com/">
+<image alt="Schneider Electric logo" src="/logos/members/se.png"></image>
+</a>
+</div>
+</div>
+
+<div class="container-inner m-auto py-16 px-8">
+<h2 class="text-4xl font-bold leading-tight pb-16 border-b mb-8">Academic Individual Researcher Members from these institutions</h2>
+<div class="flex flex-wrap">
+<a class="w-64 m-auto p-10" href="https://www.cmu.edu/"> <image alt="Carnegie Mellon University Logo" src="/logos/research/cmu.jpg"></image> </a>
+<a class="w-64 m-auto p-10" href="https://mines.edu/"> <image alt="Colorado School of Mines" src="/logos/research/mines.png"></image> </a>
+<a class="w-64 m-auto p-4" href="https://www.berkeley.edu/">
+<image alt="UC Berkeley Logo" src="/logos/research/ucb.png"></image>
+</a>
+<a class="w-64 m-auto p-10" href="https://www.ucsd.edu/">
+<image alt="UC San Diego logo" src="/logos/research/ucsd.png"></image>
+</a>
+</div>
+</div>
+
 ## The organization of the Brick Consortium.
 
 ![Brick Consortium Organization Structure](/images/brick-org-structure.png)
