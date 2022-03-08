@@ -11,6 +11,9 @@
                 <a class="w-64 m-auto p-10" href="https://bractlet.com/">
                     <g-image src="../../static/logos/success-stories/bractlet.png"></g-image>
                 </a>
+                <a class="w-64 m-auto p-10" href="https://www.carrier.com/">
+                    <g-image alt="Carrier Logo" src="../../static/logos/members/carrier.png"></g-image>
+                </a>
                 <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/digital">
                     <g-image src="../../static/logos/supporters/jci.png"></g-image>
                 </a>
@@ -20,15 +23,15 @@
                 <a class="w-64 m-auto p-10" href="https://mapped.com/">
                     <g-image src="../../static/logos/members/mapped.svg"></g-image>
                 </a>
+                <a class="w-64 m-auto p-10" href="https://se.com/">
+                    <g-image alt="Schneider Electric logo" src="../../static//logos/members/se.png"></g-image>
+                </a>
             </div>
 
             <div class="my-16 text-3xl font-bold border-b pb-4 border-gray-500">Brick collaborates with</div>
             <div class="flex flex-wrap">
                 <a class="w-64 m-auto p-10" href="https://vbis.com.au/">
                     <g-image src="../../static/logos/collaboration/vbis.jpg"></g-image>
-                </a>
-                <a class="w-64 m-auto p-4" href="https://www.johnsoncontrols.com/digital">
-                    <g-image src="../../static/logos/supporters/jci.png"></g-image>
                 </a>
                 <a class="w-64 m-auto p-4" href="https://www.ashrae.org/">
                     <g-image src="../../static/logos/collaboration/ashrae.png"></g-image>
