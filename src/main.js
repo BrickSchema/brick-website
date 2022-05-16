@@ -4,6 +4,9 @@
 import DefaultLayout from '~/layouts/Default.vue'
 import VueScrollTo from 'vue-scrollto'
 import VueFuse from 'vue-fuse'
+import 'prismjs/themes/prism.css'
+// Prism default CSS about line numbers
+import 'prismjs/plugins/line-numbers/prism-line-numbers.css'
 
 export default function (Vue, { router, head, isClient }) {
   // Set default layout as a global component
