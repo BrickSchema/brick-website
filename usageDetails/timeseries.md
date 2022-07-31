@@ -9,7 +9,7 @@ targets:
 
 ## Example usage
 
-```sql
+```turtle
 :sensor1    a   brick:Temperature_Sensor ;
     brick:hasUnit unit:DEG_F ;
     brick:timeseries [

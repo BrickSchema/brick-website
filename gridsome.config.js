@@ -123,7 +123,7 @@ module.exports = {
       anchorClassName: 'icon icon-link',
       plugins: [
         ['remark-attr'],
-        [ 'gridsome-plugin-remark-shiki', { theme: 'Material-Theme-Palenight', skipInline: true } ],
+        [ '@gridsome/remark-prismjs', { transformInlineCode: false } ],
         ['gridsome-plugin-remark-youtube', {width: '85%', align: 'auto'}],
       ]
     }
