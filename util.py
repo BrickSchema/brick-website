@@ -77,11 +77,13 @@ def generate_doc_src(doc_spec):
         print(f"[ ] Brick {'v' if version[0] <= '9' else ''}{version}...", end="\r")
         g = Graph()
         SH = Namespace("http://www.w3.org/ns/shacl#")
+        BRICK = Namespace("https://brickschema.org/schema/Brick#")
 
         # Add namespaces used in the queries
         g.bind("skos", SKOS)
         g.bind("owl", OWL)
         g.bind("sh", SH)
+        g.bind("brick", BRICK)
 
         for directory in doc_spec[version]["input"]:
             for root, dirs, files in os.walk(directory):
