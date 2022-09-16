@@ -20,6 +20,9 @@
                 <a class="w-64 m-auto p-10" href="https://se.com/">
                     <g-image alt="Schneider Electric logo" src="../../static/logos/members/se.png"></g-image>
                 </a>
+                <a class="w-64 m-auto p-10" href="https://www.siemens.com/">
+                    <g-image alt="Siemens logo" src="../../static/logos/members/siemens.svg"></g-image>
+                </a>
             </div>
         </div>
     </Layout>
