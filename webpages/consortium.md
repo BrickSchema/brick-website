@@ -34,6 +34,9 @@ We hosted a virtual open house in 2021, and the [video and slides are available.
 <a class="w-64 m-auto p-10" href="https://se.com/">
 <image alt="Schneider Electric logo" src="/logos/members/se.png"></image>
 </a>
+<a class="w-64 m-auto p-10" href="https://www.siemens.com/">
+<image alt="Siemens logo" src="/logos/members/siemens.svg"></image>
+</a>
 </div>
 </div>
 
