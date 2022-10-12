@@ -49,10 +49,10 @@ doc_spec["1.2"]["relationships"]["type_restriction"] = [
 ]
 
 # Brick v1.3
-doc_spec["1.3.0"]["input"] = ["static/schema/1.3"]
-doc_spec["1.3.0"]["ns_restriction"] = ["https://brickschema.org/schema/Brick#"]
-doc_spec["1.3.0"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl#Class"]
-doc_spec["1.3.0"]["relationships"]["type_restriction"] = [
+doc_spec["1.3"]["input"] = ["static/schema/1.3"]
+doc_spec["1.3"]["ns_restriction"] = ["https://brickschema.org/schema/Brick#"]
+doc_spec["1.3"]["classes"]["type_restriction"] = ["http://www.w3.org/2002/07/owl#Class"]
+doc_spec["1.3"]["relationships"]["type_restriction"] = [
     "http://www.w3.org/2002/07/owl#ObjectProperty"
 ]
 
