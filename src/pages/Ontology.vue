@@ -41,6 +41,9 @@
                             <g-link to="/ontology/Nightly/classes/Equipment">Nightly</g-link>
                         </li>
                         <li class="mb-6">
+                            <g-link to="/ontology/1.3">v1.3</g-link>
+                        </li>
+                        <li class="mb-6">
                             <g-link to="/ontology/1.2">v1.2</g-link>
                         </li>
                         <li class="mb-6">
