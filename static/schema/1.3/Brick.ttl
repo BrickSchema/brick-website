@@ -99,19 +99,19 @@ brick:Acceleration_Time_Setpoint a owl:Class,
     rdfs:label "Acceleration Time Setpoint" ;
     rdfs:subClassOf brick:Time_Setpoint ;
     sh:rule [ a sh:TripleRule ;
-            sh:object tag:Setpoint ;
-            sh:predicate brick:hasTag ;
-            sh:subject sh:this ],
-        [ a sh:TripleRule ;
-            sh:object tag:Time ;
-            sh:predicate brick:hasTag ;
-            sh:subject sh:this ],
-        [ a sh:TripleRule ;
             sh:object tag:Acceleration ;
             sh:predicate brick:hasTag ;
             sh:subject sh:this ],
         [ a sh:TripleRule ;
             sh:object tag:Point ;
+            sh:predicate brick:hasTag ;
+            sh:subject sh:this ],
+        [ a sh:TripleRule ;
+            sh:object tag:Setpoint ;
+            sh:predicate brick:hasTag ;
+            sh:subject sh:this ],
+        [ a sh:TripleRule ;
+            sh:object tag:Time ;
             sh:predicate brick:hasTag ;
             sh:subject sh:this ] ;
     brick:hasAssociatedTag tag:Acceleration,
@@ -6602,6 +6602,14 @@ brick:Entering_Water_Differential_Pressure_Integral_Time_Parameter a owl:Class,
     rdfs:label "Entering Water Differential Pressure Integral Time Parameter" ;
     rdfs:subClassOf brick:Differential_Pressure_Integral_Time_Parameter ;
     sh:rule [ a sh:TripleRule ;
+            sh:object tag:Differential ;
+            sh:predicate brick:hasTag ;
+            sh:subject sh:this ],
+        [ a sh:TripleRule ;
+            sh:object tag:Entering ;
+            sh:predicate brick:hasTag ;
+            sh:subject sh:this ],
+        [ a sh:TripleRule ;
             sh:object tag:Integral ;
             sh:predicate brick:hasTag ;
             sh:subject sh:this ],
@@ -6627,14 +6635,6 @@ brick:Entering_Water_Differential_Pressure_Integral_Time_Parameter a owl:Class,
             sh:subject sh:this ],
         [ a sh:TripleRule ;
             sh:object tag:Water ;
-            sh:predicate brick:hasTag ;
-            sh:subject sh:this ],
-        [ a sh:TripleRule ;
-            sh:object tag:Differential ;
-            sh:predicate brick:hasTag ;
-            sh:subject sh:this ],
-        [ a sh:TripleRule ;
-            sh:object tag:Entering ;
             sh:predicate brick:hasTag ;
             sh:subject sh:this ] ;
     brick:hasAssociatedTag tag:Differential,
@@ -45834,4 +45834,3 @@ brick:hasTag a owl:AsymmetricProperty,
     rdfs:range brick:Tag ;
     owl:inverseOf brick:isTagOf ;
     skos:definition "The subject has the given tag"@en .
-

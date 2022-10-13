@@ -1,6 +1,7 @@
 import json
 import os
 from collections import defaultdict
+from itertools import chain
 
 from rdflib import Graph, Namespace, URIRef, BNode, query, RDFS, OWL, SKOS
 
