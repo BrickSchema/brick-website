@@ -14,6 +14,7 @@
     "@gridsome/source-filesystem": "0.6.2",
     "@gridsome/transformer-remark": "0.6.3",
     "axios": "0.21.2",
+    "follow-redirects": "^1.15.2",
     "gridsome": "0.7.22",
     "gridsome-plugin-remark-youtube": "1.0.1",
     "gridsome-plugin-rss": "1.1.0",
