@@ -79,6 +79,8 @@ def generate_doc_src(doc_spec):
         g = Graph()
         SH = Namespace("http://www.w3.org/ns/shacl#")
         BRICK = Namespace("https://brickschema.org/schema/Brick#")
+        if version == "1.1":
+            BRICK = Namespace("https://brickschema.org/schema/1.1/Brick#")
 
         # Add namespaces used in the queries
         g.bind("skos", SKOS)
