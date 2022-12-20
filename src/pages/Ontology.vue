@@ -84,7 +84,7 @@
             return{
                 tree: Object,
                 expanded: true,
-                version: '1.2'
+                version: '1.3'
             }
         },
         metaInfo() {
